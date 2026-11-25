@@ -23,7 +23,14 @@ THAI_VOICE = 'th-TH-PremwadeeNeural'
 # Voice-only respellings (T.Chris, 25 Nov 2026). Applied to the text sent to the voice, never to the
 # recording key, so the app finds the clip from the on-screen text. "SAT" (capitals = the exam, not the
 # verb "sat") is spoken as the letters S-A-T.
-VOICE_FIXES = [(re.compile(r'\bSAT\b'), 'S A T')]
+VOICE_FIXES = [
+    (re.compile(r'\bSAT\b'), 'S A T'),
+    # Respellings T.Chris chose by ear (25 Nov 2026): ambivalent = option C; the others are first tries, see HANDOVER.
+    (re.compile(r'\b([Aa])mbivalen(t|ce|tly)\b'), r'\1m-bivvalen\2'),
+    (re.compile(r'\b([Ii])ncongruous(ly)?\b'), r'\1n-congroo-us\2'),
+    (re.compile(r'\b([Pp])recipitat(e|ed|es|ing)\b'), r'\1re-sippi-tat\2'),
+    (re.compile(r'\b([Ss])anguine\b'), r'\1ang-gwin'),
+]
 FIX_RE = re.compile('|'.join(f.pattern for f, _ in VOICE_FIXES))
 
 
