@@ -419,3 +419,35 @@ button.speak.lg.on,button.speak.lg.paused{border-color:var(--gold-line)}
 /* lead fix: long words in the small word-of-the-day panel must not break mid-word */
 .wd-pic.wod .wd-fb-w{word-break:normal;overflow-wrap:normal;hyphens:none;white-space:nowrap;font-size:clamp(.85rem,4.2vw,1.4rem);max-width:92%;overflow:hidden;text-overflow:ellipsis}
 @media (max-width:640px){ .hm-wod{grid-template-columns:110px minmax(0,1fr)} }
+
+/* ---------------------------------------------------------- word picture + title pane (25 Nov 2026)
+   .framed = word page hero and word card. The photo fills the frame at full height and slides
+   left so the student (--fx across the picture) sits near --T; the blurred dark pane holds the
+   word and its short definition in the space that frees on the right (--P = where the pane starts).
+   --ar = picture width/height, --fh = frame height/width (must match aspect-ratio).
+   Phones: the pane drops to the bottom and the student moves to the centre (--T 50%, --P 100%). */
+.wd-pic.framed{container-type:inline-size;background:#1b1828;--fh:.6667;--T:36%;--P:58%}
+.wd-pic.hero.framed{aspect-ratio:3/2}
+.wd-card .wd-pic.card.framed{aspect-ratio:16/10;--fh:.625;max-height:none}
+.wd-pic.framed.has .wd-fb{visibility:hidden}
+.wd-pic.framed img.bg{opacity:1;filter:blur(26px) saturate(.9) brightness(.82);transform:scale(1.2)}
+.wd-pic.framed img.fg{object-fit:cover;top:0;bottom:auto;height:100%;max-width:none;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 92%,transparent);
+  --W:calc(var(--ar) * var(--fh) * 100%);width:var(--W);
+  left:clamp(min(0%, calc(var(--P) - var(--W))), calc(var(--T) - var(--fx) * var(--W)), max(0%, calc(var(--P) - var(--W))))}
+.wd-ov{position:absolute;z-index:3;top:7%;bottom:7%;left:var(--P);right:3.5%;display:flex;flex-direction:column;justify-content:center;gap:2.2cqw;
+  padding:3.6cqw 3.2cqw;border-radius:clamp(12px,2.6cqw,20px);color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.45);
+  background:rgba(14,12,26,.52);-webkit-backdrop-filter:blur(16px) saturate(1.15);backdrop-filter:blur(16px) saturate(1.15);
+  border:1px solid rgba(255,255,255,.16);box-shadow:0 12px 32px rgba(0,0,0,.28)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){ .wd-ov{background:rgba(14,12,26,.78)} }
+.wd-ov-w{display:block;font:700 min(7.4cqw, calc(31cqw / (var(--len) * .62)))/1.04 var(--f-display);letter-spacing:-.012em;overflow-wrap:normal;word-break:normal;hyphens:none}
+.wd-ov-d{display:block;font:600 clamp(.78rem,2.55cqw,1.12rem)/1.38 var(--f-ui);color:rgba(255,255,255,.93)}
+.wd-ov-d::before{content:"";display:block;width:2.8em;height:3px;border-radius:2px;background:var(--gold,#e9c46a);margin-bottom:.75em}
+.wd-pic.noimg .wd-ov{display:none}
+@media (max-width:640px){
+  .wd-pic.framed{--fh:.8;--T:50%;--P:100%}
+  .wd-pic.hero.framed,.wd-card .wd-pic.card.framed{aspect-ratio:5/4}
+  .wd-ov{top:auto;left:3.5%;right:3.5%;bottom:3.5%;gap:2cqw;padding:3.4cqw 4.4cqw 3.8cqw}
+  .wd-ov-w{font-size:min(9.6cqw, calc(84cqw / (var(--len) * .62)))}
+  .wd-ov-d{font-size:clamp(.8rem,3.7cqw,1rem)}
+}

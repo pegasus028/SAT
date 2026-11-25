@@ -48,9 +48,19 @@
     return '<div class="wd-fb f-' + esc(w.cluster) + '" aria-hidden="true"><span class="wd-fb-ic">' + mark(w) + '</span>' +
       '<span class="wd-fb-w">' + esc(SAT.head(w)) + '</span><span class="wd-fb-f">' + esc(f.name) + '</span></div>';
   }
+  /* the word page hero and the word card: picture slid left, word + short definition on a
+     blurred dark pane in the space it frees (data/word-overlay.js) */
+  function overlay(w) {
+    var o = (window.WORD_OVERLAY || {})[w.id], head = SAT.head(w);
+    if (!o || !o.gloss) return null;
+    var len = head.split(/\s+/).reduce(function (m, t) { return Math.max(m, t.length); }, 4);
+    return { style: ' style="--ar:' + (+o.ar || 1.5) + ';--fx:' + (o.fx == null ? 0.5 : +o.fx) + ';--len:' + len + '"',
+      html: '<div class="wd-ov" aria-hidden="true"><b class="wd-ov-w">' + esc(head) + '</b><span class="wd-ov-d">' + esc(SAT.forStudents(o.gloss)) + '</span></div>' };
+  }
   function pic(w, cls) {
     var im = ((window.IMAGES || {}).words || {})[w.id], has = im && im.src;
-    return '<figure class="wd-pic ' + (cls || '') + (has ? ' has' : ' noimg') + '">' + fallback(w) +
+    var ov = has && (cls === 'hero' || cls === 'card') ? overlay(w) : null;
+    return '<figure class="wd-pic ' + (cls || '') + (has ? ' has' : ' noimg') + (ov ? ' framed' : '') + '"' + (ov ? ov.style : '') + '>' + fallback(w) + (ov ? ov.html : '') +
       (has ? '<img class="bg" src="' + esc(im.src) + '" alt="" aria-hidden="true" onerror="this.parentNode.classList.add(\'noimg\')">' +
              '<img class="fg" src="' + esc(im.src) + '" alt="' + esc(im.alt || SAT.head(w)) + '" loading="lazy" onerror="this.parentNode.classList.add(\'noimg\')">' : '') +
       '</figure>';
