@@ -170,7 +170,10 @@ var ACTIONS = {
     return { ok: true, week: wk, rows: rows };
   },
   teacherLogin: function (p) {
-    if (String(p.pin || '') !== pin_()) return { ok: false, error: 'Wrong PIN.' };
+    var cache = CacheService.getScriptCache(), n = Number(cache.get('pinFails') || 0);
+    if (n >= 10) return { ok: false, error: 'Too many wrong PINs. Try again in 15 minutes.' };
+    if (String(p.pin || '') !== pin_()) { cache.put('pinFails', String(n + 1), 900); return { ok: false, error: 'Wrong PIN.' }; }
+    cache.remove('pinFails');
     return { ok: true, token: teacherToken_() };
   },
   roster: function (p) {

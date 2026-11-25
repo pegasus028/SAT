@@ -16,8 +16,8 @@
 window.ROLEPLAY = {
   MATCH: {
     "manifest": "manifest(s|ed|ing|ly|ation|ations)?(?!o)",
-    "ambivalent": "ambivalen(t|tly|ce)(?!\\s+(of|for|with|on|in)\\b)",
-    "integral": "integral(ly)?\\s+to|an?\\s+(\\w+\\s+)?integral\\s+(part|parts|element|elements|component|components|role|roles|feature|features)",
+    "ambivalent": "ambivalen(t|tly)(?!\\s+(of|for|with|on)\\b)|ambivalence(?!\\s+(for|with|on)\\b)",
+    "integral": "integral(ly)?\\s+to|integral\\s+(part|parts|element|elements|component|components|role|roles|feature|features)",
     "that-said": "(that said|having said that|that being said|with that said)\\s*,",
     "opaque": "opaque(ly|ness)?|opacity",
     "tenuous": "tenuous(ly|ness)?",
@@ -28,8 +28,8 @@ window.ROLEPLAY = {
     "immaterial-to": "immaterial(ly)?(?!\\s+(for|of|with|on)\\b)",
     "homogeneous": "homogene?ous(ly)?|homogeneity",
     "contingent-on": "contingent\\s+(up)?on",
-    "attest-to": "attest(s|ed|ing)?\\s+(to|that)|well[- ]attested",
-    "incongruous-with": "incongru(ous|ously|ity)(?!\\s+(to|for|of|from)\\b)",
+    "attest-to": "attest(s|ed|ing)?\\s+(to|that)|(can|could|will|would)\\s+attest|well[- ]attested",
+    "incongruous-with": "incongru(ous|ously)(?!\\s+(for|of|from)\\b)(?!\\s+to\\s+(the|its|their|this|that|these|those|a|an|what|our|my|her\\s+\\w+|his\\s+\\w+)\\b)|incongruity",
     "proxies-for": "prox(y|ies)\\s+for",
     "prevail-over": "prevail(s|ed|ing)?\\s+(over|against)",
     "inconsequential-to": "inconsequential(ly)?(?!\\s+(for|of|with|on)\\b)",
@@ -39,12 +39,12 @@ window.ROLEPLAY = {
     "corroborate": "corroborat(e|es|ed|ing|ion|ive)(?!\\s+with\\b)",
     "disparate": "disparate(ly)?",
     "latent": "laten(t|tly|cy)",
-    "belie": "(belie|belies|belied|belying)(?!\\s+(that|in|on)\\b)",
+    "belie": "(belie|belies|belied|belying)(?!\\s+that\\s+(i|we|they|you|she|he|it|there|the|a|an|her|his|their|our|my|its|people|students|everyone|some|many|all)\\b)(?!\\s+in\\s+(me|you|her|him|them|us|it|my|your|our|their|his|myself|yourself|herself|themselves|ourselves)\\b)",
     "precipitate": "precipitat(e|es|ed|ing)",
     "buttress": "buttress(es|ed|ing)?",
     "mitigate": "mitigat(e|es|ed|ing|ion)(?!\\s+against\\b)",
     "exacerbate": "exacerbat(e|es|ed|ing|ion)",
-    "stymie": "stymi(e|es|ed|eing|ing)"
+    "stymie": "stym(ie|ies|ied|ieing|ying)"
   },
   FORMS: {
     "manifest": "manifest(s|ed|ing|ly|ation|ations)?(?!o)",
@@ -76,7 +76,7 @@ window.ROLEPLAY = {
     "buttress": "buttress(es|ed|ing)?",
     "mitigate": "mitigat(e|es|ed|ing|ion)",
     "exacerbate": "exacerbat(e|es|ed|ing|ion)",
-    "stymie": "stymi(e|es|ed|eing|ing)"
+    "stymie": "stym(ie|ies|ied|ieing|ying)"
   },
 
   scenes: [

@@ -63,12 +63,33 @@
   SAT.load = function () {
     var s = null; try { s = JSON.parse(localStorage.getItem(KEY)); } catch (e) {}
     SAT.state = deepFill(s || {}, fresh());
+    if (document.readyState !== 'loading' && SAT.rehydrate) SAT.rehydrate();
     return SAT.state;
   };
   SAT.save = function () { try { localStorage.setItem(KEY, JSON.stringify(SAT.state)); } catch (e) {} SAT.hud(); if (SAT.hooks.onSave) SAT.hooks.onSave(); };
   SAT.reset = function () { var u = SAT.state && SAT.state.user; SAT.state = fresh(); SAT.state.user = u; SAT.save(); };
   SAT.KEY = KEY;
+  /* Every practice item by id (stages, tests, pattern quizzes, word mini-items), so a fault list restored from the
+     server as {id, src, misses…} stubs gets its full question back. */
+  var ITEMS = null;
+  SAT.findItem = function (id) {
+    if (!ITEMS) {
+      ITEMS = {}; var add = function (it) { if (it && it.id) ITEMS[it.id] = it; };
+      ((window.STAGES || {}).stages || []).forEach(function (st) { (st.levels || []).forEach(function (l) { (l.modules || []).forEach(function (m) { (m.items || []).forEach(add); }); ((l.check || {}).items || []).forEach(add); }); });
+      var T = window.TESTS || {}; (T.papers || []).forEach(function (p) { (p.items || []).forEach(add); });
+      (T.adaptive || []).forEach(function (a) { ['m1', 'm2easy', 'm2hard'].forEach(function (k) { ((a[k] || {}).items || []).forEach(add); }); });
+      var PP = window.PATTERN_PLAY || {}; Object.keys(PP).forEach(function (k) { (PP[k].quiz || []).forEach(add); });
+      WORDS.forEach(function (w) { var mi = w.mini_item; if (!mi) return; add({ id: 'word-' + w.id, passage: mi.passage, prompt: w.group === 'transition' ? 'Which choice completes the text with the most logical transition?' : 'Which choice completes the text with the most logical and precise word or phrase?', options: mi.options, answer: mi.key, why: mi.rationale, word: w.id, field: w.cluster, skill: 'wic' }); });
+    }
+    return ITEMS[id] || null;
+  };
+  SAT.rehydrate = function () {
+    var F = (SAT.state && SAT.state.faults) || {};
+    Object.keys(F).forEach(function (k) { var f = F[k]; if (!f) { delete F[k]; return; }
+      if (!f.item || !f.item.options) { var it = SAT.findItem(k); if (it) f.item = Object.assign({ src: f.src }, it); else delete F[k]; } });
+  };
   SAT.load();
+  document.addEventListener('DOMContentLoaded', function () { SAT.rehydrate(); });
 
   /* ------------------------------------------------------------- helpers */
   SAT.esc = function (s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); };
@@ -78,6 +99,14 @@
     return SAT.md(s).replace(/\{\{([a-z0-9-]+)\|([^}]*)\}\}/g, function (m, id, surf) {
       return BY[id] ? '<button type="button" class="kw' + (SAT.state.seen.words[id] ? ' got' : '') + '" data-w="' + id + '">' + surf + '</button>' : surf;
     });
+  };
+  /* Student screens show the pack's teaching text but not research bookkeeping: sentences that cite recall reports,
+     sittings or Question Bank counts stay in the Staff Room (T.Chris: learning value, not prediction; no recalled items). */
+  SAT.forStudents = function (s) {
+    var parts = String(s || '').match(/[^.!?]+(?:[.!?]+(?=\s|$)|$)/g) || [];
+    var bad = /\brecall|\bsitting|\breported\b|TestDaily|\bTTA\b|vendor|\b\d+ of \d+\b|Question Bank|first report|back-test|\d+(\.\d+)?\s?%/i;
+    var keep = parts.filter(function (x) { return !bad.test(x); }).join('').trim();
+    return keep;
   };
   SAT.shuffle = function (a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; };
   function pad(n) { return ('0' + n).slice(-2); }
@@ -360,7 +389,7 @@
         paint(); tick = setInterval(paint, 250);
       }
       function finish(ok, pick) {
-        locked = true; clearInterval(tick);
+        locked = true; clearInterval(tick); note.textContent = '';
         var r = { ok: ok, first: ok && tries === 1, tries: tries, ms: Date.now() - t0, pick: pick, bonus: ok && tries === 1 && bonusLive };
         results.push(r);
         btns.forEach(function (b) { b.disabled = true; var k = +b.dataset.k; if (k === it.answer) b.classList.add('right'); });
@@ -413,6 +442,7 @@
   SAT.cur = '';
   SAT.go = function () { var a = Array.prototype.slice.call(arguments); location.hash = '#/' + a.filter(function (x) { return x != null && x !== ''; }).join('/'); };
   SAT.route = function () {
+    if (stack.length) { stack = []; var sc = document.getElementById('scrim'); if (sc) sc.classList.remove('on'); document.body.style.overflow = ''; }
     var h = (location.hash || '').replace(/^#\/?/, ''), parts = h.split('/').filter(Boolean).map(decodeURIComponent);
     var id = parts[0] || 'home'; if (!TABS.some(function (t) { return t.id === id; })) id = 'home';
     var tab = TABS.filter(function (t) { return t.id === id; })[0]; if (!tab) return;

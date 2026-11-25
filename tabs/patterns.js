@@ -681,7 +681,7 @@
         var pp = play(p.id), im = picture(p.id), s = (SAT.state.patternsPlay || {})[p.id] || {}, gb = SAT.state.games[gameKey(p.id)];
         return '<a class="pt-card' + (seen[p.id] ? ' seen' : '') + '" href="#/patterns/' + esc(p.id) + '" data-pid="' + esc(p.id) + '">' +
           '<span class="pt-thumb">' + (im ? '<img src="' + esc(im.src) + '" alt="" loading="lazy" decoding="async">' : '<span class="pt-thumb-i" aria-hidden="true">' + p.icon + '</span>') + '<span class="pt-no">' + ('0' + (i + 1)).slice(-2) + '</span></span>' +
-          '<span class="pt-card-b"><span class="pt-card-k">' + esc(p.kind) + ' · ' + (p.items || []).length + ' words</span><b class="pt-card-t">' + esc(p.title) + '</b>' +
+          '<span class="pt-card-b"><span class="pt-card-k">' + esc(p.kind) + ' · ' + (p.items || []).length + ' words</span><b class="pt-card-title">' + esc(p.title) + '</b>' +
           '<span class="pt-card-s">' + (seen[p.id] ? '<span class="pill sage">✓ Opened</span>' : '<span class="pill">New</span>') +
           (s.quiz ? '<span class="pill">Quiz ' + s.quiz.score + '/' + s.quiz.total + '</span>' : '') + (gb != null ? '<span class="pill gold">Game ' + gb + '</span>' : '') + '</span></span></a>';
       }).join('') + '</div>' : '<div class="empty">The pattern cards have not loaded.</div>') + '</div>';

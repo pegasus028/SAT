@@ -40,7 +40,7 @@ var ctx = {
     getActiveSpreadsheet: function () { throw new Error('getActiveSpreadsheet must not be used (standalone project)'); }
   },
   PropertiesService: { getScriptProperties: function () { return { getProperty: function (k) { return props[k] == null ? null : props[k]; }, setProperty: function (k, v) { props[k] = String(v); }, deleteProperty: function (k) { delete props[k]; }, getKeys: function () { return Object.keys(props); } }; } },
-  CacheService: { getScriptCache: function () { return { get: function (k) { return cache[k] == null ? null : cache[k]; }, put: function (k, v) { cache[k] = v; } }; } },
+  CacheService: { getScriptCache: function () { return { get: function (k) { return cache[k] == null ? null : cache[k]; }, put: function (k, v) { cache[k] = v; }, remove: function (k) { delete cache[k]; } }; } },
   LockService: { getScriptLock: function () { return { waitLock: function () {}, tryLock: function () { return true; }, releaseLock: function () {} }; } },
   UrlFetchApp: { fetch: function (url, opt) { fetches.push({ url: url, opt: opt || {} }); var rep = nextReply || { code: 200, body: { content: [] } };
     return { getResponseCode: function () { return rep.code; }, getContentText: function () { return typeof rep.body === 'string' ? rep.body : JSON.stringify(rep.body); } }; } },

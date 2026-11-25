@@ -140,7 +140,7 @@ window.LEXICON = {
     def: "Conclusive evidence or proof shows that something is definitely true, so that no doubt remains.",
     ex: ["The study offers strong but not conclusive evidence that the drug slows memory loss.", "The photo of Nam at the concert was conclusive proof that she had not been revising."],
     colls: ["conclusive evidence", "conclusive proof", "far from conclusive", "a conclusive answer"],
-    note: "The top of the claim ladder, far above *tenuous*. Not *corroborated*: a finding can be corroborated by a second source and still not be conclusive."
+    note: "A word for evidence that settles the question, far above *tenuous*. Not the same as *corroborated*: a finding can be corroborated by a second source and still not be conclusive."
   },
   "confirm": {
     pos: "verb", cefr: null, ipa: "/kənˈfɜːm/",
@@ -325,7 +325,7 @@ window.LEXICON = {
     note: "An extent word (how complete), not an importance word like *integral* or a quantity word like *a dearth of*. Not *exhausting* (very tiring) or *exhausted* (very tired)."
   },
   "extra": {
-    pos: "adjective", cefr: "A2", ipa: "/ˈekstrə/",
+    pos: "adjective", cefr: null, ipa: "/ˈekstrə/",
     def: "Something extra is more than is usual or necessary, or is added to what is already there.",
     ex: ["The extra data points did not change the overall result of the analysis.", "Khao took an extra pencil into the exam, just in case."],
     colls: ["extra time", "an extra charge", "at no extra cost", "extra help"],
@@ -348,7 +348,7 @@ window.LEXICON = {
   "fragile": {
     pos: "adjective", cefr: null, ipa: "/ˈfrædʒaɪl/",
     def: "Something fragile is easily broken or damaged; a fragile situation or agreement could easily fail.",
-    ex: ["The ceasefire remained fragile, and both sides prepared for renewed fighting.", "Fern wrapped the fragile glass ornament in three layers of paper."],
+    ex: ["The agreement between the two fishing villages remained fragile, and one more dispute could have ended it.", "Fern wrapped the fragile glass ornament in three layers of paper."],
     colls: ["a fragile peace", "fragile economy", "extremely fragile", "a fragile ecosystem"],
     note: "Close to *tenuous*, but wider. *Tenuous* is for links, claims and positions that are thinly supported; *fragile* is for anything easily broken."
   },
@@ -409,7 +409,7 @@ window.LEXICON = {
     note: "Close to *sanguine*, but weaker: a hopeful person wants and expects a good result; a sanguine person is calmly confident of it, often when others are worried."
   },
   "however": {
-    pos: "transition (adverb)", cefr: "A2", ipa: "/haʊˈevə(r)/",
+    pos: "transition (adverb)", cefr: null, ipa: "/haʊˈevə(r)/",
     def: "You use *however* to introduce a statement that contrasts with, or seems surprising after, what you have just said.",
     ex: ["The first trial was successful. However, later trials produced mixed results.", "Mook wanted to go to the concert; however, it was the night before her exam."],
     colls: ["However, ...", ", however, ...", "however much"],
@@ -423,7 +423,7 @@ window.LEXICON = {
     note: "The plain opposite of *immaterial to* and *inconsequential to*: important things make a difference; immaterial and inconsequential things do not."
   },
   "improve": {
-    pos: "verb", cefr: "A2", ipa: "/ɪmˈpruːv/",
+    pos: "verb", cefr: null, ipa: "/ɪmˈpruːv/",
     def: "To improve something is to make it better; if something improves, it becomes better.",
     ex: ["Better drainage improved yields across the whole valley.", "Fon's pronunciation has improved since she started watching films without subtitles."],
     colls: ["improve significantly", "greatly improve", "improve the quality of", "room to improve"],
@@ -460,7 +460,7 @@ window.LEXICON = {
   "indifferent": {
     pos: "adjective", cefr: null, ipa: "/ɪnˈdɪfrənt/",
     def: "If you are indifferent to something, you have no interest in it and do not care about it.",
-    ex: ["Most voters seemed indifferent to the details of the new regulation.", "Pear is indifferent to football but loves watching tennis."],
+    ex: ["Most residents seemed indifferent to the details of the new parking rules.", "Pear is indifferent to football but loves watching tennis."],
     colls: ["indifferent to", "largely indifferent", "remain indifferent", "an indifferent response"],
     note: "Not *ambivalent*. Ambivalent = two strong feelings at once; indifferent = no feeling at all."
   },
@@ -493,14 +493,14 @@ window.LEXICON = {
     note: "The plain word for *immaterial to* and *inconsequential to*. *Immaterial to* = makes no difference to a question; *inconsequential to* = has no real effect on it."
   },
   "lack": {
-    pos: "noun (also verb)", cefr: "B2", ipa: "/læk/",
+    pos: "noun (also verb)", cefr: null, ipa: "/læk/",
     def: "A lack of something is a situation in which there is not any of it or not enough of it.",
     ex: ["A lack of funding forced the project to close after two years.", "Fah's lack of sleep showed in her yawns all morning."],
     colls: ["a lack of", "for lack of", "a complete lack of", "a lack of evidence"],
     note: "The everyday word for *a dearth of*. Same frame (*a lack of + noun*); *a dearth of* is more formal and often used of evidence, research or talent."
   },
   "lose to": {
-    pos: "verb + preposition", cefr: "A2", ipa: "/ˈluːz tə/",
+    pos: "verb + preposition", cefr: null, ipa: "/ˈluːz tə/",
     def: "If you lose to someone, they beat you in a game, competition or contest.",
     ex: ["The older design eventually lost to a cheaper, lighter rival.", "Our team lost to Prang's school in the final, but only by one point."],
     colls: ["lose to", "narrowly lose to", "lose heavily to"],
@@ -700,7 +700,7 @@ window.LEXICON = {
     def: "To repudiate a claim, idea or accusation is to reject it firmly and refuse to accept it.",
     ex: ["The scientist repudiated the suggestion that her data had been altered.", "Jasmine repudiated the rumour that she was leaving the choir."],
     colls: ["repudiate a claim", "repudiate an accusation", "firmly repudiate", "publicly repudiate"],
-    note: "A claim-ladder word: repudiating a claim pushes it towards *untenable*. Not *recant* (take back your own earlier statement): you repudiate someone else's claim."
+    note: "Listed beside the claim-ladder words: to repudiate a claim is to reject it outright. Not *recant* (take back your own earlier statement): you repudiate someone else's idea."
   },
   "reveal": {
     pos: "verb", cefr: "B2", ipa: "/rɪˈviːl/",
@@ -752,7 +752,7 @@ window.LEXICON = {
     note: "The opposite of *inconsequential to*: significant things have consequences; inconsequential things have none."
   },
   "similar": {
-    pos: "adjective", cefr: "A2", ipa: "/ˈsɪmələ(r)/",
+    pos: "adjective", cefr: null, ipa: "/ˈsɪmələ(r)/",
     def: "Things that are similar are like each other but not exactly the same.",
     ex: ["The two samples have similar chemical compositions.", "Ploy and her cousin have similar laughs, so people often confuse them on the phone."],
     colls: ["similar to", "very similar", "broadly similar", "in a similar way"],

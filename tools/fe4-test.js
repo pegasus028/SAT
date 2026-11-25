@@ -72,6 +72,7 @@ async function contrast(page, sel) {
     ok(tag + ' no overflow on the writing list', (await overflow(page)) <= 1, await overflow(page));
 
     /* ============ 2. a full writing mission ============ */
+    var OWN_W1 = "Mali wanted to substantiate a worry many parents share: phones at bedtime steal sleep. The sleep diaries she collected from sixty classmates attest to a steady trend, since the students who scrolled late slept roughly forty minutes less each night. Her result was corroborated by a second survey that Dr Pear ran with another class, and a small set of tracker readings buttressed it further. However, the link to sleep quality is still tenuous because the diaries only measured hours in bed.";
     await page.click('[data-m="W1"]');
     await page.waitForSelector('#wrIn');
     ok(tag + ' mission view: brief, 🔊, chips, textarea', await page.isVisible('.wr-head .speak') && (await page.$$('#wrMust .wr-chip')).length === 5);
@@ -82,6 +83,9 @@ async function contrast(page, sel) {
     ok(tag + ' attest chip marked as "check the pattern"', await page.$eval('#wrMust [data-id="attest-to"]', function (c) { return c.classList.contains('st-prep'); }));
     await shot(page, tag + '-03-writing-flags');
     await page.fill('#wrIn', MODEL.W1);
+    await page.waitForSelector('.wr-fb');
+    ok(tag + ' pasting the model answer does not complete the mission', !(await page.$('.wr-done')) && /too close to the model/.test(await page.textContent('#v-writing')));
+    await page.fill('#wrIn', OWN_W1);
     await page.waitForSelector('.wr-done');
     ok(tag + ' model answer: all five words ✓, mission complete', (await page.$$('#wrMust .wr-chip.st-ok')).length === 5 && await page.isVisible('.wr-done'));
     ok(tag + ' word count in band', /\b8\d\b|\b9\d\b|\b7\d\b/.test(await page.textContent('#wrCount')) && await page.$eval('.wr-bar', function (b) { return b.classList.contains('ok'); }));

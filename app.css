@@ -205,3 +205,6 @@ input:focus,select:focus,textarea:focus,button:focus-visible{outline:3px solid v
   .hud .chip:nth-child(2),.hud .chip:nth-child(3){display:none}
   .contact{font-size:.74rem;padding:4px 8px}
 }
+/* dark mode: dark text on the light rose primary button (contrast) */
+:root[data-theme=dark] .btn.primary{color:#1b1726}
+@media (prefers-color-scheme:dark){ :root:not([data-theme=light]) .btn.primary{color:#1b1726} }

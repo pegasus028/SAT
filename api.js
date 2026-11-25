@@ -45,9 +45,15 @@
   function stateForServer() {
     var s = SATs(); if (!s || !s.state) return null;
     var c = {}; Object.keys(s.state).forEach(function (k) { if (k !== 'events') c[k] = s.state[k]; });
+    /* Faults travel as stubs: core.js rebuilds each question from the content by id (SAT.rehydrate). */
+    c.faults = {}; Object.keys(s.state.faults || {}).forEach(function (k) { var f = s.state.faults[k]; if (f) c.faults[k] = { src: f.src, misses: f.misses, streak: f.streak, at: f.at }; });
+    /* Papers: keep per-question detail for the two latest attempts of each paper only. */
+    c.papers = {}; Object.keys(s.state.papers || {}).forEach(function (k) { var a = s.state.papers[k] || [];
+      c.papers[k] = a.map(function (x, i) { return i >= a.length - 2 ? x : Object.assign({}, x, { detail: undefined }); }); });
     var j = JSON.stringify(c);
-    if (j.length > 45000) { c.faults = {}; Object.keys(s.state.faults || {}).forEach(function (k) { var f = s.state.faults[k]; c.faults[k] = { src: f.src, misses: f.misses, streak: f.streak, at: f.at, word: f.item && f.item.word }; }); j = JSON.stringify(c); }
-    if (j.length > 45000) { Object.keys(c.roleplay || {}).forEach(function (k) { if (c.roleplay[k]) c.roleplay[k] = Object.assign({}, c.roleplay[k], { history: [] }); }); j = JSON.stringify(c); }
+    if (j.length > 45000) { c.roleplay = {}; Object.keys(s.state.roleplay || {}).forEach(function (k) { var r = s.state.roleplay[k]; if (r) c.roleplay[k] = Object.assign({}, r, { log: (r.log || []).slice(-6), history: [] }); }); j = JSON.stringify(c); }
+    if (j.length > 45000) { Object.keys(c.papers).forEach(function (k) { c.papers[k] = c.papers[k].map(function (x) { return Object.assign({}, x, { detail: undefined }); }); }); j = JSON.stringify(c); }
+    if (j.length > 45000) { c.writing = {}; Object.keys(s.state.writing || {}).forEach(function (k) { var w = s.state.writing[k]; if (w) c.writing[k] = { submitted: w.submitted, saved: w.saved, draft: String(w.draft || '').slice(0, 1500) }; }); j = JSON.stringify(c); }
     return j.length > 45000 ? null : c;
   }
   function slim(ev) {

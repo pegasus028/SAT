@@ -15,13 +15,16 @@ function add(kind, ref, raw) {
   if (seen[key]) { if (seen[key] !== text) throw new Error("Key collision: " + key); return; }
   seen[key] = text; out.push({ key, kind, ref, text });
 }
+const forStudents = s => { const parts = String(s || "").match(/[^.!?]+(?:[.!?]+(?=\s|$)|$)/g) || [];
+  const bad = /\brecall|\bsitting|\breported\b|TestDaily|\bTTA\b|vendor|\b\d+ of \d+\b|Question Bank|first report|back-test|\d+(\.\d+)?\s?%/i;
+  return parts.filter(x => !bad.test(x)).join("").trim(); };  // same as SAT.forStudents in core.js
 const head = w => String(w.word).replace(/\s*\(.*\)\s*$/, "");
 // Words: headword, the bracketed form, definition, SAT sense, examples, trap, tip
 for (const w of (c.WORDS || [])) {
   add("word", w.id, head(w)); add("word", w.id + ":full", w.word);
   add("def", w.id + ":def", w.def); add("sense", w.id + ":sense", w.sat_sense);
   (w.ex || []).forEach((e, i) => add("example", w.id + ":" + i, e));
-  add("trap", w.id + ":trap", w.trap); add("tip", w.id + ":tip", w.tip);
+  add("trap", w.id + ":trap", forStudents(w.trap)); add("tip", w.id + ":tip", w.tip);
 }
 // Lexicon: headword, definition, examples, note
 Object.keys(c.LEXICON || {}).forEach(t => { const e = c.LEXICON[t] || {};

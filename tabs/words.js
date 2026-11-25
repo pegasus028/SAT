@@ -74,7 +74,7 @@
 
   function lvlChips(obj, kind) {
     var out = ['B1', 'B2', 'C1'].filter(function (l) { return obj && typeof obj[l] === 'string' && obj[l].trim(); }).map(function (l) {
-      return '<button type="button" class="wd-term" data-term="' + esc(obj[l]) + '"><span class="wd-tl">' + l + '</span>' + esc(obj[l]) + '<span class="wd-go" aria-hidden="true">→</span></button>';
+      return '<button type="button" class="wd-term" data-term="' + esc(obj[l]) + '"><span class="wd-tl" title="' + (l === 'B1' ? 'An everyday word, A1 to B1 (Oxford)' : l + ' word (Oxford)') + '">' + (l === 'B1' ? '≤B1' : l) + '</span>' + esc(obj[l]) + '<span class="wd-go" aria-hidden="true">→</span></button>';
     });
     return out.length ? '<div class="wd-terms">' + out.join('') + '</div>' : '<p class="muted small">None listed for ' + kind + '.</p>';
   }
@@ -123,7 +123,7 @@
         var g = list.filter(function (w) { return w.cluster === fid; }); if (!g.length) return '';
         var f = FBY[fid] || { name: fid, description: '' }, all = W.filter(function (w) { return w.cluster === fid; });
         return '<section class="wd-group"><header class="wd-gh"><span class="wd-gm">' + (FIELD_MARK[fid] || '◆') + '</span><div><h3>' + esc(f.name) + '</h3>' +
-          (f.description ? '<p class="muted small">' + md(f.description) + '</p>' : '') + '</div><span class="wd-gn">' + all.filter(function (w) { return seen(w.id); }).length + ' / ' + all.length + '</span></header>' +
+          (SAT.forStudents(f.description) ? '<p class="muted small">' + md(SAT.forStudents(f.description)) + '</p>' : '') + '</div><span class="wd-gn">' + all.filter(function (w) { return seen(w.id); }).length + ' / ' + all.length + '</span></header>' +
           '<div class="wd-grid">' + g.map(tile).join('') + '</div></section>';
       }).join('');
     }
@@ -188,8 +188,8 @@
         sec('Say it right', txt(w.say)) +
         sec('British and American', txt(w.ukus)) +
         sec('Did you know?', txt(w.fact), 'wd-fact') +
-        sec('Watch out', txtSay(w.trap), 'wd-warn') +
-        sec('How the SAT builds the trap', (w.distractor_traps || []).length ? '<ul class="wd-traps">' + w.distractor_traps.map(function (t) { return '<li>' + md(t) + '</li>'; }).join('') + '</ul>' : '', 'wd-trapsec') +
+        sec('Watch out', txtSay(SAT.forStudents(w.trap)), 'wd-warn') +
+        sec('How the SAT builds the trap', (w.distractor_traps || []).map(SAT.forStudents).filter(Boolean).length ? '<ul class="wd-traps">' + w.distractor_traps.map(SAT.forStudents).filter(Boolean).map(function (t) { return '<li>' + md(t) + '</li>'; }).join('') + '</ul>' : '', 'wd-trapsec') +
         sec('Memory tip', txtSay(w.tip), 'wd-tip') +
       '</div><aside class="wd-side">' +
         sec('Synonyms <span class="muted small">tap to study</span>', lvlChips(w.syn, 'this word')) +
@@ -379,7 +379,7 @@
     var where = (asSyn.length ? '<p class="small muted">Close in meaning to</p>' + chips(asSyn) : '') + (asAnt.length ? '<p class="small muted">Opposite of, or a contrast with</p>' + chips(asAnt) : '') +
       (asRel.length ? '<p class="small muted">Related to</p>' + chips(asRel) : '');
     var html = '<div class="wd-tsh"><p class="eyebrow">Linked entry</p><div class="wd-card-h"><h2>' + esc(term) + '</h2>' + (e && e.ipa ? '<span class="wd-ipa">' + esc(e.ipa) + '</span>' : '') + SAT.speakBtn(term) + '</div>' +
-      (e ? '<div class="wd-tags">' + SAT.levelBadge(e.cefr) + (e.pos ? '<span class="pill">' + esc(e.pos) + '</span>' : '') + '</div>' +
+      (e ? '<div class="wd-tags">' + (e.cefr ? SAT.levelBadge(e.cefr) : '') + (e.pos ? '<span class="pill">' + esc(e.pos) + '</span>' : '') + '</div>' +
         sec('Meaning', '<p class="wd-def">' + md(e.def) + ' ' + SAT.speakBtn(e.def) + '</p>') +
         sec('In use', (e.ex || []).map(function (x) { return '<blockquote class="wd-ex"><span>' + md(x) + '</span> ' + SAT.speakBtn(x) + '</blockquote>'; }).join('')) +
         sec('Goes with', (e.colls || []).length ? '<div class="wd-colls">' + e.colls.map(function (c) { return '<span class="wd-coll">' + esc(c) + '</span>'; }).join('') + '</div>' : '') +

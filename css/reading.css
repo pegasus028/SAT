@@ -416,3 +416,6 @@ button.speak.lg.on,button.speak.lg.paused{border-color:var(--gold-line)}
 }
 .md-node > .btn{align-self:flex-start}
 .wd-card .wd-pic.card.noimg{aspect-ratio:16/7}
+/* lead fix: long words in the small word-of-the-day panel must not break mid-word */
+.wd-pic.wod .wd-fb-w{word-break:normal;overflow-wrap:normal;hyphens:none;white-space:nowrap;font-size:clamp(.85rem,4.2vw,1.4rem);max-width:92%;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:640px){ .hm-wod{grid-template-columns:110px minmax(0,1fr)} }

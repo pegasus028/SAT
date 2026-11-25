@@ -55,8 +55,17 @@
     var grammar = (m.grammarRx || []).map(function (g) { var ok = false; try { ok = new RegExp(g.rx, 'i').test(text); } catch (e) {} return { label: g.label, ok: ok }; });
     var need = m.need || Math.min(4, (m.mustUse || []).length);
     var band = wc >= m.min && wc <= m.max;
-    return { wc: wc, words: words, used: used, need: need, others: others, linkers: linkers, grammar: grammar, flags: fl, band: band,
-      done: band && used >= need && fl.length === 0 };
+    /* real writing: at least 4 sentences of 5+ words, varied vocabulary, and not a copy of the model answer */
+    var toks = String(text || '').toLowerCase().match(/[a-z']+/g) || [];
+    var uniq = toks.length ? Object.keys(toks.reduce(function (o, t) { o[t] = 1; return o; }, {})).length / toks.length : 0;
+    var sents = String(text || '').split(/[.!?]+/).filter(function (x) { return SAT.countWords(x) >= 5; }).length;
+    var mt = String(m.model || '').toLowerCase().match(/[a-z']+/g) || [], grams = {}, hit = 0, tot = 0;
+    for (var i = 0; i + 6 <= mt.length; i++) grams[mt.slice(i, i + 6).join(' ')] = 1;
+    for (var j = 0; j + 6 <= toks.length; j++) { tot++; if (grams[toks.slice(j, j + 6).join(' ')]) hit++; }
+    var copied = tot > 0 && hit / tot > 0.4;
+    var real = sents >= 4 && uniq >= 0.42 && !copied;
+    return { wc: wc, words: words, used: used, need: need, others: others, linkers: linkers, grammar: grammar, flags: fl, band: band, real: real, copied: copied,
+      done: band && used >= need && fl.length === 0 && real };
   }
 
   /* ------------------------------------------------------------- list view */
@@ -125,7 +134,8 @@
         (a.grammar.length ? '<div class="wr-fb"><h4>Grammar</h4><ul class="wr-ticks">' + a.grammar.map(function (g) { return '<li class="st-' + (g.ok ? 'ok' : 'none') + '"><span aria-hidden="true">' + (g.ok ? '✓' : '○') + '</span>' + esc(g.label) + '</li>'; }).join('') + '</ul></div>' : '') +
         '<div class="wr-fb"><h4>Check these</h4>' + (a.flags.length ? a.flags.map(function (f) { return '<div class="wr-flag"><b>' + esc(f.says) + '</b><span>' + esc(f.fix) + '</span></div>'; }).join('') :
           '<p class="muted small">' + (ta.value.trim() ? 'No flags. Flags are suggestions, not verdicts.' : 'Flags for the usual slips appear here as you type.') + '</p>') + '</div>' +
-        (a.done ? '<div class="wr-fb wr-done"><b>✓ Mission complete.</b> Right length, ' + a.used + ' target words in their right patterns, no flags.</div>' : '');
+        (a.done ? '<div class="wr-fb wr-done"><b>✓ Mission complete.</b> Right length, ' + a.used + ' target words in their right patterns, no flags.</div>' :
+          (a.band && a.used >= a.need && !a.flags.length ? '<div class="wr-fb"><b>Nearly there.</b> ' + (a.copied ? 'This is too close to the model answer: write it in your own words.' : 'Write at least four real sentences in your own words, with varied vocabulary.') + '</div>' : ''));
       return a;
     }
     function persist(a) {
@@ -190,6 +200,8 @@
     SAT.$('#wrModel', el).onclick = function () {
       var box = SAT.$('#wrModelOut', el);
       if (box.innerHTML) { box.innerHTML = ''; this.textContent = 'Show a model answer'; return; }
+      var dr = SAT.countWords((SAT.$('textarea', el) || {}).value || '');
+      if (dr < Math.min(m.min, 40)) { SAT.toast('Write your own draft first (at least ' + Math.min(m.min, 40) + ' words), then compare it with the model.'); return; }
       this.textContent = 'Hide the model answer';
       box.innerHTML = '<div class="card margin wr-model"><div class="wr-label">A model answer · compare it with yours after you write</div><p>' + esc(m.model) + '</p>' +
         '<div class="row">' + SAT.speakBtn(m.model, 'Listen to the model') + '<span class="muted small">' + SAT.countWords(m.model) + ' words</span></div></div>';
