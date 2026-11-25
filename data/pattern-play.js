@@ -735,7 +735,7 @@ window.PATTERN_PLAY = {
       { pre: "in", stem: "congru", suf: "ous", on: "incongruous", off: "congruent", w: "incongruous-with", offNote: "fitting, in agreement" },
       { pre: "im", stem: "materi", suf: "al", on: "immaterial", off: "material", w: "immaterial-to", offNote: "relevant", note: "in- becomes im- before m." },
       { pre: "un", stem: "ten", suf: "able", on: "untenable", off: "tenable", t: "untenable", offNote: "able to be defended" },
-      { pre: "an", stem: "omal", suf: "y", on: "anomaly", off: "homalos (Greek, 'even')", w: "anomaly", offNote: "an- + homalos, 'not even'", note: "Greek a-/an- does the same job as Latin in-." }
+      { pre: "an", stem: "omal", suf: "y", on: "anomaly", off: "homalos", w: "anomaly", onNote: "an- + homalos, 'not even'", offNote: "Greek, 'even'", note: "Greek a-/an- does the same job as Latin in-." }
     ],
     warnings: [
       { w: "integral", note: "Integral hides a 'not' you no longer feel (in- + touch = untouched, whole), so it is positive." },
@@ -841,7 +841,7 @@ window.PATTERN_PLAY = {
       { q: "The verb mitigate", a: "MIT-i-gayt", b: "mi-TI-gayt", key: 0, w: "mitigate" },
       { q: "The noun mitigation", a: "MIT-i-gay-shuhn", b: "mit-i-GAY-shuhn", key: 1, w: "mitigate" },
       { q: "The verb exacerbate", a: "ig-ZAS-uh-bayt", b: "EG-zuh-suh-bayt", key: 0, w: "exacerbate" },
-      { q: "Positive partner of incongruous", a: "congratulated", b: "congruent", key: 1, w: "incongruous-with" },
+      { q: "Positive partner of incongruous", a: "congregated", b: "congruent", key: 1, w: "incongruous-with" },
       { q: "Not relevant", a: "immaterial", b: "inmaterial", key: 0, w: "immaterial-to" },
       { q: "The adjective disparate ends in", a: "a full 'ayt'", b: "a weak 'uht'", key: 1, w: "disparate" },
       { q: "The verb ameliorate", a: "uh-MEE-lee-uh-rayt", b: "am-uh-LEE-uh-rayt", key: 0, w: "ameliorate" },
@@ -1142,7 +1142,7 @@ window.PATTERN_PLAY = {
       kinds: [1, 2, 0, 4],
       notes: [
         "Kind 1: same field (importance), opposite direction. The workers ignored the speeches, so the speeches were not essential to their lives.",
-        "Kind 2: a nearby field (visibility) with a different relationship. The speeches were public, not hidden; the point is how little they mattered.",
+        "Kind 2: same field, different relationship: concealed is about visibility, the key about importance. The speeches were public, not hidden; the point is how little they mattered.",
         "The key: connected to the workers' lives, but at the edge. Few attended, and their letters scarcely mention the speeches.",
         "Kind 4: same grammar frame (adjective + preposition) but another field, dependence. Grammar cannot eliminate it; only meaning can."
       ]
@@ -1195,7 +1195,7 @@ window.PATTERN_PLAY = {
       hint: "Is concealing about how much something matters, or about something else nearby?",
       why: "Concealed is about visibility, peripheral about importance: a neighbouring idea with a different relationship. The card files it as kind 2.",
       whyEach: ["Kind 1 would point the opposite way on the same scale, such as integral to.",
-        "Right: a nearby field, visibility, with a different relationship.",
+        "Right: concealed is about visibility, the key about importance: a different relationship.",
         "Kind 3 words are things the same people do, such as researchers' verbs; concealed is about visibility.",
         "It does share the frame, but it also sits next to the key's meaning, which makes it kind 2."] },
     { id: "pt-ds-3", type: "wic", word: "corroborate", field: "claim", skill: "wic", level: "C1",

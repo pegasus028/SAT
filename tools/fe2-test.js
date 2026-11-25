@@ -137,7 +137,7 @@ async function testGame(page, pp, where) {
     await click(page, box + " [data-check]", w);
   } else if (g.kind === "match") {
     await click(page, box + ' [data-a="0"]', w); await click(page, box + ' [data-b="1"]', w); // one miss
-    for (let i = 0; i < g.pairs.length; i++) { await click(page, box + ` [data-a="${i}"]`, w); await click(page, box + ` [data-b="${i}"]`, w); }
+    for (let i = 0; i < g.pairs.length; i++) { if (!(await page.locator(box + ` [data-a="${i}"].sel`).count())) await click(page, box + ` [data-a="${i}"]`, w); await click(page, box + ` [data-b="${i}"]`, w); }
   } else if (g.kind === "sprint") {
     await click(page, box + " [data-go]", w);
     for (let n = 0; n < g.rounds.length; n++) {
@@ -194,9 +194,11 @@ async function testGame(page, pp, where) {
     }
     // listen button starts the reader bar (browser voice in headless: just check state changes)
     await page.goto(BASE + "#/patterns/claim-ladder"); await page.waitForSelector(".pt-h");
+    await page.evaluate(() => { const orig = SAT.readAloud; SAT.readAloud = function (parts, o) { window.__fe2Read = { parts: parts.map(p => typeof p === "string" ? p : p.text), owner: o && o.owner }; try { return orig.apply(this, arguments); } catch (e) {} }; });
     await page.locator('.pt-listen [data-rd]').click(); await sleep(300);
-    const rd = await page.evaluate(() => ({ owner: SAT._rd.owner, n: SAT._rd.parts.length, first: (SAT._rd.parts[0] || {}).text }));
-    if (rd.owner !== "pat:claim-ladder" || rd.n !== 6) notes.push(tag + ": reader state " + JSON.stringify(rd)); await page.evaluate(() => SAT.stopSpeech());
+    const rd = await page.evaluate(() => window.__fe2Read || null);
+    if (!rd || rd.owner !== "pat:claim-ladder" || rd.parts.length !== 6 || !/^Try it now\. /.test(rd.parts[5])) fail(tag + ": listen button read " + JSON.stringify(rd && { owner: rd.owner, n: rd.parts.length }));
+    await page.evaluate(() => SAT.stopSpeech());
     const st = await page.evaluate(() => ({ xp: SAT.state.xp, badge: !!SAT.state.badges.patterns_all, seen: Object.keys(SAT.state.seen.patterns).length, ev: SAT.state.events.filter(e => e.kind === "pattern").length, games: Object.keys(SAT.state.games).length }));
     console.log("  state", JSON.stringify(st));
     if (!st.badge) fail(tag + ": patterns_all badge not awarded");

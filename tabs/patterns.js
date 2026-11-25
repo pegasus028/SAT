@@ -35,6 +35,7 @@
   /* ------------------------------------------------------------ word helpers
      an entry is {w:"id"} (one of the 30) or {t:"term", note} (a lexicon word) */
   function head(e) { return e.w && BY[e.w] ? SAT.head(e.w) : (e.t || e.w || ''); }
+  function bare(e) { return head(e).replace(/ to$/, ''); }
   function full(e) { return e.w && BY[e.w] ? BY[e.w].word : (e.t || ''); }
   function infoHTML(e, extra) {
     var w = e.w && BY[e.w], lx = !w && e.t ? SAT.lex(e.t) : null, h = '<div class="pt-info">';
@@ -204,7 +205,7 @@
       m.rows.map(function (rw, r) {
         return '<span class="pt-q-rowh">' + esc(rw) + '</span>' + m.cols.map(function (_, c) {
           var cell = m.cells[r][c];
-          return '<button type="button" class="pt-q-cell r' + r + ' c' + c + '" data-zone="' + r + ',' + c + '"><span class="pt-q-ill" aria-hidden="true">' + quadIll(r, c) + '</span><b>' + cell.words.map(function (w) { return esc(head(w)); }).join(' · ') + '</b></button>';
+          return '<button type="button" class="pt-q-cell r' + r + ' c' + c + '" data-zone="' + r + ',' + c + '"><span class="pt-q-ill" aria-hidden="true">' + quadIll(r, c) + '</span><b>' + cell.words.map(function (w) { return esc(head(w)); }).join('<br><span class="pt-q-and">and</span><br>') + '</b></button>';
         }).join('');
       }).join('') + '</div></div>' +
       '<button type="button" class="pt-q-side" data-zone="side"><span class="pt-frost" aria-hidden="true"></span><span><small>' + esc(m.side.label) + '</small><b>' + esc(head(m.side)) + '</b></span></button>' +
@@ -242,8 +243,8 @@
       '<div class="pt-target"><svg viewBox="0 0 340 230" role="img" aria-label="A target: integral at the centre, peripheral at the edge, two zones off the target">' +
       '<g class="pt-tz" data-zone="' + e.w + '" tabindex="0" role="button" aria-label="' + esc(head(e)) + '"><circle cx="118" cy="115" r="104" class="t-edge"/><text x="118" y="34" class="t-lab">' + esc(e.label) + '</text><text x="118" y="196" class="t-word">' + esc(full(e)) + '</text></g>' +
       '<g class="pt-tz" data-zone="' + c.w + '" tabindex="0" role="button" aria-label="' + esc(head(c)) + '"><circle cx="118" cy="115" r="50" class="t-centre"/><text x="118" y="108" class="t-lab on">' + esc(c.label) + '</text><text x="118" y="128" class="t-word on">' + esc(full(c)) + '</text></g>' +
-      '<g class="pt-tz" data-zone="' + o1.w + '" tabindex="0" role="button" aria-label="' + esc(head(o1)) + '"><rect x="236" y="14" width="98" height="96" rx="14" class="t-off"/><text x="285" y="52" class="t-lab">' + esc(o1.label.replace(/^Off: /, '')) + '</text><text x="285" y="74" class="t-word sm">' + esc(head(o1)) + '</text><text x="285" y="90" class="t-word sm">to</text></g>' +
-      '<g class="pt-tz" data-zone="' + o2.w + '" tabindex="0" role="button" aria-label="' + esc(head(o2)) + '"><rect x="236" y="120" width="98" height="96" rx="14" class="t-off"/><text x="285" y="158" class="t-lab">' + esc(o2.label.replace(/^Off: /, '')) + '</text><text x="285" y="180" class="t-word sm">' + esc(head(o2)) + '</text><text x="285" y="196" class="t-word sm">to</text></g>' +
+      '<g class="pt-tz" data-zone="' + o1.w + '" tabindex="0" role="button" aria-label="' + esc(head(o1)) + '"><rect x="230" y="14" width="110" height="96" rx="14" class="t-off"/><text x="285" y="48" class="t-lab">' + esc(o1.label.replace(/^Off: /, '')) + '</text><text x="285" y="72" class="t-word sm">' + esc(bare(o1)) + '</text><text x="285" y="90" class="t-word sm">to</text></g>' +
+      '<g class="pt-tz" data-zone="' + o2.w + '" tabindex="0" role="button" aria-label="' + esc(head(o2)) + '"><rect x="230" y="120" width="110" height="96" rx="14" class="t-off"/><text x="285" y="154" class="t-lab">' + esc(o2.label.replace(/^Off: /, '')) + '</text><text x="285" y="178" class="t-word sm">' + esc(bare(o2)) + '</text><text x="285" y="196" class="t-word sm">to</text></g>' +
       '<text x="285" y="226" class="t-cap">off the target</text></svg></div>' +
       '<button type="button" class="pt-gauge pt-tz" data-zone="' + m.gauge.w + '"><span class="pt-gauge-h">' + esc(m.gauge.label) + '</span><span class="pt-gauge-bar" aria-hidden="true"><i></i></span><span class="pt-gauge-l"><b>' + esc(m.gauge.low) + '</b><span>' + esc(m.gauge.high) + '</span></span></button>' +
       '<div class="pt-info-slot" aria-live="polite"><p class="muted small">Tap a ring, a zone off the target, or the gauge.</p></div><div class="pt-probe" hidden></div>';
@@ -341,7 +342,7 @@
       return m.parts.map(function (p, i) {
         var e = p.w ? { w: p.w } : { t: p.t };
         return '<div class="pt-bld' + (on[i] ? '' : ' offp') + '"><div class="pt-bld-tiles"><button type="button" class="pt-blk pre" data-tog="' + i + '" aria-pressed="' + on[i] + '" aria-label="Prefix ' + esc(p.pre) + '- on or off">' + esc(p.pre) + '-</button><span class="pt-blk stem">' + esc(p.stem) + '</span><span class="pt-blk suf">-' + esc(p.suf) + '</span></div>' +
-          '<div class="pt-bld-out">= <b>' + esc(on[i] ? p.on : p.off) + '</b><span>' + (on[i] ? 'not ' + esc(p.off.replace(/ \(.*$/, '')) : esc(p.offNote)) + '</span>' + (on[i] && (p.w || p.t) ? (p.w ? chipW(p.w, 'card') : '') : '') + '</div>' +
+          '<div class="pt-bld-out">= <b>' + esc(on[i] ? p.on : p.off) + '</b><span>' + (on[i] ? esc(p.onNote || 'not ' + p.off) : esc(p.offNote)) + '</span>' + (on[i] && p.w ? chipW(p.w, 'Open card') : '') + '</div>' +
           (p.note ? '<p class="pt-bld-note">' + md(p.note) + '</p>' : '') + '</div>';
       }).join('');
     }
@@ -391,7 +392,7 @@
     var order = SAT.shuffle(m.words.map(function (_, i) { return i; })), got = {}, sel = null, tries = 0, miss = 0;
     function draw(msg) {
       var pool = order.filter(function (i) { return !got[i]; }), done = !pool.length;
-      box.innerHTML = '<div class="pt-pool pt-ppool">' + (done ? '<span class="pt-good"><b>All ' + m.words.length + ' plugged in</b>' + (miss ? ' (' + miss + ' wrong tries on the way)' : ', no wrong tries') + '.</span>' :
+      box.innerHTML = '<div class="pt-pool pt-ppool">' + (done ? '<span class="pt-good"><b>All ' + m.words.length + ' plugged in</b>' + (miss ? ' (' + miss + ' wrong ' + (miss === 1 ? 'try' : 'tries') + ' on the way)' : ', with no wrong tries') + '.</span>' :
         pool.map(function (i) { return '<button type="button" class="pt-tile' + (sel === i ? ' sel' : '') + '" data-tile="' + i + '">' + esc(m.words[i].t) + ' ___</button>'; }).join('')) + '</div>' +
         '<div class="pt-fb" aria-live="polite">' + (msg || (sel != null ? 'Now tap the socket for “' + esc(m.words[sel].t) + '”.' : (done ? '' : 'Tap a word first.'))) + '</div>' +
         '<div class="pt-socks">' + m.preps.map(function (p, k) {
@@ -569,7 +570,9 @@
             return '<button type="button" class="pt-card-t in' + (checked ? (g.items[i].bin === k ? ' ok' : ' bad') : '') + '" data-it="' + i + '">' + md(g.items[i].t) + '</button>'; }).join('') + '</div>';
         }).join('') + '</div>' +
         '<div class="row"><button type="button" class="btn primary sm" data-check' + (pool.length || checked ? ' disabled' : '') + '>Check</button><span class="muted small">' + (sel != null ? 'Now tap a box.' : pool.length ? 'Tap an item, then a box.' : '') + '</span></div>';
-      SAT.$$('[data-it]', box).forEach(function (b) { b.onclick = function (e) { e.stopPropagation(); if (checked) return; var i = +b.dataset.it; sel = sel === i ? null : i; draw(); }; });
+      SAT.$$('[data-it]', box).forEach(function (b) { b.onclick = function (e) { e.stopPropagation(); if (checked) return; var i = +b.dataset.it;
+        if (sel != null && sel !== i && placed[i] != null) { placed[sel] = placed[i]; sel = null; draw(); return; }   // tapped a card already in a box: drop the selection there
+        sel = sel === i ? null : i; draw(); }; });
       SAT.$$('[data-bin]', box).forEach(function (b) {
         var go = function () { if (sel == null || checked) return; placed[sel] = +b.dataset.bin; sel = null; draw(); };
         b.onclick = go; b.onkeydown = function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } };
@@ -658,9 +661,13 @@
   };
 
   /* ================================================================== PAGES */
+  function fallbackHTML(p, pp) {
+    var ws = (p.items || []).filter(function (id) { return BY[id]; }).slice(0, 8).map(function (id) { return '<span>' + esc(SAT.head(id)) + '</span>'; }).join('');
+    return '<div class="pt-fallback" role="img" aria-label="' + esc(pp.alt || p.title) + '"><span class="pt-fb-i" aria-hidden="true">' + p.icon + '</span><span class="pt-fb-k">' + esc(p.kind) + ' · ' + (p.items || []).length + ' words</span><span class="pt-fb-w">' + ws + '</span></div>';
+  }
   function heroHTML(p, pp) {
     var im = picture(p.id);
-    var fb = '<div class="pt-fallback" role="img" aria-label="' + esc(pp.alt || p.title) + '"><span class="pt-fb-i" aria-hidden="true">' + p.icon + '</span><span class="pt-fb-k">' + esc(p.kind) + '</span><b>' + esc(p.title) + '</b></div>';
+    var fb = fallbackHTML(p, pp);
     return '<figure class="pt-hero">' + (im ? '<img src="' + esc(im.src) + '" alt="' + esc(im.alt || pp.alt || '') + '" decoding="async" data-fb>' : fb) +
       (pp.sceneCaption ? '<figcaption>' + esc(pp.sceneCaption) + '</figcaption>' : '') + '</figure>';
   }
@@ -703,7 +710,7 @@
       (next ? '<a class="pt-pg next" href="#/patterns/' + esc(next.id) + '"><small>Next →</small><b>' + esc(next.icon + ' ' + next.title) + '</b></a>' : '<a class="pt-pg next" href="#/patterns"><small>Done</small><b>Back to all ten cards</b></a>') + '</nav></div>';
     function sec(id, n, title, intro) { return '<section class="pt-sec" id="' + id + '"><h3><span class="pt-num">' + n + '</span>' + esc(title) + '</h3>' + (intro ? '<p class="pt-sec-i">' + md(intro) + '</p>' : '') + '<div class="pt-body"></div></section>'; }
     var bodies = {}; secs.forEach(function (s) { bodies[s[0]] = SAT.$('#' + s[0] + ' .pt-body', el); });
-    var fbImg = SAT.$('img[data-fb]', el); if (fbImg) fbImg.onerror = function () { var f = fbImg.closest('figure'); fbImg.remove(); f.insertAdjacentHTML('afterbegin', '<div class="pt-fallback"><span class="pt-fb-i" aria-hidden="true">' + p.icon + '</span><span class="pt-fb-k">' + esc(p.kind) + '</span><b>' + esc(p.title) + '</b></div>'); };
+    var fbImg = SAT.$('img[data-fb]', el); if (fbImg) fbImg.onerror = function () { var f = fbImg.closest('figure'); fbImg.remove(); f.insertAdjacentHTML('afterbegin', fallbackHTML(p, pp)); };
     try { if (pp.model && MODELS[pp.model.kind]) { bodies['pt-model'].classList.add('pt-m-' + pp.model.kind); MODELS[pp.model.kind](bodies['pt-model'], pp.model, p); } else bodies['pt-model'].innerHTML = '<p class="empty">Model coming soon.</p>'; } catch (e) { console.error(e); bodies['pt-model'].innerHTML = '<p class="empty">This model could not be drawn.</p>'; }
     if (pp.tree) drawTree(bodies['pt-tree'], pp.tree); else bodies['pt-tree'].innerHTML = '<p class="empty">Tree coming soon.</p>';
     if (pp.quiz && pp.quiz.length) drawQuiz(bodies['pt-quiz'], p, pp); else bodies['pt-quiz'].innerHTML = '<p class="empty">Quiz coming soon.</p>';
