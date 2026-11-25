@@ -25,11 +25,10 @@ THAI_VOICE = 'th-TH-PremwadeeNeural'
 # verb "sat") is spoken as the letters S-A-T.
 VOICE_FIXES = [
     (re.compile(r'\bSAT\b'), 'S A T'),
-    # Respellings T.Chris chose by ear (25 Nov 2026): ambivalent = option C; the others are first tries, see HANDOVER.
+    # Respellings T.Chris chose by ear (25 Nov 2026): ambivalent option C, sanguine option C.
+    # incongruous and precipitate: he chose Sonia's own reading (option A), so no rule.
     (re.compile(r'\b([Aa])mbivalen(t|ce|tly)\b'), r'\1m-bivvalen\2'),
-    (re.compile(r'\b([Ii])ncongruous(ly)?\b'), r'\1n-congroo-us\2'),
-    (re.compile(r'\b([Pp])recipitat(e|ed|es|ing)\b'), r'\1re-sippi-tat\2'),
-    (re.compile(r'\b([Ss])anguine\b'), r'\1ang-gwin'),
+    (re.compile(r'\b([Ss])anguine\b'), r'\1an-gwinn'),
 ]
 FIX_RE = re.compile('|'.join(f.pattern for f, _ in VOICE_FIXES))
 
@@ -117,10 +116,12 @@ async def record(item, sem, force):
 async def main():
     force, prune = '--force' in sys.argv, '--prune' in sys.argv
     refix = '--refix' in sys.argv            # re-record only clips whose text a VOICE_FIXES rule changes
+    m = [a[len('--match='):] for a in sys.argv if a.startswith('--match=')]
+    match = re.compile(m[0]) if m else None  # re-record clips whose text matches this regex (e.g. after removing a rule)
     items = json.loads(subprocess.check_output(['node', os.path.join(ROOT, 'tools', 'tts-list.js')], cwd=ROOT))
     os.makedirs(OUT, exist_ok=True)
     sem = asyncio.Semaphore(4)
-    results = await asyncio.gather(*(record(i, sem, force or (refix and bool(FIX_RE.search(i['text'])))) for i in items))
+    results = await asyncio.gather(*(record(i, sem, force or (refix and bool(FIX_RE.search(i['text']))) or (match is not None and bool(match.search(i['text'])))) for i in items))
     keys = {i['key'] for i in items}
     if prune:
         for f in os.listdir(OUT):

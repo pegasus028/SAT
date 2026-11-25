@@ -246,7 +246,7 @@
   try { if (window.speechSynthesis) { speechSynthesis.getVoices(); speechSynthesis.addEventListener('voiceschanged', pickVoice); } } catch (e) {}
   function ttsNorm(s) { return String(s || '').replace(/\s+/g, ' ').trim(); }
   /* Voice-only respellings, same rules as VOICE_FIXES in tools/make-audio.py (the exam name SAT is spoken S-A-T). */
-  SAT.voiceFix = function (s) { return String(s).replace(/\bSAT\b/g, 'S A T').replace(/\b([Aa])mbivalen(t|ce|tly)\b/g, '$1m-bivvalen$2').replace(/\b([Ii])ncongruous(ly)?\b/g, '$1n-congroo-us$2').replace(/\b([Pp])recipitat(e|ed|es|ing)\b/g, '$1re-sippi-tat$2').replace(/\b([Ss])anguine\b/g, '$1ang-gwin'); };
+  SAT.voiceFix = function (s) { return String(s).replace(/\bSAT\b/g, 'S A T').replace(/\b([Aa])mbivalen(t|ce|tly)\b/g, '$1m-bivvalen$2').replace(/\b([Ss])anguine\b/g, '$1an-gwinn'); };
   SAT.ttsKey = function (s) { s = ttsNorm(s); var h = 0x811c9dc5; for (var i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return ('0000000' + h.toString(16)).slice(-8); };
   SAT.sayText = function (raw) { return ttsNorm(window.speechText ? window.speechText(raw) : raw); };
   var TTS_SET = {}; ((window.TTS && window.TTS.keys) || []).forEach(function (k) { TTS_SET[k] = 1; });
