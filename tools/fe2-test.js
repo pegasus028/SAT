@@ -162,7 +162,7 @@ async function testGame(page, pp, where) {
   const summary = {};
   for (const pass of passes) {
     const ctx = await browser.newContext({ viewport: { width: pass.w, height: pass.h }, deviceScaleFactor: 1, colorScheme: pass.theme });
-    await ctx.addInitScript(t => { try { sessionStorage.setItem("satstudio.guest", "1"); if (!localStorage.getItem("satstudio.v1")) localStorage.setItem("satstudio.v1", JSON.stringify({ settings: { theme: t } })); } catch (e) {} }, pass.theme);
+    await ctx.addInitScript(t => { try { sessionStorage.setItem("satstudio.testpass", "1"); if (!localStorage.getItem("satstudio.v1")) localStorage.setItem("satstudio.v1", JSON.stringify({ settings: { theme: t } })); } catch (e) {} }, pass.theme);
     const page = await ctx.newPage(); const tag = pass.w + "-" + pass.theme;
     const errs = []; page.on("pageerror", e => errs.push(e.message)); page.on("console", m => { if (m.type() === "error" && !/Failed to load resource/.test(m.text())) errs.push("console: " + m.text()); });
     console.log("== pass " + tag);

@@ -203,7 +203,7 @@ async function contrast(page, sel) {
     ok(tag + ' no overflow on staff tabs', (await overflow(tp)) <= 1, await overflow(tp));
     await A.ctx.close();
 
-    /* ============ 6. Just practise + class list (roster with names) ============ */
+    /* ============ 6. No Just practise + class list (roster with names) ============ */
     var B = await newPage(browser, vp, { tag: tag, roster: true }); page = B.page;
     await page.goto(BASE + 'index.html#/roleplay');
     await page.waitForSelector('.au-scrim');
@@ -216,11 +216,9 @@ async function contrast(page, sel) {
     await B.ctx.close();
     var C = await newPage(browser, vp, { tag: tag }); page = C.page;
     await page.goto(BASE + 'index.html#/writing'); await page.waitForSelector('.au-scrim');
-    await page.click('.au-tab[data-m="guest"]'); await page.click('#auGo');
-    await page.waitForSelector('.au-scrim', { state: 'detached' });
-    ok(tag + ' Just practise: no user, Sign in chip shown', await page.evaluate(function () { return !SAT.state.user; }) && await page.isVisible('#auSignBtn'));
-    await page.reload(); await sleep(300);
-    ok(tag + ' Just practise lasts for the visit (no panel on reload)', !(await page.$('.au-scrim')));
+    ok(tag + ' no "Just practise" tab on the sign-in panel', !(await page.$('.au-tab[data-m="guest"]')) && !/Just practi[sc]e/i.test(await page.textContent('.au-scrim')));
+    await page.evaluate(function () { try { sessionStorage.setItem('satstudio.testpass', '1'); } catch (e) {} }); await page.reload(); await sleep(300);
+    ok(tag + ' test guest flag: no user, Sign in chip shown', await page.evaluate(function () { return !SAT.state.user; }) && await page.isVisible('#auSignBtn') && !(await page.$('.au-scrim')));
     await page.click('#auSignBtn'); ok(tag + ' Sign in chip reopens the panel with a close button', await page.isVisible('#auX'));
     await page.click('#auX');
     await C.ctx.close();
@@ -288,7 +286,7 @@ async function contrast(page, sel) {
     await D.ctx.close();
 
     /* ============ 8. dark mode readability ============ */
-    var E = await newPage(browser, vp, { tag: tag, dark: true, init: 'try{sessionStorage.setItem("satstudio.guest","1")}catch(e){}' }); page = E.page;
+    var E = await newPage(browser, vp, { tag: tag, dark: true, init: 'try{sessionStorage.setItem("satstudio.testpass","1")}catch(e){}' }); page = E.page;
     await page.goto(BASE + 'index.html#/writing/W3'); await page.waitForSelector('#wrIn');
     await page.fill('#wrIn', MODEL.W3);
     await shot(page, tag + '-16-dark-writing');

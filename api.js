@@ -72,7 +72,7 @@
   }
   function student(p) { p = p || {}; var u = me(); if (S.token) p.token = S.token; if (u && !p.id) p.id = u.id; return p; }
   function teacher(p) { p = p || {}; if (S.teacher) p.token = S.teacher; return p; }
-  var NET = 'Could not reach the class server. Check your connection and try again, or choose “Just practise”.';
+  var NET = 'Could not reach the class server. Check your connection and try again.';
 
   /* ------------------------------------------------------------- outbox sync */
   var SEQ = 0;

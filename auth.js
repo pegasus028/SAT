@@ -1,16 +1,18 @@
 /* ============================================================================
    SAT Studio — auth.js  (FE-4)  the sign-in panel and the account sheet.
    SAT.hooks.beforeStart(go): shows the panel before the first route unless a
-   student is signed in (SAT.state.user) or chose "Just practise" in this visit.
+   student is signed in (SAT.state.user). Every student signs in: the "Just practise"
+   tab was removed (T.Chris, 26 Nov 2026). The sessionStorage flag (renamed satstudio.testpass so old guest visits lapse) is kept only so
+   the test harnesses in tools/ can get past the panel; nothing in the app sets it.
    Tabs: "Class list" (only when roster.js has names: pick your nickname, set a
-   password the first time), "Log in", "Create account", "Just practise".
+   password the first time), "Log in", "Create account".
    SAT.hooks.account: the name chip's sheet (name, mode, sync status, Log out).
    A guest gets a "Sign in" chip in the header.
    ============================================================================ */
 (function () {
   'use strict';
   var SAT = window.SAT; if (!SAT) return;
-  var GUEST = 'satstudio.guest', esc = SAT.esc, goFn = null;
+  var GUEST = 'satstudio.testpass', esc = SAT.esc, goFn = null;
   function api() { return window.API || null; }
   function roster() {
     var list = (typeof ROSTER !== 'undefined' && Array.isArray(ROSTER)) ? ROSTER : [];
@@ -37,7 +39,7 @@
       '<h2 id="auH">Sign in to keep your progress</h2>' +
       '<p class="au-lede">' + (cloud() ? 'Your progress is saved to the class record, so T.Chris can see how you are doing. He never sees your password.' :
         'No class server is connected yet, so your account and progress stay on this device.') + '</p>' +
-      '<div class="au-tabs" role="tablist">' + (R.length ? tab('class', 'Class list') : '') + tab('login', 'Log in') + tab('new', 'Create account') + tab('guest', 'Just practise') + '</div>' +
+      '<div class="au-tabs" role="tablist">' + (R.length ? tab('class', 'Class list') : '') + tab('login', 'Log in') + tab('new', 'Create account') + '</div>' +
       '<div class="au-pane" id="auPane"></div><p class="au-msg" id="auMsg" role="status" aria-live="polite"></p></div></div>';
     document.body.classList.add('au-on');
     SAT.$$('.au-tab', slot).forEach(function (b) { b.onclick = function () { mode = b.dataset.m; pane(); }; });
@@ -56,15 +58,12 @@
         '<button type="button" class="btn primary au-go" id="auGo">Sign in</button>' +
         '<p class="au-hint">First time here? Pick your nickname and choose a password: that becomes your password from now on.</p>';
       SAT.$('#auPick').onchange = function () { say(''); if (this.value) SAT.$('#auPw').focus(); };
-    } else if (mode === 'login' || mode === 'new') {
+    } else {
       p.innerHTML = '<label class="au-l" for="auName">Nickname</label><input type="text" id="auName" autocomplete="username" maxlength="30" placeholder="e.g. Ploy" autocapitalize="words">' +
         '<label class="au-l" for="auPw">Password</label><input type="password" id="auPw" autocomplete="' + (mode === 'new' ? 'new-password' : 'current-password') + '" placeholder="' + (mode === 'new' ? '4 or more characters' : 'Your password') + '">' +
         '<button type="button" class="btn primary au-go" id="auGo">' + (mode === 'new' ? 'Create my account' : 'Log in') + '</button>' +
         '<p class="au-hint">' + (mode === 'new' ? 'Use the nickname T.Chris knows you by. ' + (cloud() ? 'Your password is stored scrambled; nobody can read it.' : 'This account lives on this device only.') :
           'No account yet? Choose “Create account”.') + '</p>';
-    } else {
-      p.innerHTML = '<div class="au-guest"><p>Practise without signing in. Everything you do is saved on this device only, and T.Chris will not see it' + (cloud() ? '. The AI tutor needs you to sign in.' : '.') + '</p>' +
-        '<button type="button" class="btn dark au-go" id="auGo">Start practising</button><p class="au-hint">You can sign in later from the “Sign in” button at the top.</p></div>';
     }
     SAT.$('#auGo').onclick = submit;
     SAT.$$('#auPane input').forEach(function (i) { i.onkeydown = function (e) { if (e.key === 'Enter') submit(); }; });
@@ -75,7 +74,7 @@
 
   function submit() {
     var A = api();
-    if (mode === 'guest' || !A) { setGuest(true); close(); return; }
+    if (!A) return say('The sign-in service did not load. Refresh the page and try again.', true);
     var pw = (SAT.$('#auPw') || {}).value || '', name, id;
     if (mode === 'class') {
       var sel = SAT.$('#auPick'); id = sel.value; name = id ? sel.options[sel.selectedIndex].getAttribute('data-name') : '';

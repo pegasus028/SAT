@@ -30,10 +30,8 @@ async function setup(browser, vp, scheme) {
 }
 async function go(page, hash) { await page.evaluate(h => { location.hash = h; }, hash); await wait(250); }
 async function passAuth(page) {
-  for (const re of [/^Just practi[sc]e$/i, /^Start practi[sc]ing$/i]) {
-    const b = page.locator('button, [role=tab]', { hasText: re }).first();
-    if (await b.count() && await b.isVisible().catch(() => false)) { await b.click(); await wait(300); }
-  }
+  /* "Just practise" is gone from the panel: tests pass it with the session guest flag instead. */
+  if (await page.$('.au-scrim')) { await page.evaluate(() => { try { sessionStorage.setItem('satstudio.testpass', '1'); } catch (e) {} }); await page.reload(); await wait(600); }
 }
 async function shot(page, name) { step++; await page.screenshot({ path: path.join(OUT, String(step).padStart(2, '0') + '-' + name + '.png'), fullPage: false }); }
 async function noOverflow(page, label) { const o = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth); ok(o <= 1, 'no horizontal overflow: ' + label + ' (' + o + 'px)'); }
