@@ -54,12 +54,12 @@
     var o = (window.WORD_OVERLAY || {})[w.id], head = SAT.head(w);
     if (!o || !o.gloss) return null;
     var len = head.split(/\s+/).reduce(function (m, t) { return Math.max(m, t.length); }, 4);
-    return { style: ' style="--ar:' + (+o.ar || 1.5) + ';--fx:' + (o.fx == null ? 0.5 : +o.fx) + ';--len:' + len + '"',
+    return { style: ' style="--ar:' + (+o.ar || 1.5) + ';--fx:' + (o.fx == null ? 0.5 : +o.fx) + ';--len:' + len + (o.up ? ';--up:' + (+o.up * 100) + '%' : '') + '"',
       html: '<div class="wd-ov" aria-hidden="true"><b class="wd-ov-w">' + esc(head) + '</b><span class="wd-ov-d">' + esc(SAT.forStudents(o.gloss)) + '</span></div>' };
   }
   function pic(w, cls) {
     var im = ((window.IMAGES || {}).words || {})[w.id], has = im && im.src;
-    var ov = has && (cls === 'hero' || cls === 'card') ? overlay(w) : null;
+    var ov = has && (cls === 'hero' || cls === 'card' || cls === 'thumb') ? overlay(w) : null;
     return '<figure class="wd-pic ' + (cls || '') + (has ? ' has' : ' noimg') + (ov ? ' framed' : '') + '"' + (ov ? ov.style : '') + '>' + fallback(w) + (ov ? ov.html : '') +
       (has ? '<img class="bg" src="' + esc(im.src) + '" alt="" aria-hidden="true" onerror="this.parentNode.classList.add(\'noimg\')">' +
              '<img class="fg" src="' + esc(im.src) + '" alt="' + esc(im.alt || SAT.head(w)) + '" loading="lazy" onerror="this.parentNode.classList.add(\'noimg\')">' : '') +
