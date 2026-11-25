@@ -43,16 +43,31 @@
       (cfg.blurb ? '<p class="muted md-blurb">' + md(cfg.blurb) + '</p>' : '') +
       '<div class="md-row">' + (list.length ? list.map(function (m) { return node(m, kind); }).join('') : placeholders) + '</div></section>';
   }
+  /* Videos with a `series` name get their own shelf under that title (in first-appearance order, blurb from
+     MEDIA.video.series[name] if given); videos without one stay on the general Videos shelf, which shows the
+     "coming soon" cards while it is empty. */
+  function videoShelves(cfg, vid, vidSoon) {
+    cfg = cfg || {};
+    var names = [], groups = {}, loose = [];
+    vid.forEach(function (m) {
+      if (!m.series) { loose.push(m); return; }
+      if (!groups[m.series]) { groups[m.series] = []; names.push(m.series); }
+      groups[m.series].push(m);
+    });
+    var blurbs = cfg.series || {};
+    return names.map(function (n) { return shelf({ title: n, blurb: blurbs[n] || '' }, 'video', groups[n], ''); }).join('') +
+      shelf(cfg, 'video', loose, vidSoon);
+  }
   function draw(el, sub) {
     var M = window.MEDIA || {}, pod = (M.podcast || {}).episodes || [], vid = (M.video || {}).episodes || [], ext = (M.extras || {}).items || [];
     var st = ((window.STAGES || {}).stages || []);
     var podSoon = st.length ? st.map(function (s) { return soon('podcast', 'Podcast: ' + (s.title || s.id), 'About ten minutes on ' + (s.kicker || s.title || 'this stage') + ', for the bus or the walk to school. Nothing to answer.'); }).join('')
       : soon('podcast', 'Podcast: high-value SAT words', 'About ten minutes, for the bus or the walk to school. Nothing to answer.');
-    var vidSoon = soon('video', 'The patterns behind SAT vocabulary', 'Video, about 7 minutes: the scales and pairs that hold the 30 words together.') +
+    var vidSoon = (vid.some(function (m) { return m.stage === 'vocab'; }) ? '' : soon('video', 'The patterns behind SAT vocabulary', 'Video, about 7 minutes: the scales and pairs that hold the 30 words together.')) +
       soon('video', 'Transitions and boundaries', 'Video, about 7 minutes: how to choose a transition by the relationship between two sentences.');
     el.innerHTML = '<div class="md"><div class="pagehead"><p class="eyebrow">Media</p><h2>Listen and watch</h2><p>Podcasts for the way to school and short videos that explain one pattern or rule each. ' +
       'New episodes appear here, and their chips show up on the word and pattern cards they cover.</p></div>' +
-      shelf(M.podcast, 'podcast', pod, podSoon) + shelf(M.video, 'video', vid, vidSoon) +
+      shelf(M.podcast, 'podcast', pod, podSoon) + videoShelves(M.video, vid, vidSoon) +
       (ext.length ? shelf(M.extras, 'extra', ext, '') : '') + '</div>';
     SAT.$$('.md-yt', el).forEach(function (b) {
       b.onclick = function () {
