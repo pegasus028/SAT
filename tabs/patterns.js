@@ -669,7 +669,7 @@
     var im = picture(p.id);
     var fb = fallbackHTML(p, pp);
     return '<figure class="pt-hero">' + (im ? '<img src="' + esc(im.src) + '" alt="' + esc(im.alt || pp.alt || '') + '" decoding="async" data-fb>' : fb) +
-      (pp.sceneCaption ? '<figcaption>' + esc(pp.sceneCaption) + '</figcaption>' : '') + '</figure>';
+      ((im && im.caption) || pp.sceneCaption ? '<figcaption>' + esc((im && im.caption) || pp.sceneCaption) + '</figcaption>' : '') + '</figure>';
   }
   function list(el) {
     var seen = SAT.state.seen.patterns, n = PATS.filter(function (p) { return seen[p.id]; }).length;
