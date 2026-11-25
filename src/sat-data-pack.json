@@ -1,0 +1,1610 @@
+{
+ "meta": {
+  "title": "SAT Dec 2026 data pack",
+  "version": "1.1",
+  "date": "2026-11-25",
+  "test_date": "2026-12-05",
+  "sources_doc": "SAT top 30 C1 C2 word cards.md",
+  "note": "Importance = learning value, not a prediction that a word appears (back-test).",
+  "local_copy_note": "Copied from the SAT Exam Project on 25 Nov 2026 with the Thai notes removed (T.Chris: no Thai text). Everything else is verbatim."
+ },
+ "words": [
+  {
+   "rank": 1,
+   "id": "manifest",
+   "word": "manifest (manifest in)",
+   "pos": "adjective (also verb, noun)",
+   "cefr": null,
+   "cefr_source": "Unlabelled for the adjective, which is what the SAT keyed twice. Oxford labels only the verb (Oxford 5000 visible badge, C1); Cambridge shows no level.",
+   "group": "core",
+   "cluster": "visible",
+   "ipa": "/ˈmænɪfest/",
+   "def": "Something that is manifest is clear and easy to see or notice. If a quality is manifest in something, that thing shows it plainly.",
+   "sat_sense": "Adjective: plainly visible or evident. Two official keys: *manifest in* (= evident from) and *manifest* in a literary 'most nearly means' item (= perceptible).",
+   "ex": [
+    "The architect's debt to traditional Japanese design is manifest in the sliding screens and open courtyards of her early houses.",
+    "Fah's love of maps was manifest in every page of her geography project, down to the hand-drawn compass in each corner."
+   ],
+   "syn": {"B1": "obvious", "B2": "evident", "C1": null},
+   "ant": {"B1": null, "B2": "hidden", "C1": null},
+   "colls": ["manifest in", "become manifest", "make something manifest", "a manifest failure", "manifest itself in/as", "manifestly unfair"],
+   "family": ["manifest (adj, v, n)", "manifestly (adv)", "manifestation (n)", "manifesto (n)"],
+   "grammar": "Adjective: *be / become manifest (in something)*. Verb: *manifest something* or reflexive *manifest itself in / as something* (*the illness manifests itself as a rash*). Formal in every use.",
+   "say": "/ˈmænɪfest/: three syllables, stress on MAN for the adjective, verb and noun alike; the last syllable is a clear *fest*.",
+   "ukus": "",
+   "fact": "From Latin *manifestus*, 'plain, caught in the act'. One possible story is that it joins *manus* ('hand') to a second part meaning 'struck' or 'seized', so that a manifest thief was one caught by hand; the second part is uncertain. A ship's *manifest* is the list that makes its cargo plain.",
+   "trap": "The self-help sense ('manifest your dreams') is not the academic one. *Manifest* is about being visible, not about being important or being true.",
+   "distractor_traps": [
+    "As key *manifest in* it beat *insensible to*, *scrutinized by* and *complicated by*: only *manifest in* says the quality shows itself there. The preposition does half the work.",
+    "In the 'most nearly means' item the answer was 'perceptible', against 'realized', 'situated' and 'dwindling': the wrong options borrow the verb sense (make real) or simply fit the scene."
+   ],
+   "tip": "A ship's manifest puts the cargo on show: what is manifest is on show.",
+   "related": ["latent", "opaque", "belie", "attest-to"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Official practice-test key: Test 6, Module 2, Q4 (*manifest in*); the same item is a Question Bank key rated Hard (batch Oct 2024)",
+     "Official practice-test key: Test 11, Module 2, Q5 ('most nearly means' item, = perceptible); the same item is a Question Bank key rated Hard (batch Apr 2026)",
+     "Asian recall, unverified: Oct 2025 (TestDaily, listed as an 'old' word)"
+    ],
+    "tier": "Tier 1: two separate official keys, both rated Hard. The only word keyed twice in the 82 practice-test items",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). Even the one word that did repeat officially is no forecast; learn it for the latent/manifest contrast and the second sense."
+   },
+   "mini_item": {
+    "passage": "The composer never wrote about her childhood on the coast. Its influence is nonetheless ______ her late symphonies, where slow, swelling phrases rise and fall like waves and a solitary horn suggests a distant ship.",
+    "options": ["contingent on", "immaterial to", "absent from", "manifest in"],
+    "key": 3,
+    "rationale": "*Nonetheless* signals that the influence can be clearly seen despite her silence, and the wave-like music is the visible sign; the other options deny or reverse that."
+   }
+  },
+  {
+   "rank": 2,
+   "id": "ambivalent",
+   "word": "ambivalent (ambivalence toward)",
+   "pos": "adjective (noun: ambivalence)",
+   "cefr": null,
+   "cefr_source": "Unlabelled: no level on the Oxford or Cambridge entry for *ambivalent* or *ambivalence* (entry pages read 25 Nov 2026). Treat as beyond C1.",
+   "group": "core",
+   "cluster": "attitude",
+   "ipa": "/æmˈbɪvələnt/",
+   "def": "If you are ambivalent about something, you have two opposite feelings about it at the same time, so you cannot simply say you are for it or against it.",
+   "sat_sense": "Mixed feelings that pull in two directions. The official key is the noun phrase *ambivalence toward*; the adjective appears more often as a tempting wrong option.",
+   "ex": [
+    "Early reviewers were ambivalent about the novel, praising its inventive structure while complaining that its characters felt cold.",
+    "Praew is ambivalent about moving to the science stream: she loves biology, but she would miss her literature class."
+   ],
+   "syn": {"B1": null, "B2": "mixed (of feelings)", "C1": null},
+   "ant": {"B1": "sure", "B2": null, "C1": null},
+   "colls": ["ambivalent about", "ambivalent towards", "deeply ambivalent", "remain ambivalent", "an ambivalent attitude", "ambivalence toward(s)"],
+   "family": ["ambivalent (adj)", "ambivalence (n)", "ambivalently (adv)"],
+   "grammar": "Adjective after *be / feel / remain* + *about* or *towards*. Noun *ambivalence* + *about / toward(s)*. The subject is a person or group, or their attitude, response or reaction: *critics were ambivalent*, *an ambivalent reaction*; not *the data were ambivalent*.",
+   "say": "/æmˈbɪvələnt/: four syllables, stress on BIV: am-BIV-uh-luhnt. Do not stress the first syllable.",
+   "ukus": "British English prefers *towards*; American English, and the SAT, write *toward*. Both are correct.",
+   "fact": "The word is only about a century old. The Swiss psychiatrist Eugen Bleuler coined German *Ambivalenz* in 1910 from Latin *ambi-* ('on both sides') and *valentia* ('strength'), on the model of *equivalence*: two feelings of equal strength pulling opposite ways.",
+   "trap": "Not *indifferent* (no feeling at all), and not *ambiguous* (two possible meanings: used for words and evidence, not for people's feelings).",
+   "distractor_traps": [
+    "As the key (*ambivalence toward*) it beat *responsiveness to*, *renunciation of* and *mastery over*: only ambivalence names two opposed attitudes at once. Check that the passage gives BOTH a positive and a negative reaction.",
+    "As a wrong option it sat beside the keys *counterfactual* (with *retrospective*, *analogical*) and *opaque* (with *abrasive*, *outspoken*): if the blank describes an analysis or a piece of writing rather than someone's feelings, *ambivalent* cannot fit."
+   ],
+   "tip": "*Ambi-* = both (as in *ambidextrous*, both hands) + *valent* = strong: both feelings are strong.",
+   "related": ["sanguine", "opaque"],
+   "related_other": ["dogmatic"],
+   "sat_evidence": {
+    "sources": [
+     "Question Bank key, Medium: *ambivalence toward* (batch Aug 2023)",
+     "Question Bank distractor, Hard, twice (batch Jul 2026): beside the keys *counterfactual* and *opaque*",
+     "Asian recall, unverified: Mar 2026 (JSL list, role not stated); Oct 2026 (TTA, named as a wrong option)"
+    ],
+    "tier": "Tier 1: official key plus repeated official distractor; recall on 2 dates",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). Its value is that it keeps returning as an option students must be able to rule in or out."
+   },
+   "mini_item": {
+    "passage": "When the city's first tram line opened, residents' reaction was ______: letters to the local newspapers praised the faster journey to the market, yet the same writers often complained that the noise had spoiled their once quiet streets.",
+    "options": ["indifferent", "ambivalent", "hostile", "ambiguous"],
+    "key": 1,
+    "rationale": "Praise and complaint from the same writers means two opposed feelings at once; *indifferent* is no feeling, *hostile* is one-sided, and *ambiguous* describes unclear meaning, not mixed feelings."
+   }
+  },
+  {
+   "rank": 3,
+   "id": "integral",
+   "word": "integral (to)",
+   "pos": "adjective",
+   "cefr": "C1",
+   "cefr_source": "Oxford visible badge (Oxford 5000, C1); Cambridge badge also C1.",
+   "group": "core",
+   "cluster": "centre",
+   "ipa": "/ˈɪntɪɡrəl/",
+   "def": "If something is integral to a thing, it is an essential part of it, and the thing would not be complete or would not work without it.",
+   "sat_sense": "Essential, built into the whole: the 'centre' end of the centre-to-edge scale.",
+   "ex": [
+    "Far from being decoration, the chorus is integral to Greek tragedy, since it tells the audience how to judge the action.",
+    "Mint's careful timekeeping was integral to the debate team's win; without her signals, every speaker would have run over."
+   ],
+   "syn": {"B1": "essential", "B2": "vital", "C1": null},
+   "ant": {"B1": "extra", "B2": "secondary", "C1": "marginal"},
+   "colls": ["integral to", "an integral part of", "play an integral role in", "become integral to", "an integral component"],
+   "family": ["integral (adj)", "integrally (adv)", "integrate (v)", "integration (n)", "integrity (n)", "integer (n)"],
+   "grammar": "*integral to + noun* or *an integral part / element / component of + noun*. Not *integral for*; *in* appears only in the frame *an integral role / part in + noun or -ing*.",
+   "say": "/ˈɪntɪɡrəl/: stress on IN: IN-ti-gruhl. (Some speakers say in-TEG-ral, especially in maths; IN-ti-gruhl is the safe choice.)",
+   "ukus": "",
+   "fact": "From Latin *integer*, 'whole, untouched': *in-* ('not') plus the root of *tangere* ('to touch'). An integer is a whole number, integrity is being whole in character, and an integral part is one the whole cannot lose.",
+   "trap": "Stronger than *important* or *useful*. A helpful extra is not integral. In maths *an integral* is a noun (calculus); the SAT uses the adjective.",
+   "distractor_traps": [
+    "Official wrong options beside it: *tangential*, *subsequent*, *analogous* (Practice Test 11). *Tangential* is its opposite on the centre-to-edge scale and comes from the same Latin root, *tangere*: it only touches the edge.",
+    "In a second official item: *antithetical*, *resigned*, *invulnerable*. *Antithetical to* means directly opposed to; the passage will show whether the part belongs to the whole or fights it."
+   ],
+   "tip": "An *integer* is a whole number; an *integral* part keeps the whole whole.",
+   "related": ["peripheral", "inconsequential-to", "immaterial-to", "contingent-on"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Official practice-test key: Test 11, Module 2, Q4; the same item is a Question Bank key rated Medium (batch Apr 2026)",
+     "Question Bank key, Medium, second item (batch Jul 2026)",
+     "Asian recall, unverified: Sep 2025 (JSL list)"
+    ],
+    "tier": "Tier 1: two separate official keys (one of only six words keyed twice in the 261-item Question Bank sample)",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). Strong evidence that the centre-to-edge field is tested, weak evidence about this exact word."
+   },
+   "mini_item": {
+    "passage": "Historians once treated the kitchen garden as a minor feature of the medieval manor. Recent studies of household accounts suggest instead that it was ______ the estate's economy, supplying most of the food and medicine on which its workers relied.",
+    "options": ["integral to", "incongruous with", "peripheral to", "independent of"],
+    "key": 0,
+    "rationale": "*Instead* reverses 'minor', and supplying most of the food makes the garden essential; *peripheral to* repeats the old view and the other two break the link."
+   }
+  },
+  {
+   "rank": 4,
+   "id": "that-said",
+   "word": "that said",
+   "pos": "transition (linking adverbial)",
+   "cefr": "C1",
+   "cefr_source": "Oxford page markup (C1 on the idiom *that said / having said that*; not a displayed badge). Cambridge shows no level.",
+   "group": "transition",
+   "cluster": "transition",
+   "ipa": "/ˌðæt ˈsed/",
+   "def": "You use *that said* to add something that limits, or partly goes against, what you have just said, without taking the first statement back.",
+   "sat_sense": "Concession: both statements stay true, and the second one qualifies the first. Tested in Transitions questions, not Words in Context.",
+   "ex": [
+    "The survey reached more than ten thousand households. That said, almost all of them were in cities, so its findings may not hold for rural areas.",
+    "Ploy's presentation ran two minutes over the limit. That said, it was the only one the whole class remembered a week later."
+   ],
+   "syn": {"B1": "however", "B2": "nevertheless", "C1": "nonetheless"},
+   "ant": {"B1": null, "B2": null, "C1": null},
+   "colls": ["That said, ...", "having said that, ...", "that being said, ...", "with that said, ..."],
+   "family": ["that said", "having said that", "that being said"],
+   "grammar": "Starts a new sentence (or follows a semicolon) and takes a comma: *X. That said, Y.* It links two full statements; it cannot join a clause to a phrase.",
+   "say": "/ˌðæt ˈsed/: the main stress falls on *said*; pause briefly after it.",
+   "ukus": "*Having said that* is the commoner form in British speech; *that said* and *that being said* are normal in both varieties and in SAT options.",
+   "fact": "It is a shortened absolute clause: *that (having been) said*. The grammar itself tells you the logic: the first point has been said and stands, and now comes the limit.",
+   "trap": "*That is* restates; *that said* concedes. Recall from the Dec 2024 sitting reported students confusing exactly this pair.",
+   "distractor_traps": [
+    "In the official items where it is the key it sits beside result words (*thus*, *for this reason*), addition words (*moreover*) and example or restatement words (*for example*, *in other words*, *specifically*). Test: does sentence 2 follow from sentence 1 (result), add to it (addition), illustrate or restate it, or pull against it without cancelling it (*that said*)?",
+    "It is a wrong option in eight official items, mostly Hard: when sentence 2 simply continues or explains sentence 1, *that said* is the trap."
+   ],
+   "tip": "Read it as 'I have said that, and I still mean it, BUT...'.",
+   "related": ["accordingly"],
+   "related_other": ["granted"],
+   "sat_evidence": {
+    "sources": [
+     "Question Bank Transitions key in 3 items: Medium (batch Mar 2025), Hard (Oct 2024), Hard (Aug 2023)",
+     "Question Bank Transitions distractor in 8 items (7 Hard, 1 Easy); also a distractor in a harder-module item (TTA label)",
+     "Asian recall, unverified: Dec 2024 (TTA: 'that said' versus 'that is' confusion); Jun 2025 (New Oriental: 'that being said')"
+    ],
+    "tier": "Tier 1: three official keys and eight official distractor uses",
+    "likelihood_note": "Higher than any content word here, because transitions are a near-closed set: 16 of 21 later official transition keys had been options in earlier tests. Still, 39 different keys filled 55 items, so no single transition is a safe bet."
+   },
+   "mini_item": {
+    "passage": "Satellite images allow researchers to map the spread of seagrass meadows across an entire coastline in a single afternoon. ______ the images cannot show the health of individual plants, which must still be checked by divers.",
+    "options": ["Accordingly,", "For instance,", "That said,", "In other words,"],
+    "key": 2,
+    "rationale": "Sentence 2 limits the praise in sentence 1 without cancelling it (concession); it is not a result, an example or a restatement. (Transition-style item, as the SAT tests this phrase.)"
+   }
+  },
+  {
+   "rank": 5,
+   "id": "opaque",
+   "word": "opaque",
+   "pos": "adjective",
+   "cefr": null,
+   "cefr_source": "Unlabelled: no level on the Oxford or Cambridge entry for either sense (entry pages read 25 Nov 2026). Treat as beyond C1.",
+   "group": "core",
+   "cluster": "visible",
+   "ipa": "/əʊˈpeɪk/",
+   "def": "Opaque writing, rules or reasons are difficult to understand because they are not made clear. Literally, an opaque material does not let light through.",
+   "sat_sense": "The figurative sense: unclear, hard to understand. Used of prose, methods, motives, decisions and systems.",
+   "ex": [
+    "The committee's reasons for rejecting the paper remained opaque, since its report gave no account of how the reviewers had reached their decision.",
+    "The scoring rules for the science fair were so opaque that Mint had to ask three different teachers what 'originality' meant."
+   ],
+   "syn": {"B1": "unclear", "B2": null, "C1": null},
+   "ant": {"B1": "clear", "B2": null, "C1": "transparent"},
+   "colls": ["remain opaque", "opaque to outsiders", "an opaque process", "opaque prose", "deliberately opaque", "opaque glass"],
+   "family": ["opaque (adj)", "opaquely (adv)", "opacity (n)", "opaqueness (n)"],
+   "grammar": "Before a noun or after *be / remain / seem*; *opaque to + person* (*opaque to most readers*). Gradable: *fairly / increasingly opaque*.",
+   "say": "/əʊˈpeɪk/: two syllables, stress on the second: oh-PAYK. The *-que* is just /k/. The noun *opacity* is /əʊˈpæsəti/ (oh-PASS-uh-tee).",
+   "ukus": "",
+   "fact": "From Latin *opacus*, 'shaded, dark'; where *opacus* itself came from is unknown. In English it first meant 'shaded, dark', then 'not letting light through' (from the 1640s), and from 1761 'hard to understand'.",
+   "trap": "Opaque does not mean false, secret or complicated: it means you cannot see how it works. A simple rule can be opaque if nobody explains it.",
+   "distractor_traps": [
+    "Official options in one Hard item: *authoritative*, *empirical*, *facile*. These praise or classify the writing; *opaque* is the only one about clarity. (*Facile* = too easy, shallow.)",
+    "In a second Hard item: *abrasive*, *ambivalent*, *outspoken*. All three describe a person's manner; *opaque* describes how hard the text or process is to see into."
+   ],
+   "tip": "Opaque glass: light cannot get through. Opaque prose: meaning cannot get through.",
+   "related": ["manifest", "latent", "belie", "ambivalent"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Question Bank key, Hard, in two separate items (batches Aug 2025 and Jul 2026)",
+     "Recall: only a tier-D list (LearnQ, May 2026), not counted"
+    ],
+    "tier": "Tier 1: two separate official Hard keys (one of six words keyed twice in the Question Bank sample)",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). The clarity field supplies 9 of 61 Hard keys but almost none at Easy, so it matters mainly on the harder second module."
+   },
+   "mini_item": {
+    "passage": "Early users praised the app's design but complained that its pricing was ______: the cost of a journey changed from minute to minute, and the company never explained how the figure was calculated.",
+    "options": ["exorbitant", "opaque", "nominal", "manifest"],
+    "key": 1,
+    "rationale": "The complaint is that nobody could see how the price was worked out, not that it was high (*exorbitant*) or tiny (*nominal*); *manifest* is the opposite of unclear."
+   }
+  },
+  {
+   "rank": 6,
+   "id": "tenuous",
+   "word": "tenuous",
+   "pos": "adjective",
+   "cefr": null,
+   "cefr_source": "Unlabelled: no level on the Oxford or Cambridge entry. Treat as beyond C1.",
+   "group": "core",
+   "cluster": "claim",
+   "ipa": "/ˈtenjuəs/",
+   "def": "A tenuous link, claim or position is so weak or slight that it could easily be broken or shown to be wrong.",
+   "sat_sense": "Weak, thinly supported: the bottom rung of the strength-of-claim ladder. Typical subjects are *link, connection, claim, evidence, grasp, hold*.",
+   "ex": [
+    "Critics argue that the link between the two manuscripts is tenuous, resting on a single shared spelling error.",
+    "Fern's claim that she had lost her homework on the train was tenuous at best, as she had cycled to school that day."
+   ],
+   "syn": {"B1": "weak", "B2": null, "C1": "fragile"},
+   "ant": {"B1": "strong", "B2": "convincing", "C1": "robust"},
+   "colls": ["a tenuous link", "a tenuous connection", "tenuous evidence", "a tenuous grasp of", "a tenuous hold on", "tenuous at best"],
+   "family": ["tenuous (adj)", "tenuously (adv)", "tenuousness (n)", "attenuate (v)", "extenuating (adj)"],
+   "grammar": "Before a noun (*a tenuous link*) or after *be / seem / remain*. Often followed by *at best*. It describes links, claims and positions, not people.",
+   "say": "/ˈtenjuəs/: three syllables, TEN-yoo-uhs. Do not say ten-OO-us.",
+   "ukus": "",
+   "fact": "From Latin *tenuis*, 'thin', a distant relative of English *thin* itself. A tenuous argument is a thread stretched thin. The same root gives *attenuate* (make thinner or weaker) and *extenuating* circumstances (ones that thin out the blame).",
+   "trap": "Not *tentative* (offered cautiously, may change) and not *untenable* (cannot be defended at all). Tenuous = still standing, but only just.",
+   "distractor_traps": [
+    "Practice Test 5 options: *enduring*, *contentious*, *conspicuous*. *Enduring* is the opposite direction (lasting); *contentious* means argued about, which a strong claim can also be; *conspicuous* is about visibility.",
+    "Harder-module item options: *disorienting*, *nuanced*, *unoriginal*. All are criticisms, but only *tenuous* attacks how well the claim is supported."
+   ],
+   "tip": "A *ten*uous link is a *thin* one: the two words are distant cousins.",
+   "related": ["corroborate", "substantiate", "buttress"],
+   "related_other": ["untenable"],
+   "sat_evidence": {
+    "sources": [
+     "Official practice-test key: Test 5, Module 2, Q4",
+     "Question Bank key, Hard (batch Aug 2023): a different item, which TTA places in a harder Module 2",
+     "No recall reports found"
+    ],
+    "tier": "Tier 1: two separate official keys, one rated Hard",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). Note that the 'uncertainty' set it belongs to supplied keys in Tests 5 and 6 and none in Tests 9 to 11."
+   },
+   "mini_item": {
+    "passage": "The biographer claims that the poet spent a summer in Lisbon, yet her only support is an unsigned postcard of the city found among the poet's papers. Most scholars regard the evidence for the visit as ______.",
+    "options": ["tenuous", "exhaustive", "manifest", "conclusive"],
+    "key": 0,
+    "rationale": "A single unsigned postcard is thin support, so the evidence is weak; *exhaustive* (complete), *manifest* (plain to see) and *conclusive* (settling the matter) all say the opposite."
+   }
+  },
+  {
+   "rank": 7,
+   "id": "anomaly",
+   "word": "anomaly (anomalous)",
+   "pos": "noun (adjective: anomalous)",
+   "cefr": null,
+   "cefr_source": "Unlabelled: no level on the Oxford or Cambridge entry for *anomaly* or *anomalous*. Treat as beyond C1.",
+   "group": "core",
+   "cluster": "fit",
+   "ipa": "/əˈnɒməli/",
+   "def": "An anomaly is something that is different from what is normal or expected, so that it does not fit the pattern around it.",
+   "sat_sense": "A result, case or feature that breaks an otherwise regular pattern: the standard research word for 'the odd one out'.",
+   "ex": [
+    "The single warm year in the tree-ring record was at first dismissed as an anomaly, but later samples showed the same spike.",
+    "Mali's 42 in maths was an anomaly: she had scored above 85 in every other test this term."
+   ],
+   "syn": {"B1": null, "B2": "exception", "C1": null},
+   "ant": {"B1": null, "B2": "the norm", "C1": null},
+   "colls": ["a statistical anomaly", "an apparent anomaly", "an anomaly in the data", "explain the anomaly", "anomalous results", "a temperature anomaly"],
+   "family": ["anomaly (n)", "anomalies (pl)", "anomalous (adj)", "anomalously (adv)"],
+   "grammar": "Countable: *an anomaly*, *anomalies in the data*. Adjective *anomalous* goes before a noun (*an anomalous result*) or after *be*.",
+   "say": "Noun /əˈnɒməli/: uh-NOM-uh-lee. Adjective /əˈnɒmələs/: uh-NOM-uh-luhs. Stress on NOM in both.",
+   "ukus": "",
+   "fact": "From Greek *anomalos*, 'uneven': *an-* ('not') + *homalos* ('even'), which comes from *homos* ('same'). So *anomaly* and *homogeneous* share a root. It is not built on *nomos* ('law'), although 'breaks the law of the pattern' is a handy way to remember it.",
+   "trap": "An anomaly is not an error and not a mystery: it is a mismatch with a pattern. No pattern in the passage, no anomaly.",
+   "distractor_traps": [
+    "As key it beat *hypothesis*, *affinity* and *corroboration*: all research nouns, but only *anomaly* names a result that does not fit. *Corroboration* is the opposite idea (a result that supports).",
+    "Recall reports name *anomaly / anomalies / anomalous* as wrong options on three 2026 dates: it is wrong when the passage's case is simply new or rare but fits the pattern."
+   ],
+   "tip": "An *anomaly* is a-normal: it sits outside the normal pattern.",
+   "related": ["incongruous-with", "disparate", "homogeneous", "corroborate"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Question Bank key, Medium (batch Aug 2023)",
+     "Asian recall, unverified, as an option: Aug 2026 US form (TestDaily: *anomalous*); Sep 2026 (TTA: *anomaly* as distractor); Oct 2026 (TTA: *anomalies* as wrong option)"
+    ],
+    "tier": "Tier 1: official key; recall on 3 dates through both the Chinese-institute and the Reddit route",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). The family has been reported three sittings running, but mostly as a wrong option."
+   },
+   "mini_item": {
+    "passage": "Of the forty tide gauges along the coast, thirty-nine recorded a steady rise in sea level over the decade. The fortieth showed a slight fall, ______ that the team traced to the slow uplift of the land beneath that one station.",
+    "options": ["a consensus", "an anomaly", "a proxy", "a dearth"],
+    "key": 1,
+    "rationale": "One reading that breaks a pattern of thirty-nine is an anomaly; the other nouns name agreement, a stand-in measure and a shortage."
+   }
+  },
+  {
+   "rank": 8,
+   "id": "peripheral",
+   "word": "peripheral (to)",
+   "pos": "adjective",
+   "cefr": null,
+   "cefr_source": "Unlabelled for the adjective. Oxford marks only the computing noun (C2, page markup); Cambridge shows no level.",
+   "group": "core",
+   "cluster": "centre",
+   "ipa": "/pəˈrɪfərəl/",
+   "def": "Something peripheral is at the edge of a thing, or is not as important as its main part.",
+   "sat_sense": "Figurative: of minor importance to the main subject (*peripheral to the debate*). The 'edge' end of the centre-to-edge scale.",
+   "ex": [
+    "For decades, women's letters were treated as peripheral to the study of the period, useful for colour but not for evidence.",
+    "Aom's group spent so long on peripheral details, like the font of the poster, that they never rehearsed the talk itself."
+   ],
+   "syn": {"B1": null, "B2": "minor", "C1": "marginal"},
+   "ant": {"B1": "central", "B2": "fundamental", "C1": "integral"},
+   "colls": ["peripheral to", "a peripheral role", "peripheral issues", "of peripheral importance", "peripheral vision", "remain peripheral"],
+   "family": ["peripheral (adj, n)", "periphery (n)", "peripherally (adv)"],
+   "grammar": "*peripheral to + noun*; before a noun: *a peripheral figure / role / issue*. Noun: *on the periphery of something*.",
+   "say": "/pəˈrɪfərəl/: four syllables, stress on RIF: puh-RIF-uh-ruhl. The *ph* is /f/.",
+   "ukus": "",
+   "fact": "From Greek *peripheria*, 'circumference': *peri* ('around') + *pherein* ('to carry'), so literally the line carried round the outside. *Peri-* also gives *perimeter* and *periscope*.",
+   "trap": "Peripheral is about position and importance, not visibility. A peripheral figure can be easy to see; a central one can be hidden.",
+   "distractor_traps": [
+    "Practice Test 10 options: *unobtrusive*, *concealed*, *approximate*. *Unobtrusive* (not attracting attention) and *concealed* (hidden) belong to the hidden/visible field; the passage was about how central something was, not how noticeable.",
+    "Its true opposites, *integral* and *central*, are the words to test it against: is the thing part of the core or at the edge?"
+   ],
+   "tip": "*Peri-* = around, as in *perimeter*: peripheral things sit on the perimeter.",
+   "related": ["integral", "inconsequential-to", "immaterial-to"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Official practice-test key: Test 10, Module 2, Q3; the same item is a Question Bank key rated Hard (batch Aug 2023)",
+     "TTA labels this item as harder Module 2 (vendor label, unverified)",
+     "No recall reports found"
+    ],
+    "tier": "Tier 1: official key, rated Hard, harder-module label",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). It is one of 9 later keys that sit outside both the Oxford 5000 and the Academic Word List, the kind found in the last vocabulary slots."
+   },
+   "mini_item": {
+    "passage": "The treaty's clauses on fishing rights filled barely a page and were scarcely mentioned during the negotiations. They were plainly ______ the diplomats' main concern, which was the land border.",
+    "options": ["integral to", "contingent on", "peripheral to", "manifest in"],
+    "key": 2,
+    "rationale": "Barely a page and scarcely mentioned means minor beside the 'main concern'; *integral to* is the opposite, and the other two express dependence and visibility."
+   }
+  },
+  {
+   "rank": 9,
+   "id": "sanguine",
+   "word": "sanguine (about)",
+   "pos": "adjective",
+   "cefr": "C2",
+   "cefr_source": "Oxford page markup (C2 in a hidden attribute; no badge is displayed). Cambridge shows no level.",
+   "group": "core",
+   "cluster": "attitude",
+   "ipa": "/ˈsæŋɡwɪn/",
+   "def": "If you are sanguine about something, you are cheerful and confident that it will turn out well, often when other people are worried.",
+   "sat_sense": "Optimistic, especially in a difficult situation (College Board's own gloss is 'optimistic'). Nothing to do with blood in modern use.",
+   "ex": [
+    "While most economists predicted a long recession, a few remained sanguine about the prospects for recovery.",
+    "Bua is surprisingly sanguine about the netball final, even though two of her team's best players are injured."
+   ],
+   "syn": {"B1": "positive", "B2": "optimistic", "C1": "hopeful"},
+   "ant": {"B1": "worried", "B2": "pessimistic", "C1": "gloomy"},
+   "colls": ["sanguine about", "remain sanguine", "less sanguine", "a sanguine view", "a sanguine outlook", "far from sanguine"],
+   "family": ["sanguine (adj)", "sanguinely (adv)", "sanguinary (adj: bloody, a different meaning)", "consanguinity (n: blood relationship)"],
+   "grammar": "After *be / remain / seem* + *about + noun*, or before *view / outlook / prediction*. Very often negative or comparative: *less sanguine*, *not so sanguine*.",
+   "say": "/ˈsæŋɡwɪn/: two syllables, SANG-gwin. The ending rhymes with *win*, not *wine*.",
+   "ukus": "",
+   "fact": "From Latin *sanguis*, 'blood'. Medieval medicine taught that the body held four fluids, or humours, and that a person ruled by blood was red-cheeked, lively and hopeful. The medicine was abandoned; the adjective for the hopeful temperament stayed.",
+   "trap": "*Sanguinary* means bloodthirsty: a completely different word. And sanguine is quiet confidence, not enthusiasm or happiness.",
+   "distractor_traps": [
+    "Practice Test 10 options: *recalcitrant* (stubbornly refusing to obey), *misanthropic* (disliking people), *earnest* (serious and sincere). All four are rare temperament words; only *sanguine* is about expecting a good outcome.",
+    "This is the model 'attitude' item: find the outlook the passage describes (hopeful, resistant, hostile, serious) before looking at the options."
+   ],
+   "tip": "Blood in the cheeks, a healthy glow, a hopeful face: sanguine.",
+   "related": ["ambivalent", "tenuous"],
+   "related_other": ["dogmatic"],
+   "sat_evidence": {
+    "sources": [
+     "Official practice-test key: Test 10, Module 2, Q5 (last vocabulary slot); the same item is a Question Bank key rated Hard (batch Mar 2025)",
+     "TTA labels this item as harder Module 2 (vendor label, unverified)",
+     "No recall reports found"
+    ],
+    "tier": "Tier 1: official key, rated Hard, harder-module label",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). It stands for the last-slot item whose four options are all rare: the skill is ruling out three hard words, not recognising this one."
+   },
+   "mini_item": {
+    "passage": "The orchard's owners remained ______ about the coming harvest despite the late frost: the trees had flowered heavily, and in earlier years similar cold spells had done little lasting damage.",
+    "options": ["sanguine", "ambivalent", "despondent", "indifferent"],
+    "key": 0,
+    "rationale": "*Despite the late frost* plus two reasons for confidence points to optimism; *ambivalent* needs mixed feelings, *despondent* is the opposite, and *indifferent* means not caring."
+   }
+  },
+  {
+   "rank": 10,
+   "id": "ameliorate",
+   "word": "ameliorate",
+   "pos": "verb",
+   "cefr": "C2",
+   "cefr_source": "Oxford page markup (C2 in a hidden attribute; no badge is displayed). Cambridge shows no level.",
+   "group": "core",
+   "cluster": "fix",
+   "ipa": "/əˈmiːliəreɪt/",
+   "def": "To ameliorate a bad situation or a problem is to make it better, though not necessarily to solve it completely.",
+   "sat_sense": "Improve something bad: the 'remedy' end of the remedy-to-worsen scale. The object is a problem, a condition or its effects.",
+   "ex": [
+    "Planting mangroves along the estuary was intended to ameliorate the effects of coastal erosion on nearby villages.",
+    "The new covered walkway has ameliorated the morning crush at the school gate, though the queue is still long."
+   ],
+   "syn": {"B1": "improve", "B2": null, "C1": "relieve"},
+   "ant": {"B1": null, "B2": null, "C1": "worsen"},
+   "colls": ["ameliorate the effects of", "ameliorate a problem", "ameliorate conditions", "ameliorate the situation", "do little to ameliorate"],
+   "family": ["ameliorate (v)", "amelioration (n)", "ameliorative (adj)", "meliorate (v, rare)"],
+   "grammar": "Transitive: *ameliorate + a problem / conditions / the effects of something*. The object is the bad thing, never a person: not *ameliorate the patients*.",
+   "say": "/əˈmiːliəreɪt/: five syllables, stress on MEE: uh-MEE-lee-uh-rayt.",
+   "ukus": "",
+   "fact": "From French *améliorer*, built on Latin *melior*, 'better'. English first had *meliorate*; the *a-* was added later under French influence. Spanish *mejor* and Italian *migliore* ('better') are cousins.",
+   "trap": "Only bad things are ameliorated. You *improve* a good essay; you *ameliorate* poor conditions. It does not mean 'solve'.",
+   "distractor_traps": [
+    "Practice Test 5 options: *sanction*, *rationalize*, *postulate*. Each is a formal verb that a reader half-knows; none means 'make better'. *Sanction* is a classic trap because it can mean approve or punish.",
+    "In the sister item keyed *redressing*, the wrong options included *exacerbating*: same field, opposite direction. Decide first whether the passage wants the problem better or worse."
+   ],
+   "tip": "a·[melior]·ate: *melior* = better (think Spanish *mejor*). Make it better.",
+   "related": ["mitigate", "exacerbate", "precipitate"],
+   "related_other": ["rectify"],
+   "sat_evidence": {
+    "sources": [
+     "Official practice-test key: Test 5, Module 1, Q5 (last vocabulary slot)",
+     "Asian recall, unverified: Dec 2024 (Test Ninjas); May 2025 (TestDaily back-reference); Nov 2026 (TestDaily and TTA agree)"
+    ],
+    "tier": "Tier 1: official key; recall on 3 dates through both routes",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). The 'remedy' set gave keys in Tests 5, 6 and 7 and none in Tests 9 to 11, and a word reported in November is not thereby more likely in December."
+   },
+   "mini_item": {
+    "passage": "The reservoir did not end the region's water shortages, but by storing the heavy monsoon rains for release in the dry months it did much to ______ them.",
+    "options": ["exacerbate", "precipitate", "ameliorate", "corroborate"],
+    "key": 2,
+    "rationale": "*Did not end ... but* points to a partial improvement; *exacerbate* and *precipitate* make things worse or start them, and *corroborate* is about evidence."
+   }
+  },
+  {
+   "rank": 11,
+   "id": "immaterial-to",
+   "word": "immaterial to",
+   "pos": "adjective + preposition",
+   "cefr": null,
+   "cefr_source": "Unlabelled: no level on the Oxford or Cambridge entry for *immaterial*. Treat as beyond C1.",
+   "group": "phrase",
+   "cluster": "centre",
+   "ipa": "/ˌɪməˈtɪəriəl tə/",
+   "def": "If something is immaterial to a question or decision, it is not important or relevant to it and makes no difference.",
+   "sat_sense": "Irrelevant, making no difference to the matter in hand. Not the older sense 'without physical form'.",
+   "ex": [
+    "The age of the manuscript is immaterial to the argument, which concerns only the meaning of its final line.",
+    "Whether Fah presents first or last is immaterial to her mark, because every group is judged on the same rubric."
+   ],
+   "syn": {"B1": null, "B2": null, "C1": "irrelevant to"},
+   "ant": {"B1": "important to", "B2": "relevant to", "C1": null},
+   "colls": ["immaterial to", "it is immaterial whether", "quite immaterial", "largely immaterial", "immaterial to the outcome", "dismiss as immaterial"],
+   "family": ["immaterial (adj)", "material (adj: important, relevant)", "materially (adv)", "materiality (n)"],
+   "grammar": "*immaterial to + noun*; or *It is immaterial whether / who / how + clause*. Not *immaterial for*.",
+   "say": "/ˌɪməˈtɪəriəl/: five syllables, stress on TEER: im-uh-TEER-ee-uhl.",
+   "ukus": "",
+   "fact": "From medieval Latin *immaterialis*, 'not made of matter'. The 'unimportant' sense dates from the 1690s and comes from *material* in its sixteenth-century sense 'important' (still used in law, where *material evidence* is evidence that matters to the case). So *immaterial* means, almost literally, 'it does not matter'.",
+   "trap": "*Material* as an adjective means important or relevant (*a material fact*), so *immaterial* is its opposite, not a word about cloth or physical stuff.",
+   "distractor_traps": [
+    "Recall reports do not give the other options. In its official sister item, the key *inconsequential to* beat *controversial among*, *antagonistic toward* and *imitated by*: the trap is another adjective + preposition that fits the grammar but states a different relationship.",
+    "The contrast to master is with *integral to* (cannot do without it), *contingent on* (depends on it) and *peripheral to* (at the edge of it): four relevance relationships, four prepositions to check."
+   ],
+   "tip": "Im-material: it doesn't *matter*.",
+   "related": ["inconsequential-to", "peripheral", "integral", "contingent-on"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Asian recall, unverified: Nov 2025 (TestDaily back-reference); Nov 2026 (TestDaily and TTA agree)",
+     "No official key or distractor found; the official parallel is *inconsequential to* (Practice Test 6)"
+    ],
+    "tier": "Tier 3: recall only (2 dates, both routes)",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). It is the most recently reported phrase here, which does not raise its odds; it is included as the second relevance + *to* phrase."
+   },
+   "mini_item": {
+    "passage": "The judges score each bridge model only on the weight it can bear before it breaks. The colour of the paint, however carefully chosen, is therefore ______ the result.",
+    "options": ["integral to", "contingent on", "incongruous with", "immaterial to"],
+    "key": 3,
+    "rationale": "If only strength is scored, paint colour makes no difference; *integral to* is the opposite, and the other two express dependence and mismatch."
+   }
+  },
+  {
+   "rank": 12,
+   "id": "homogeneous",
+   "word": "homogeneous",
+   "pos": "adjective",
+   "cefr": null,
+   "cefr_source": "Unlabelled: no level on the Oxford or Cambridge entry (entry pages read 25 Nov 2026). Treat as beyond C1.",
+   "group": "core",
+   "cluster": "fit",
+   "ipa": "/ˌhɒməˈdʒiːniəs/",
+   "def": "A homogeneous group or substance is made up of people or parts that are all of the same kind.",
+   "sat_sense": "All alike throughout: the 'sameness' pole opposite *disparate*, *diverse* and *heterogeneous*. Used of populations, samples, mixtures and styles.",
+   "ex": [
+    "Because the sample was homogeneous, drawn entirely from one university's first-year students, the findings may not apply to older adults.",
+    "The playlist for the class party was oddly homogeneous: forty T-pop songs in a row and nothing else."
+   ],
+   "syn": {"B1": "similar", "B2": null, "C1": null},
+   "ant": {"B1": "different", "B2": "diverse", "C1": "varied"},
+   "colls": ["a homogeneous group", "a homogeneous population", "a homogeneous mixture", "culturally homogeneous", "relatively homogeneous", "far from homogeneous"],
+   "family": ["homogeneous (adj)", "homogeneity (n)", "homogeneously (adv)", "homogenize (v)", "heterogeneous (adj, opposite)"],
+   "grammar": "Before a noun or after *be*; often with an adverb of respect: *ethnically / culturally / genetically homogeneous*.",
+   "say": "/ˌhɒməˈdʒiːniəs/: five syllables, main stress on JEE: hom-uh-JEE-nee-uhs. The noun *homogeneity* is /ˌhɒmədʒəˈniːəti/.",
+   "ukus": "The four-syllable spelling *homogenous* (huh-MOJ-uh-nuhs) is common in American use; British dictionaries and the SAT's printed options use *homogeneous*.",
+   "fact": "From Greek *homos* ('same') + *genos* ('kind'). Its twin *heterogeneous* swaps in *heteros* ('other'). Homogenised milk has been processed so that the cream is the same all the way through.",
+   "trap": "It describes the make-up of a group, not agreement between people (*unanimous*) and not equality (*equal*). A homogeneous class can still disagree.",
+   "distractor_traps": [
+    "Official Medium item options: *uncontroversial*, *individualistic*, *theoretical*. *Individualistic* is the opposite direction (each one different).",
+    "Official Hard item options: *depleted*, *immature*, *dispersed*. All describe a population; only *homogeneous* is about how alike its members are. *Dispersed* is about where they are, not what they are like."
+   ],
+   "tip": "*Homo-* = same, *gen-* = kind (as in *genre*, *gene*): the same kind all through.",
+   "related": ["disparate", "anomaly", "incongruous-with"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Question Bank key in two separate items: Medium (batch Oct 2024) and Hard (batch Aug 2023)",
+     "Named as a distractor in TTA's 'most repeated hard Module 2' list (vendor claim, unverified)"
+    ],
+    "tier": "Tier 1: two separate official keys (one of six words keyed twice in the Question Bank sample)",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). The similarity-and-difference field is the third largest in the Question Bank (38 of 261 keys), which is the real reason to learn it."
+   },
+   "mini_item": {
+    "passage": "The island's beetle population is remarkably ______: genetic tests on two hundred specimens found almost no variation, which suggests that all of them descend from a few individuals that arrived quite recently.",
+    "options": ["disparate", "anomalous", "peripheral", "homogeneous"],
+    "key": 3,
+    "rationale": "'Almost no variation' means the beetles are all alike; *disparate* is the opposite, and the other two describe oddness or position, not sameness."
+   }
+  },
+  {
+   "rank": 13,
+   "id": "contingent-on",
+   "word": "contingent on",
+   "pos": "adjective + preposition",
+   "cefr": null,
+   "cefr_source": "Unlabelled for the adjective. Oxford marks only the military-group sense of the noun (C2, page markup); Cambridge shows no level.",
+   "group": "phrase",
+   "cluster": "depend",
+   "ipa": "/kənˈtɪndʒənt ɒn/",
+   "def": "If one thing is contingent on another, it will happen or be true only if the other thing happens or is true.",
+   "sat_sense": "Conditional dependence: A occurs only if B does. Formal sister of *dependent on*.",
+   "ex": [
+    "The spread of the plant is contingent on the presence of a single species of moth that pollinates it.",
+    "Khao's place on the field trip is contingent on her handing in the consent form by Friday."
+   ],
+   "syn": {"B1": null, "B2": "dependent on", "C1": null},
+   "ant": {"B1": null, "B2": "independent of", "C1": null},
+   "colls": ["contingent on", "contingent upon", "be made contingent on", "contingent on approval", "contingent on the outcome of", "historically contingent"],
+   "family": ["contingent (adj, n)", "contingency (n)", "contingently (adv)", "contingency plan (n)"],
+   "grammar": "*be contingent on / upon + noun or -ing*: *contingent on receiving approval*. Only *on* or *upon*; not *contingent to* or *contingent with*.",
+   "say": "/kənˈtɪndʒənt/: three syllables, stress on TIN: kuhn-TIN-juhnt.",
+   "ukus": "",
+   "fact": "From Latin *contingere*, 'to touch, to happen': *con-* ('together') + *tangere* ('to touch'). An event contingent on another 'touches' it and cannot occur alone. The same root hides in *integral*, *tangent*, *tangible* and *contact*.",
+   "trap": "As a noun, *a contingent* is a group (*the Thai contingent at the conference*). And *contingent* does not mean 'likely' or 'continuing'.",
+   "distractor_traps": [
+    "As key it beat *inhibited by*, *obligated to* and *reserved for*: three more adjective + preposition frames. *Inhibited by* is a blocking relationship; only *contingent on* says 'happens only if'.",
+    "As a wrong option beside the key *saturated with* (with *susceptible to*, *depleted of*): there the passage described how much of something was present, not a condition."
+   ],
+   "tip": "con·[ting]·ent: the two events are touching (*tangere*); pull one away and the other falls.",
+   "related": ["proxies-for", "integral", "immaterial-to", "prevail-over"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Question Bank key, Medium (batch Oct 2024)",
+     "Question Bank distractor, Medium (batch Aug 2023): beside the key *saturated with*",
+     "No recall reports found"
+    ],
+    "tier": "Tier 1: official key and official distractor",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). Multi-word keys are steady at 16 to 21% of Question Bank vocabulary items at every difficulty, so the phrase type is a safer bet than the phrase."
+   },
+   "mini_item": {
+    "passage": "The orchid cannot make enough food for itself in its first year. Its survival as a seedling is ______ a particular soil fungus, which supplies the young plant with sugars until its leaves develop.",
+    "options": ["contingent on", "immaterial to", "incongruous with", "a proxy for"],
+    "key": 0,
+    "rationale": "The seedling survives only if the fungus is present: conditional dependence. The other options say no effect, mismatch and stand-in measure."
+   }
+  },
+  {
+   "rank": 14,
+   "id": "attest-to",
+   "word": "attest to",
+   "pos": "verb + preposition",
+   "cefr": null,
+   "cefr_source": "Unlabelled: no level on the Oxford or Cambridge entry for *attest* (entry pages read 25 Nov 2026). Treat as beyond C1.",
+   "group": "phrase",
+   "cluster": "claim",
+   "ipa": "/əˈtest tə/",
+   "def": "If one thing attests to another, it shows or proves that the other thing exists or is true. If a person attests to something, they state that it is true.",
+   "sat_sense": "With a thing as subject: 'serve as evidence of'. In academic prose the evidence, not a person, usually does the attesting.",
+   "ex": [
+    "Thousands of shell beads found far inland attest to the reach of the coastal traders' networks.",
+    "The worn steps of the old school library attest to the generations of girls who have climbed them."
+   ],
+   "syn": {"B1": "show", "B2": "demonstrate", "C1": "testify to"},
+   "ant": {"B1": null, "B2": null, "C1": "contradict"},
+   "colls": ["attest to the fact that", "attest to the importance of", "attest to the popularity of", "records attest to", "as X can attest", "well attested"],
+   "family": ["attest (v)", "attestation (n)", "attested (adj)", "testify (v)", "testimony (n)", "testament (n)"],
+   "grammar": "*attest to + noun / the fact that* is the usual pattern in SAT-style prose. Also *attest that + clause*, and a formal or legal transitive use, *attest something* (*attest a will*). The subject is usually plural evidence (*records, finds, letters attest to*), so check agreement: *attest*, not *attests*.",
+   "say": "/əˈtest/: two syllables, stress on TEST: uh-TEST. In the phrase, *to* is weak: /tə/ before a consonant, /tu/ before a vowel.",
+   "ukus": "",
+   "fact": "From Latin *attestari*: *ad-* ('to') + *testari* ('to bear witness'), from *testis*, 'a witness'. The same witness stands behind *testify*, *testimony*, *testament*, *contest* and *protest*.",
+   "trap": "Before a noun, expect *attest to* (*the finds attest to its age*); the bare transitive *attest something* exists but is formal or legal. Do not confuse with *attribute to* (say what caused something).",
+   "distractor_traps": [
+    "No official Words in Context item with this key was found. Recall of the Aug 2025 sitting lists it beside *collude with*: both are verb + preposition, so the test is which relationship the passage shows (giving evidence of, or secretly cooperating with).",
+    "Official grammar evidence: Practice Test 8 (Module 1, Q23) uses *attest* as the verb in a subject-verb agreement item, where the trap was the singular *attests* after a long plural subject."
+   ],
+   "tip": "*Test-* = witness, as in *testify*: the evidence takes the witness stand.",
+   "related": ["corroborate", "substantiate", "manifest", "belie"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Asian recall, unverified: Aug 2025 (New Oriental, Hong Kong sitting); Sep 2026 (TTA 'hard answers' list)",
+     "Official, but not as vocabulary: *attest* is the keyed verb form in a conventions item, Practice Test 8, Module 1, Q23"
+    ],
+    "tier": "Tier 3: recall only for the vocabulary use (2 dates, both routes), plus one official grammar appearance",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). No official vocabulary key; chosen for the evidence field and for the verb + *to* pattern."
+   },
+   "mini_item": {
+    "passage": "Few of the weavers' names were ever written down. Yet the hundreds of patterned cloths preserved in village collections ______ their skill, each one showing a control of colour that takes years to master.",
+    "options": ["prevail over", "belie", "attest to", "are contingent on"],
+    "key": 2,
+    "rationale": "The cloths serve as evidence of the skill; *belie* would mean they give a false impression of it, and the other options express defeat and dependence."
+   }
+  },
+  {
+   "rank": 15,
+   "id": "incongruous-with",
+   "word": "incongruous with",
+   "pos": "adjective + preposition",
+   "cefr": null,
+   "cefr_source": "Unlabelled: no level on the Oxford or Cambridge entry for *incongruous*. Treat as beyond C1.",
+   "group": "phrase",
+   "cluster": "fit",
+   "ipa": "/ɪnˈkɒŋɡruəs wɪð/",
+   "def": "If something is incongruous with its surroundings or with what you know, it seems strange because it does not match or fit them.",
+   "sat_sense": "Not fitting, out of keeping with: a mismatch between a thing and its setting, or between a finding and a theory.",
+   "ex": [
+    "The cheerful tone of the final chapter is incongruous with the bleak events that it describes.",
+    "A glass coffee bar would look incongruous with the old wooden shophouses along the canal near Ploy's home."
+   ],
+   "syn": {"B1": null, "B2": null, "C1": null},
+   "ant": {"B1": null, "B2": null, "C1": "consistent with"},
+   "colls": ["incongruous with", "seem incongruous", "look incongruous", "an incongruous sight", "an incongruous mix of", "strangely incongruous"],
+   "family": ["incongruous (adj)", "incongruously (adv)", "incongruity (n)", "congruous (adj, rare)", "congruent (adj)", "congruence (n)"],
+   "grammar": "*incongruous with + noun*. Alone before a noun or after *look / seem*: *an incongruous detail*; *it looked incongruous in the old street*.",
+   "say": "/ɪnˈkɒŋɡruəs/: four syllables, stress on KONG: in-KONG-groo-uhs.",
+   "ukus": "",
+   "fact": "From Latin *in-* ('not') + *congruus* ('agreeing, suitable'), from *congruere*, 'to come together, to agree'. Geometry kept the positive form: congruent triangles fit each other exactly.",
+   "trap": "Not *inconsistent* (two statements that cannot both be true) and not *incompatible* (two things that cannot work together). Incongruous = looks or feels out of place.",
+   "distractor_traps": [
+    "*Incongruous* is an official wrong option beside the key *unassuming* (with *shrewd*, *pretentious*) in Practice Test 11: the passage described something plain and modest, with no mismatch in sight.",
+    "Recall of the Nov 2025 sitting names *inconsistencies* and *incompatibilities* together as options: learn the three *in-con-* words as a set and ask which kind of misfit the passage shows."
+   ],
+   "tip": "*Congruent* triangles fit exactly; *in-congruous* things do not fit.",
+   "related": ["anomaly", "disparate", "homogeneous", "belie"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Official distractor: *incongruous*, Practice Test 11, Module 1, Q5 (same item is in the Question Bank, Hard, batch Apr 2026)",
+     "Asian recall, unverified: Dec 2024 (TTA: *incongruous with*); Aug 2026 US form (TestDaily, listed as an 'old' item, which TestDaily also dates to Nov 2024)"
+    ],
+    "tier": "Tier 2: official distractor plus recall on 2 dates through both routes. Not an official key",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). Recalled words covered only 0 to 7% of the words recalled from the next sitting, so the recall dates show the type (adjective + preposition), not a prediction."
+   },
+   "mini_item": {
+    "passage": "Visitors often remark that the museum's new steel entrance is ______ the rest of the building, a low brick structure from the 1920s whose every other detail is curved, warm and modest in scale.",
+    "options": ["integral to", "contingent on", "manifest in", "incongruous with"],
+    "key": 3,
+    "rationale": "Steel against curved, warm brick is a mismatch of thing and setting; the other options say it belongs, depends or shows."
+   }
+  },
+  {
+   "rank": 16,
+   "id": "proxies-for",
+   "word": "a proxy for (proxies for)",
+   "pos": "noun + preposition",
+   "cefr": null,
+   "cefr_source": "Unlabelled: no level on the Oxford or Cambridge entry for any sense of *proxy* (entry pages read 25 Nov 2026). Treat as beyond C1.",
+   "group": "phrase",
+   "cluster": "depend",
+   "ipa": "/ˈprɒksi fə(r)/",
+   "def": "A proxy for something is a thing you measure or use in its place, because the real thing cannot be measured or observed directly.",
+   "sat_sense": "The research sense: a stand-in measure (*tree rings are proxies for past rainfall*), not the legal sense (a person who acts for you) or the computing sense (a proxy server).",
+   "ex": [
+    "Because ancient temperatures cannot be measured directly, researchers use the width of tree rings as a proxy for past climate.",
+    "In her survey of M4 students, Nam used the number of library visits as a proxy for how much each student read."
+   ],
+   "syn": {"B1": null, "B2": null, "C1": "indicator of"},
+   "ant": {"B1": null, "B2": null, "C1": null},
+   "colls": ["a proxy for", "serve as a proxy for", "use X as a proxy for Y", "a rough proxy", "a reliable proxy", "proxy data"],
+   "family": ["proxy (n)", "proxies (pl)", "by proxy (adv phrase)", "proxy measure (n)"],
+   "grammar": "Countable noun + *for*: *X is / serves as a proxy for Y*; plural *proxies for*. The pattern is always the measurable thing first, the unmeasurable thing after *for*.",
+   "say": "/ˈprɒksi/: PROK-see, two syllables, stress on the first. Plural /ˈprɒksiz/.",
+   "ukus": "",
+   "fact": "*Proxy* is a squeezed form of *procuracy*, from Latin *procurare*, 'to manage on someone's behalf'. It first meant a person acting for another (as in acting *by proxy*); science later borrowed it for one measurement acting for another.",
+   "trap": "A proxy is not a cause, a sign of the future or an example. It stands in for something it is believed to track.",
+   "distractor_traps": [
+    "Official Hard item options: *contrivances of*, *catalysts of*, *deterrents to*. A *catalyst of* X causes X and a *deterrent to* X discourages X: both are cause words. A *proxy for* X only measures X.",
+    "TTA's vendor list (unverified) also names *harbingers of* and *emissaries for* as distractors: a *harbinger of* X announces that X is coming. Ask: is the thing causing, announcing or standing in for X?"
+   ],
+   "tip": "A proxy stands in for someone who cannot be there; a proxy measure stands in for something you cannot measure.",
+   "related": ["contingent-on", "attest-to", "manifest", "corroborate"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Question Bank key, Hard: *proxies for* (batch Jul 2026)",
+     "Asian recall, unverified: Sep 2025 (JSL); Oct 2025 (TestDaily); Jun 2026 (JSL: *proxy*); also on TTA's 'most repeated' vendor list"
+    ],
+    "tier": "Tier 1: official Hard key in the newest batch; recall on 3 dates",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). Recent Question Bank additions lean towards research-method nouns of this kind, which is a reason to learn the type, not a forecast of the word."
+   },
+   "mini_item": {
+    "passage": "No written records survive to tell us how wealthy the town's households were. Archaeologists therefore treat the size of each house's storage pits as ______ household wealth, reasoning that richer families had more grain to store.",
+    "options": ["a catalyst of", "a proxy for", "a deterrent to", "a dearth of"],
+    "key": 1,
+    "rationale": "Pit size is measured in place of wealth, which cannot be observed directly; a *catalyst of* or *deterrent to* wealth would be a cause, and *a dearth of* means a shortage."
+   }
+  },
+  {
+   "rank": 17,
+   "id": "prevail-over",
+   "word": "prevail over",
+   "pos": "verb + preposition",
+   "cefr": "C1",
+   "cefr_source": "Oxford visible badge on the headword *prevail* (Oxford 5000, C1), though Oxford's 'defeat an opponent' sense itself carries no label; Cambridge gives C2 for its 'get control or influence' sense.",
+   "group": "phrase",
+   "cluster": "depend",
+   "ipa": "/prɪˈveɪl ˈəʊvə(r)/",
+   "def": "If one person, idea or force prevails over another, it proves stronger and wins in the end, usually after a struggle.",
+   "sat_sense": "Win out over a competitor: used of theories, interests, species, designs and arguments as well as people.",
+   "ex": [
+    "In the long dispute over the fossil's age, the geologists' estimate eventually prevailed over the one based on anatomy.",
+    "Pim's calm, evidence-based case prevailed over the louder arguments of the other team in the semi-final."
+   ],
+   "syn": {"B1": "beat", "B2": "defeat", "C1": "overcome"},
+   "ant": {"B1": "lose to", "B2": null, "C1": "surrender to"},
+   "colls": ["prevail over", "eventually prevail", "common sense prevailed", "prevail against", "prevail upon someone to", "prevailing winds"],
+   "family": ["prevail (v)", "prevailing (adj)", "prevalent (adj)", "prevalence (n)"],
+   "grammar": "Intransitive + *over* (or *against*) + the loser: *A prevailed over B*. Different verb patterns: *prevail in / among* = be common; *prevail on / upon someone to do something* = persuade.",
+   "say": "/prɪˈveɪl/: two syllables, stress on VAIL: pri-VAYL.",
+   "ukus": "",
+   "fact": "From Latin *praevalere*: *prae* ('before, ahead') + *valere* ('to be strong'). To prevail is to be stronger and so come out ahead. *Valere* also gives *valid*, *value*, *valiant* and the *-valent* of *ambivalent*.",
+   "trap": "*Prevail* alone often means 'be widespread' (*the view that prevailed at the time*); *prevalent* means common, not victorious. The preposition tells you which sense you have.",
+   "distractor_traps": [
+    "*Prevail* is an official wrong option in a Hard item keyed *intersect*, beside *succumb* and *diverge*: *prevail* and *succumb* are opposites (win, give way), and neither fitted two things that simply cross.",
+    "Check direction: in *A prevails over B* the winner comes first. A passage in which the first-named side loses needs *succumb to* or *yield to*."
+   ],
+   "tip": "pre·[vail]: *valere* = be strong, like *value* and *valid*. The stronger one prevails.",
+   "related": ["contingent-on", "ambivalent", "stymie"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Question Bank distractor, Hard: *prevail* (batch Aug 2023), beside the key *intersect*",
+     "Asian recall, unverified: Sep 2026 (TTA 'hard answers'); Oct 2026 (TestDaily, 'old' item that it also dates to Aug 2024 and Dec 2024)"
+    ],
+    "tier": "Tier 2: official distractor plus recall on 2 dates in the window through both routes. Not an official key",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). TestDaily's back-dating is its own claim and cannot be checked; treat the repeat dates as unverified."
+   },
+   "mini_item": {
+    "passage": "In the late 1880s, two designs for the bicycle competed for buyers. The 'safety' model, with two wheels of equal size, finally ______ its tall rival once air-filled tyres made it the more comfortable of the two.",
+    "options": ["succumbed to", "attested to", "prevailed over", "was contingent on"],
+    "key": 2,
+    "rationale": "The safety model won the competition, so it prevailed over the rival; *succumbed to* reverses winner and loser."
+   }
+  },
+  {
+   "rank": 18,
+   "id": "inconsequential-to",
+   "word": "inconsequential to",
+   "pos": "adjective + preposition",
+   "cefr": null,
+   "cefr_source": "Unlabelled: no level on the Oxford or Cambridge entry for *inconsequential*. Treat as beyond C1.",
+   "group": "phrase",
+   "cluster": "centre",
+   "ipa": "/ɪnˌkɒnsɪˈkwenʃl tə/",
+   "def": "If something is inconsequential to a person or a matter, it is not important to them and has no real effect.",
+   "sat_sense": "Unimportant because it has no consequences for the matter in hand.",
+   "ex": [
+    "The exact date of the letter is inconsequential to the historian's case, which depends only on who received it.",
+    "A two-baht rise in the price of iced tea is inconsequential to most students, but the canteen sells a thousand cups a day."
+   ],
+   "syn": {"B1": null, "B2": null, "C1": "irrelevant to"},
+   "ant": {"B1": "important to", "B2": "significant for", "C1": null},
+   "colls": ["inconsequential to", "seemingly inconsequential", "an inconsequential detail", "relatively inconsequential", "far from inconsequential", "dismiss as inconsequential"],
+   "family": ["inconsequential (adj)", "inconsequentially (adv)", "consequential (adj)", "consequence (n)", "consequently (adv)"],
+   "grammar": "*inconsequential to + noun*; alone before a noun: *an inconsequential error*. Often after *seemingly / apparently*, when the writer is about to show that the thing mattered after all.",
+   "say": "/ɪnˌkɒnsɪˈkwenʃl/: five syllables, main stress on KWEN: in-kon-si-KWEN-shuhl.",
+   "ukus": "",
+   "fact": "Built from *in-* ('not') + *consequential*, from Latin *consequi*, 'to follow closely'. Something inconsequential is something nothing follows from. *Sequel*, *sequence* and *consecutive* come from the same 'follow' root.",
+   "trap": "It judges effects, not size: a small change can be consequential, and a huge effort can be inconsequential. *Inconsistent* is a different word.",
+   "distractor_traps": [
+    "Practice Test 6 options: *controversial among*, *antagonistic toward*, *imitated by*. Each is adjective + preposition, so grammar will not help; decide what relationship the passage states (did not matter to, was argued over by, was hostile to, was copied by).",
+    "Neighbours that could sit beside it: *immaterial to* (irrelevant to a question) and *negligible* (a size word: too small to count, with no *to*)."
+   ],
+   "tip": "No *consequence* follows: in-consequential.",
+   "related": ["immaterial-to", "peripheral", "integral"],
+   "related_other": ["negligible"],
+   "sat_evidence": {
+    "sources": [
+     "Official practice-test key: Test 6, Module 1, Q5 (last vocabulary slot); the same item is a Question Bank key rated Hard (batch Oct 2024)",
+     "Asian recall, unverified: Nov 2026 (TestDaily lists *inconsequential* as an 'old' word)"
+    ],
+    "tier": "Tier 1: official key rated Hard",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). The official proof that the SAT keys adjective + preposition phrases of this kind."
+   },
+   "mini_item": {
+    "passage": "The printer misnumbered several pages of the first edition, an error that annoyed collectors but was ______ ordinary readers, who could follow the story perfectly well from one page to the next.",
+    "options": ["inconsequential to", "integral to", "contingent on", "manifest in"],
+    "key": 0,
+    "rationale": "Readers could follow the story anyway, so the error had no effect on them; the other options claim it was essential, a condition, or visible."
+   }
+  },
+  {
+   "rank": 19,
+   "id": "substantiate",
+   "word": "substantiate",
+   "pos": "verb",
+   "cefr": null,
+   "cefr_source": "Unlabelled: no level on the Oxford or Cambridge entry. Treat as beyond C1.",
+   "group": "core",
+   "cluster": "claim",
+   "ipa": "/səbˈstænʃieɪt/",
+   "def": "To substantiate a claim is to provide evidence or facts that show it is true.",
+   "sat_sense": "Support a claim with evidence. It differs from *corroborate* in that you can substantiate your own claim, whereas corroboration comes from a second, independent source.",
+   "ex": [
+    "The journalist could not substantiate her claim that the painting was a forgery, since the laboratory report had never been published.",
+    "Mook substantiated her complaint about the canteen queue with a week of timings recorded on her phone."
+   ],
+   "syn": {"B1": "prove", "B2": null, "C1": "verify"},
+   "ant": {"B1": null, "B2": null, "C1": "disprove"},
+   "colls": ["substantiate a claim", "substantiate an allegation", "substantiate a theory", "evidence to substantiate", "fail to substantiate", "unsubstantiated rumours"],
+   "family": ["substantiate (v)", "substantiation (n)", "unsubstantiated (adj)", "substance (n)", "substantial (adj)", "substantive (adj)"],
+   "grammar": "Transitive: *substantiate + a claim / allegation / theory*. The negative adjective *unsubstantiated* is at least as common as the verb.",
+   "say": "/səbˈstænʃieɪt/: four syllables, stress on STAN: suhb-STAN-shee-ayt.",
+   "ukus": "",
+   "fact": "From Latin *substantia*, 'substance', literally 'that which stands under' (*sub-* + *stare*, 'to stand'). To substantiate a claim is to put something solid underneath it.",
+   "trap": "*Substantial* means large; *substantiate* means support with evidence. A claim can be substantial and unsubstantiated.",
+   "distractor_traps": [
+    "It is an official wrong option in two Medium items: beside the key *negating* (with *prefiguring*, *entrenching*) and beside the key *marginalize* (with *epitomize*, *extol*). In both, the passage wanted a verb that weakens or pushes aside, and *substantiate* runs the opposite way.",
+    "Its near-twins on the same side are *corroborate*, *validate* and *buttress*: when two of them appear together, check who supplies the support (the claimant, or an independent source)."
+   ],
+   "tip": "Give the claim some *substance*: substantiate it.",
+   "related": ["corroborate", "attest-to", "tenuous", "buttress"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Question Bank distractor, Medium, twice: *substantiating* (batch Aug 2023) and *substantiate* (batch Aug 2025)",
+     "Asian recall, unverified: Sep 2025 (JSL: *substantiated*); May 2026 (TTA: *substantiating*)"
+    ],
+    "tier": "Tier 2: official distractor twice, plus recall on 2 dates through both routes. Not an official key",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). Evidence-and-reasoning verbs are the largest Question Bank field (44 of 261 keys); this word's own record is as an option to rule out."
+   },
+   "mini_item": {
+    "passage": "The explorer's diary describes a waterfall 'taller than any in Europe', but she took no measurements and made no sketch. Later travellers who searched the valley found nothing to ______ her account.",
+    "options": ["substantiate", "mitigate", "precipitate", "exacerbate"],
+    "key": 0,
+    "rationale": "The explorer left no measurements, and later travellers found no evidence to support the account; the other three verbs act on harms and events (lessen, set off, worsen), not on claims."
+   }
+  },
+  {
+   "rank": 20,
+   "id": "dearth",
+   "word": "a dearth of",
+   "pos": "noun + preposition",
+   "cefr": null,
+   "cefr_source": "Unlabelled: no level on the Oxford or Cambridge entry for *dearth* (or for its synonym *paucity*). Treat as beyond C1.",
+   "group": "phrase",
+   "cluster": "centre",
+   "ipa": "/ə ˈdɜːθ əv/",
+   "def": "A dearth of something is a lack of it: there is not enough, or there are not enough.",
+   "sat_sense": "Scarcity, in the frame *a dearth of + noun*. Its official twin is *a paucity of*, a Hard Question Bank key.",
+   "ex": [
+    "Research on the language has been held back by a dearth of written records from before 1800.",
+    "There is a dearth of shade on the school field, so the M3 football club now trains at seven in the morning."
+   ],
+   "syn": {"B1": "lack", "B2": "shortage", "C1": "deficiency"},
+   "ant": {"B1": "plenty", "B2": null, "C1": "abundance"},
+   "colls": ["a dearth of evidence", "a dearth of information", "a dearth of research", "a dearth of talent", "a relative dearth of", "no dearth of"],
+   "family": ["dearth (n)", "dear (adj: expensive; loved)", "paucity (n, synonym)"],
+   "grammar": "Singular with *a* (or *the*) + *of* + plural or uncountable noun: *a dearth of studies / evidence*. The verb agrees with *dearth*: *a dearth of records has hampered...*",
+   "say": "/dɜːθ/: one syllable, rhymes with *earth* and *birth*; it does not sound like *death* or *dear*.",
+   "ukus": "",
+   "fact": "*Dearth* is *dear* + *-th*, built like *warmth* and *width*. It first meant dearness, a time when food was costly because there was too little of it, and from there simply scarcity.",
+   "trap": "Sounds like *death* but has nothing to do with it. Opposite direction from *a wealth of*, *an abundance of* and *a profusion of*.",
+   "distractor_traps": [
+    "In the official item keyed *paucity of*, the options were *quarrel about*, *profusion of* and *verisimilitude in*: *profusion of* is the same frame with the opposite meaning (a great quantity).",
+    "Quantity frames to keep apart: *a dearth / paucity of* (too little), *a profusion / wealth of* (a great deal), *a preponderance of* (the larger share)."
+   ],
+   "tip": "When rice is *dear* (expensive), there is a *dearth* of it.",
+   "related": ["peripheral", "inconsequential-to"],
+   "related_other": ["negligible", "ubiquitous"],
+   "sat_evidence": {
+    "sources": [
+     "Asian recall, unverified: Mar 2025 (TestDaily back-reference); May 2026 (TTA); Nov 2026 (TestDaily and TTA agree)",
+     "Official parallel: *paucity of* is a Question Bank key rated Hard (batch Aug 2023)",
+     "No official key or distractor found for *dearth* itself"
+    ],
+    "tier": "Tier 3: recall only for this word (3 dates, both routes); the official evidence is for its synonym",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). Extent-and-quantity words supply about 8% of Question Bank keys; learn the frame *a ... of* with both poles."
+   },
+   "mini_item": {
+    "passage": "Biologists know a great deal about the shallow reefs of the bay but far less about its deeper waters. This gap reflects ______ suitable equipment: only two research vessels in the region can lower cameras below five hundred metres.",
+    "options": ["a profusion of", "a proxy for", "a dearth of", "an anomaly in"],
+    "key": 2,
+    "rationale": "Only two vessels means too little equipment; *a profusion of* is the same frame with the opposite meaning."
+   }
+  },
+  {
+   "rank": 21,
+   "id": "accordingly",
+   "word": "accordingly",
+   "pos": "transition (adverb)",
+   "cefr": "C1",
+   "cefr_source": "Oxford visible badge (Oxford 5000, C1), with C1 on both senses. Cambridge shows no level.",
+   "group": "transition",
+   "cluster": "transition",
+   "ipa": "/əˈkɔːdɪŋli/",
+   "def": "You use *accordingly* to say that something happens as a result of what has just been mentioned, and in a way that suits it.",
+   "sat_sense": "Result with a sense of fit: because of X, someone did Y, which was the appropriate response. Tested in Transitions questions.",
+   "ex": [
+    "The first trial showed that the dose was too low to have any effect. Accordingly, the researchers doubled it in the second.",
+    "The forecast warned of heavy rain all afternoon. Accordingly, Ploy's class moved its plant survey from the park to the greenhouse."
+   ],
+   "syn": {"B1": "therefore", "B2": "consequently", "C1": null},
+   "ant": {"B1": null, "B2": null, "C1": null},
+   "colls": ["Accordingly, ...", "act accordingly", "plan accordingly", "be adjusted accordingly", "dress accordingly", "and was treated accordingly"],
+   "family": ["accordingly (adv)", "according to (prep)", "accord (n, v)", "accordance (n)", "in accordance with"],
+   "grammar": "As a transition it opens the sentence and takes a comma: *Accordingly, the team...* At the end of a clause it is an adverb of manner: *read the rules and act accordingly* (= in the way that fits).",
+   "say": "/əˈkɔːdɪŋli/: four syllables, stress on CORD: uh-KOR-ding-lee.",
+   "ukus": "",
+   "fact": "*Accord* comes through French from Latin *ad-* ('to') + *cor* ('heart'): to bring hearts together, hence to agree. Something done *accordingly* agrees with what went before. (The *cor-* of *corroborate* is a different thing: it is the prefix *com-*.)",
+   "trap": "Not *according to* (which names a source). And it cannot introduce a contrast, an example or a restatement.",
+   "distractor_traps": [
+    "In its three official items the wrong options include *In contrast*, *In other words* and *In the end*: check that sentence 2 is a response caused by sentence 1, not a restatement of it and not merely the last step in time.",
+    "It is itself a wrong option in two official items. If sentence 2 is a fact that would be true anyway, no result word fits."
+   ],
+   "tip": "In *accord* with what came before: the action matches the reason.",
+   "related": ["that-said"],
+   "related_other": ["granted"],
+   "sat_evidence": {
+    "sources": [
+     "Question Bank Transitions key in 3 items: Medium (batch Aug 2025), Hard (Oct 2024), Hard (Jul 2026)",
+     "Question Bank Transitions distractor in 2 items (Easy, Medium)",
+     "No recall reports name it"
+    ],
+    "tier": "Tier 1: three official keys",
+    "likelihood_note": "Transitions are a near-closed set (about three-quarters of later official keys had been options before), so this is better odds than any content word here; but 39 different keys filled 55 official items, so it is still unlikely on a given form."
+   },
+   "mini_item": {
+    "passage": "Early tests showed that the new glue lost its strength when the temperature rose above forty degrees. ______ the engineers limited its use to parts of the aircraft cabin that are never exposed to engine heat.",
+    "options": ["That said,", "For instance,", "Accordingly,", "Similarly,"],
+    "key": 2,
+    "rationale": "The engineers' decision is the fitting result of the test finding; it is not a concession, an example or a comparison. (Transition-style item, as the SAT tests this word.)"
+   }
+  },
+  {
+   "rank": 22,
+   "id": "corroborate",
+   "word": "corroborate",
+   "pos": "verb",
+   "cefr": "C2",
+   "cefr_source": "Oxford page markup (C2 in a hidden attribute; no badge is displayed). Cambridge shows no level.",
+   "group": "core",
+   "cluster": "claim",
+   "ipa": "/kəˈrɒbəreɪt/",
+   "def": "To corroborate a statement, theory or finding is to provide new evidence, from a separate source, that supports it.",
+   "sat_sense": "Confirm by adding independent evidence. Near the top of the strength-of-claim ladder: a corroborated finding has been supported twice.",
+   "ex": [
+    "Excavations at the harbour corroborated the chronicle's account of a great fire, revealing a thick layer of ash from the same decade.",
+    "Mint said the projector had been broken all week, and the technician's repair log corroborated her story."
+   ],
+   "syn": {"B1": "confirm", "B2": null, "C1": "verify"},
+   "ant": {"B1": null, "B2": null, "C1": "contradict"},
+   "colls": ["corroborate a claim", "corroborate an account", "corroborate a theory", "corroborating evidence", "independently corroborated", "be corroborated by"],
+   "family": ["corroborate (v)", "corroboration (n)", "corroborative (adj)", "corroborating (adj)", "uncorroborated (adj)"],
+   "grammar": "Transitive; the subject is the new evidence or the second witness: *the log corroborated her story*. Very common in the passive: *was corroborated by later studies*.",
+   "say": "/kəˈrɒbəreɪt/: four syllables, stress on ROB: kuh-ROB-uh-rayt. Do not turn it into *collaborate*.",
+   "ukus": "",
+   "fact": "From Latin *corroborare*, 'to strengthen': *com-* (here simply 'thoroughly', and nothing to do with *cor*, 'heart') + *robur*, 'oak, strength'. *Robust* is from the same oak. To corroborate a claim is to make it oak-strong.",
+   "trap": "*Collaborate* = work together. *Corroborate* = back up with evidence. You cannot corroborate your own claim by repeating it.",
+   "distractor_traps": [
+    "Practice Test 7 options: *circumvent* (find a way round), *disseminate* (spread widely), *implement* (put into effect). All are things a researcher might do with a rule, a result or a plan; only *corroborate* is what new evidence does to a claim.",
+    "The noun *corroboration* is itself an official wrong option beside the key *anomaly*: a result that fits and supports is the opposite of one that stands out."
+   ],
+   "tip": "cor·[rob]·orate: *robur* = oak, as in *robust*. Evidence that makes the claim robust.",
+   "related": ["substantiate", "attest-to", "tenuous", "buttress", "anomaly"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Official practice-test key: Test 7, Module 1, Q4; the same item is a Question Bank key rated Hard (batch Mar 2025)",
+     "Question Bank distractor, Medium: *corroboration* (batch Aug 2023), beside the key *anomaly*",
+     "No recall reports found"
+    ],
+    "tier": "Tier 1: official key rated Hard, plus official distractor in noun form",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). Belongs to the largest field (evidence, claims and reasoning: 44 of 261 Question Bank keys)."
+   },
+   "mini_item": {
+    "passage": "A sailor's letter of 1790 mentions a second, smaller island north of the reef. The claim was long doubted, but a survey chart drawn independently two years later shows land in the same position and so appears to ______ it.",
+    "options": ["circumvent", "belie", "mitigate", "corroborate"],
+    "key": 3,
+    "rationale": "An independent second source that agrees gives new support to the claim; *belie* would contradict it, and the others do not apply to claims."
+   }
+  },
+  {
+   "rank": 23,
+   "id": "disparate",
+   "word": "disparate",
+   "pos": "adjective",
+   "cefr": null,
+   "cefr_source": "Unlabelled: no level on the Oxford or Cambridge entry. Treat as beyond C1.",
+   "group": "core",
+   "cluster": "fit",
+   "ipa": "/ˈdɪspərət/",
+   "def": "Disparate things are so different from each other in kind that they are difficult to compare or to bring together.",
+   "sat_sense": "Fundamentally unlike. Typically of sources, groups, fields or elements that someone brings together: the 'difference' pole opposite *homogeneous*.",
+   "ex": [
+    "The study draws on such disparate sources as ship's logs, tax records and pollen samples to reconstruct the island's climate.",
+    "The school fair brought together disparate talents: Mali's coding, Fern's baking and Pear's hand-drawn posters."
+   ],
+   "syn": {"B1": "different", "B2": "distinct", "C1": "varied"},
+   "ant": {"B1": "similar", "B2": null, "C1": "comparable"},
+   "colls": ["disparate sources", "disparate groups", "disparate elements", "widely disparate", "seemingly disparate", "bring together disparate"],
+   "family": ["disparate (adj)", "disparately (adv)", "disparity (n: a gap or inequality)", "parity (n: equality)"],
+   "grammar": "Almost always before a plural noun (*disparate fields*) or after *as* in *as disparate as X and Y*. It compares members of a set, so it needs two or more things.",
+   "say": "/ˈdɪspərət/: three syllables, stress on DIS, and the last syllable is a weak /ət/: DIS-puh-ruht. Not dis-PAIR-ayt.",
+   "ukus": "",
+   "fact": "From Latin *disparatus*, 'separated', from *disparare*: *dis-* ('apart') + *parare* ('to prepare, set'). Its meaning was coloured by Latin *dispar*, 'unequal', which is where *disparity* comes from.",
+   "trap": "It is not *desperate* (/ˈdespərət/, in great need), which sounds almost the same. And a *disparity* is a gap, often an unfair one, not merely a difference in kind.",
+   "distractor_traps": [
+    "Official options: *complementary*, *unknown*, *interchangeable*. *Complementary* things differ but complete each other; *interchangeable* things are so alike you can swap them. The passage decides whether the differences fit together, cancel out or simply stand.",
+    "Its noun cousin *disparity* is among the most reported recall words (five sittings, unverified): expect either form and keep 'difference in kind' apart from 'gap in level'."
+   ],
+   "tip": "dis·[par]·ate: think of *par* (equal, as in golf): these things are not on a par and do not make a pair.",
+   "related": ["homogeneous", "incongruous-with", "anomaly"],
+   "related_other": ["disparity"],
+   "sat_evidence": {
+    "sources": [
+     "Question Bank key, Hard (batch Aug 2023); TTA places this item in a harder Module 2 (vendor label, unverified)",
+     "Related noun *disparity*: Asian recall, unverified, on five dates from Sep 2025 to Nov 2026",
+     "No recall reports found for the adjective"
+    ],
+    "tier": "Tier 1: official key rated Hard, harder-module label",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). The recall record belongs to the noun, not to this adjective."
+   },
+   "mini_item": {
+    "passage": "The exhibition's curators have gathered objects as ______ as a bronze bell, a child's shoe and a ship's compass, leaving visitors to discover for themselves what, if anything, connects them.",
+    "options": ["homogeneous", "integral", "tenuous", "disparate"],
+    "key": 3,
+    "rationale": "A bell, a shoe and a compass are unlike in kind, and the connection is left open; *homogeneous* is the opposite, and the other two do not describe a set of unlike things."
+   }
+  },
+  {
+   "rank": 24,
+   "id": "latent",
+   "word": "latent",
+   "pos": "adjective",
+   "cefr": null,
+   "cefr_source": "Unlabelled: no level on the Oxford or Cambridge entry. Treat as beyond C1.",
+   "group": "core",
+   "cluster": "visible",
+   "ipa": "/ˈleɪtnt/",
+   "def": "Something latent exists but is hidden and is not yet active, developed or noticeable.",
+   "sat_sense": "Present but not yet showing (College Board's gloss is 'dormant'). The 'hidden' pole opposite *manifest*.",
+   "ex": [
+    "The virus can remain latent in nerve cells for decades before it becomes active again.",
+    "The drama club's open auditions uncovered a good deal of latent talent among the quieter M2 girls."
+   ],
+   "syn": {"B1": null, "B2": "hidden", "C1": "underlying"},
+   "ant": {"B1": "obvious", "B2": "visible", "C1": null},
+   "colls": ["latent talent", "latent potential", "a latent infection", "remain latent", "lie latent", "latent heat"],
+   "family": ["latent (adj)", "latency (n)", "latently (adv)"],
+   "grammar": "Before a noun (*latent ability*) or after *remain / lie / be*. What is latent can later *emerge*, *surface* or *become manifest*.",
+   "say": "/ˈleɪtnt/: two syllables, LAY-tnt, with almost no vowel in the second. The first syllable sounds like *late*.",
+   "ukus": "",
+   "fact": "From Latin *latens*, 'lying hidden', from the verb *latere*. In physics, *latent heat* is energy a substance takes in or gives out as it melts or boils while its temperature stays the same: heat that is there but does not show on the thermometer.",
+   "trap": "It has nothing to do with being late. And latent does not mean absent: the thing is fully there, just not showing.",
+   "distractor_traps": [
+    "Practice Test 8 options: *replicable* (can be repeated), *predetermined* (fixed in advance), *operative* (in effect, working). *Operative* is close to an opposite; the other two are research-method words that fit the register but not the meaning.",
+    "Pair check: if the passage says a quality 'emerged', 'surfaced' or 'was awakened', it was *latent* before and *manifest* after."
+   ],
+   "tip": "Latent talent is *late* to show itself, but it is already there.",
+   "related": ["manifest", "opaque", "belie"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Official practice-test key: Test 8, Module 2, Q5 (last vocabulary slot); the same item is a Question Bank key rated Hard (batch Aug 2023)",
+     "TTA labels this item as harder Module 2 (vendor label, unverified)",
+     "No recall reports found"
+    ],
+    "tier": "Tier 1: official key, rated Hard, harder-module label",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). Its partner *manifest* is the one word that did repeat; the pair is worth more than either word."
+   },
+   "mini_item": {
+    "passage": "The seeds of some desert plants can lie in dry soil for twenty years without any sign of life. Their capacity to grow is merely ______, however: a single night of heavy rain is enough to make them sprout.",
+    "options": ["manifest", "tenuous", "anomalous", "latent"],
+    "key": 3,
+    "rationale": "The capacity is present but not showing until rain awakens it; *manifest* is the opposite, and *tenuous* would mean the capacity itself is weak."
+   }
+  },
+  {
+   "rank": 25,
+   "id": "belie",
+   "word": "belie",
+   "pos": "verb",
+   "cefr": null,
+   "cefr_source": "Unlabelled: no level on the Oxford or Cambridge entry. Treat as beyond C1.",
+   "group": "core",
+   "cluster": "visible",
+   "ipa": "/bɪˈlaɪ/",
+   "def": "If one thing belies another, it gives a false idea of it, or it shows that it cannot be true.",
+   "sat_sense": "Two linked uses: (1) a surface belies the reality beneath it (*her calm voice belied her nerves*); (2) facts belie a claim (*the figures belie the report's optimism*). In both, appearance and truth point in different directions.",
+   "ex": [
+    "The plain cover of the notebook belies the importance of its contents, which include the first sketch of the engine.",
+    "Mook's relaxed smile belied how nervous she felt before her English speech at morning assembly."
+   ],
+   "syn": {"B1": "hide", "B2": null, "C1": "conceal"},
+   "ant": {"B1": "show", "B2": "reveal", "C1": null},
+   "colls": ["belie the fact that", "belie its age", "belie its importance", "belie the claim", "a calm that belied", "belied by the evidence"],
+   "family": ["belie (v)", "belies", "belied", "belying"],
+   "grammar": "Transitive, no preposition: *X belies Y*. Forms: *belies, belied, belying*. In use (1) the subject is the appearance and the object is the truth; in use (2) the subject is the evidence and the object is the false claim.",
+   "say": "/bɪˈlaɪ/: two syllables, stress on LIE: bi-LYE. It rhymes with *rely*.",
+   "ukus": "",
+   "fact": "From Old English *beleogan*, 'to deceive by lying': the prefix *be-* + *lie* (to tell an untruth). The appearance, as it were, tells a lie about the reality.",
+   "trap": "*Belie* is not *believe* and not *betray* in the sense of 'reveal'. *Her smile belied her fear* = the smile hid it; *her shaking hands betrayed her fear* = they revealed it.",
+   "distractor_traps": [
+    "Recall reports do not give the options. The predictable traps are verbs that keep appearance and reality in line: *reflect*, *reveal*, *attest to*, *underscore*. Look for a contrast signal (*although*, *yet*, *despite*) near the blank.",
+    "Work out which side is the subject. If the subject is the surface (a title, a tone, a plain exterior), expect sense (1); if it is the evidence, expect sense (2)."
+   ],
+   "tip": "be·[lie]: the surface tells a *lie* about what is underneath.",
+   "related": ["manifest", "latent", "attest-to", "corroborate"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Asian recall, unverified: Nov 2025 (TestDaily back-reference); Aug 2026 (Test Ninjas); Nov 2026 (TestDaily and TTA agree)",
+     "No official key or distractor found"
+    ],
+    "tier": "Tier 3: recall only (3 dates, both routes)",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). Included because the appearance-versus-reality relationship it encodes is common in SAT passages, not because it was reported last month."
+   },
+   "mini_item": {
+    "passage": "The pamphlet's modest title, 'Some Notes on Local Wells', ______ its ambition: in sixty pages the author proposes nothing less than a new system for supplying water to the whole province.",
+    "options": ["attests to", "belies", "mitigates", "substantiates"],
+    "key": 1,
+    "rationale": "A modest title on an ambitious work gives a false impression of it; *attests to* and *substantiates* would make the title evidence of the ambition."
+   }
+  },
+  {
+   "rank": 26,
+   "id": "precipitate",
+   "word": "precipitate",
+   "pos": "verb",
+   "cefr": null,
+   "cefr_source": "Unlabelled for the verb. Oxford marks only the chemistry noun (C2, page markup); Cambridge shows no level.",
+   "group": "core",
+   "cluster": "fix",
+   "ipa": "/prɪˈsɪpɪteɪt/",
+   "def": "To precipitate an event, usually a bad one, is to make it happen suddenly or sooner than it otherwise would.",
+   "sat_sense": "Trigger: be the immediate cause that sets off a crisis, decline or change. The 'cause' corner of the remedy/worsen/cause/block field.",
+   "ex": [
+    "In the model, even a small rise in interest rates precipitates a sharp fall in house prices within a few months.",
+    "One careless message in the class group chat precipitated an argument that took Praew the whole weekend to calm down."
+   ],
+   "syn": {"B1": "cause", "B2": "trigger", "C1": "spark"},
+   "ant": {"B1": "prevent", "B2": null, "C1": "avert"},
+   "colls": ["precipitate a crisis", "precipitate a decline", "precipitate a collapse", "precipitate change", "the event that precipitated", "a precipitating factor"],
+   "family": ["precipitate (v, adj, n)", "precipitation (n)", "precipitous (adj: very steep or sudden)", "precipice (n)"],
+   "grammar": "Transitive: *precipitate + an event* (crisis, collapse, decline, debate). Recall lists report the *-ing* form: *the precipitating cause / event*.",
+   "say": "Verb /prɪˈsɪpɪteɪt/: pri-SIP-i-tayt, last syllable *-tayt*. The adjective (= too hasty) ends in a weak /ət/: /prɪˈsɪpɪtət/.",
+   "ukus": "",
+   "fact": "From Latin *praecipitare*, 'to throw headlong', from *praeceps*: *prae* ('before') + *caput* ('head'), that is, head first. A *precipice* is where you would fall head first, and *precipitation* is water falling from the sky.",
+   "trap": "It is the last push, not the deep cause: drought may underlie a famine that one failed harvest precipitates. Do not confuse with *anticipate* or *participate*.",
+   "distractor_traps": [
+    "TTA's vendor list groups it with *engendering* and *eliciting*. All three are 'cause' verbs: *engender* = give rise to (often a feeling), *elicit* = draw out a response, *precipitate* = set off suddenly. Match the verb to its usual object.",
+    "Direction check against the rest of the field: *mitigate* and *ameliorate* reduce a problem, *exacerbate* worsens one that exists, *precipitate* starts one."
+   ],
+   "tip": "Head first off a *precipice*: the event comes crashing down at once.",
+   "related": ["exacerbate", "mitigate", "ameliorate", "stymie"],
+   "related_other": ["engender"],
+   "sat_evidence": {
+    "sources": [
+     "Asian recall, unverified: Nov 2026 (TestDaily lists *precipitating* as an 'old' word; TTA reports it for the same sitting); Aug 2026 (Test Ninjas list: *precipitation*, a family match whose sense is unclear)",
+     "TestDaily also dates the item to Jun 2024 and Aug 2024, before the Dec 2024 to Nov 2026 window; not counted",
+     "On TTA's 'most repeated hard Module 2' vendor list (no counting method given)",
+     "No official key or distractor found"
+    ],
+    "tier": "Tier 3: recall only (2 dates in the window, both routes; the Aug 2026 report is of the noun)",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). Having been reported in November does not make it more likely in December; it is here as the 'cause' verb with useful second senses."
+   },
+   "mini_item": {
+    "passage": "Tension between the two guilds had been building for years, but it was the council's decision to move the weekly market that ______ open conflict: within days of the announcement, traders had blocked the old square.",
+    "options": ["mitigated", "precipitated", "belied", "stymied"],
+    "key": 1,
+    "rationale": "'Within days' shows the decision set the conflict off suddenly; *mitigated* and *stymied* would reduce or block it, and *belied* is about false impressions."
+   }
+  },
+  {
+   "rank": 27,
+   "id": "buttress",
+   "word": "buttress",
+   "pos": "verb (also noun)",
+   "cefr": null,
+   "cefr_source": "Unlabelled for the verb. Oxford marks only the architectural noun (C2, page markup); Cambridge shows no level.",
+   "group": "core",
+   "cluster": "claim",
+   "ipa": "/ˈbʌtrəs/",
+   "def": "To buttress an argument, a claim or a system is to give it support and make it stronger.",
+   "sat_sense": "Figurative verb: strengthen or defend a claim with evidence (College Board's gloss is 'strengthen, defend'). The literal noun is a stone support built against a wall.",
+   "ex": [
+    "The author buttresses her argument with wage data from three separate industries.",
+    "Fah buttressed her case for a later library closing time with a survey of two hundred classmates."
+   ],
+   "syn": {"B1": "support", "B2": "strengthen", "C1": "bolster"},
+   "ant": {"B1": null, "B2": null, "C1": "undermine"},
+   "colls": ["buttress an argument", "buttress a claim", "buttress the case for", "buttressed by evidence", "buttress a theory", "a flying buttress"],
+   "family": ["buttress (n, v)", "buttressed (adj)", "flying buttress (n)"],
+   "grammar": "Transitive: *buttress + claim / argument / position (+ with evidence)*; passive *be buttressed by*. Regular: *buttresses, buttressed, buttressing*.",
+   "say": "/ˈbʌtrəs/: two syllables, BUT-ruhs. The second vowel is weak; it does not rhyme with *dress*.",
+   "ukus": "",
+   "fact": "From Old French *bouterez*, probably from *bouter*, 'to push against'. Medieval builders pushed stone buttresses against high walls to keep them from falling outwards; writers have used the word of arguments for almost as long.",
+   "trap": "You buttress something that already stands: a claim, a wall, a position. You do not buttress a person, and it is not *butter* or *button*.",
+   "distractor_traps": [
+    "Practice Test 4 options: *reciprocate* (give back in return), *annotate* (add notes to), *disengage* (pull away from). All can take 'a claim' or 'an idea' loosely, but only *buttress* means strengthen it.",
+    "Its opposite, *undermine*, is the same building metaphor in reverse (digging under a wall). If the passage's evidence weakens the claim, *buttress* is the trap."
+   ],
+   "tip": "Picture a stone prop pushing against a tall stone wall: evidence pushes the same way against a wobbling claim.",
+   "related": ["corroborate", "substantiate", "tenuous", "attest-to"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Official practice-test key: Test 4, Module 2, Q8 (last vocabulary slot); the same item is a Question Bank key rated Hard (batch Aug 2023)",
+     "No recall reports found"
+    ],
+    "tier": "Tier 1: official key rated Hard",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). A model of the 'concrete noun used as an abstract verb' type that fills the hardest slots."
+   },
+   "mini_item": {
+    "passage": "The economist's first paper drew criticism for relying on figures from a single year. In her second, she sought to ______ her conclusion by adding four decades of trade records from eleven ports.",
+    "options": ["buttress", "belie", "mitigate", "circumvent"],
+    "key": 0,
+    "rationale": "Adding more evidence strengthens the conclusion; *belie* would contradict it, *mitigate* applies to harms, and *circumvent* means get round."
+   }
+  },
+  {
+   "rank": 28,
+   "id": "mitigate",
+   "word": "mitigate",
+   "pos": "verb",
+   "cefr": "C1",
+   "cefr_source": "Oxford visible badge (Oxford 5000, C1). Cambridge shows no level.",
+   "group": "core",
+   "cluster": "fix",
+   "ipa": "/ˈmɪtɪɡeɪt/",
+   "def": "To mitigate something harmful is to make it less serious, less severe or less painful.",
+   "sat_sense": "Lessen the force of a harm or risk without removing it. Midway on the remedy-to-worsen scale: the harm is still there, only smaller.",
+   "ex": [
+    "Wetlands mitigate the impact of floods by absorbing water that would otherwise rush downstream.",
+    "Starting the sports day at seven mitigated the worst of the heat, although by ten the track was still too hot to touch."
+   ],
+   "syn": {"B1": "reduce", "B2": null, "C1": "relieve"},
+   "ant": {"B1": null, "B2": null, "C1": "intensify"},
+   "colls": ["mitigate the effects of", "mitigate the impact of", "mitigate the risk", "mitigate damage", "mitigating circumstances", "climate mitigation"],
+   "family": ["mitigate (v)", "mitigation (n)", "mitigating (adj)", "unmitigated (adj: complete, usually of something bad)"],
+   "grammar": "Transitive: *mitigate + risk / damage / effects / impact*. The object is the harm itself. The verb takes no preposition: not *mitigate against*.",
+   "say": "/ˈmɪtɪɡeɪt/: three syllables, stress on MIT: MIT-i-gayt.",
+   "ukus": "",
+   "fact": "From Latin *mitigare*, 'to soften': *mitis* ('mild, gentle') + *agere* ('to do, to make'). Literally, to make mild. *Unmitigated* keeps the idea: an unmitigated disaster is one that nothing softened.",
+   "trap": "*Militate against* (work against) is a different verb; *mitigate against* is a well-known mistake. Mitigate does not mean prevent or solve.",
+   "distractor_traps": [
+    "Official Hard item options: *presuppose*, *categorize*, *validate*. These are thinking verbs; the blank needed something done to a harm. *Validate* tempts because it is positive, but you validate a claim, not a flood.",
+    "Strength check within the field: *mitigate* (less severe) is weaker than *ameliorate* (actually better), and both are weaker than *rectify* or *eliminate*. A passage saying the problem 'remains' wants the weaker verb."
+   ],
+   "tip": "[mit]·igate: make it *mild* (Latin *mitis*). The damage is still there, but milder.",
+   "related": ["ameliorate", "exacerbate", "precipitate", "stymie"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Question Bank key, Hard (batch Aug 2025)",
+     "TTA's June 2026 page lists *mitigation*, but as a prediction, not a recall, so it is not counted",
+     "No recall reports found"
+    ],
+    "tier": "Tier 1: official key rated Hard",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). Helping-and-hindering verbs hold a steady share at every difficulty (33 of 261 keys)."
+   },
+   "mini_item": {
+    "passage": "Street trees cannot prevent the build-up of heat in a dense city, but studies in several Asian capitals show that a continuous canopy can ______ it, lowering afternoon pavement temperatures by several degrees.",
+    "options": ["precipitate", "mitigate", "exacerbate", "substantiate"],
+    "key": 1,
+    "rationale": "*Cannot prevent ... but* points to making the heat less severe; *precipitate* and *exacerbate* run the wrong way, and *substantiate* is about claims."
+   }
+  },
+  {
+   "rank": 29,
+   "id": "exacerbate",
+   "word": "exacerbate",
+   "pos": "verb",
+   "cefr": "C2",
+   "cefr_source": "Oxford page markup (C2 in a hidden attribute; no badge is displayed). Cambridge shows no level.",
+   "group": "core",
+   "cluster": "fix",
+   "ipa": "/ɪɡˈzæsəbeɪt/",
+   "def": "To exacerbate a problem, a bad situation or an illness is to make it worse.",
+   "sat_sense": "Worsen something already bad: the opposite pole to *ameliorate* and *mitigate*.",
+   "ex": [
+    "Building on the flood plain exacerbated the damage caused by the river's seasonal floods.",
+    "Skipping breakfast only exacerbated Fern's headache during the three-hour mock exam."
+   ],
+   "syn": {"B1": null, "B2": null, "C1": "worsen"},
+   "ant": {"B1": "improve", "B2": null, "C1": "relieve"},
+   "colls": ["exacerbate a problem", "exacerbate the situation", "exacerbate tensions", "exacerbate inequality", "be exacerbated by", "further exacerbate"],
+   "family": ["exacerbate (v)", "exacerbation (n)", "acerbic (adj: sharp in tone)", "acrid (adj)"],
+   "grammar": "Transitive: *exacerbate + problem / shortage / symptoms / tensions*; often passive with *by*. The object must already be bad: you cannot exacerbate something good.",
+   "say": "/ɪɡˈzæsəbeɪt/: four syllables, stress on ZAS: ig-ZAS-uh-bayt. The *x* is /gz/ and the *c* is /s/.",
+   "ukus": "",
+   "fact": "From Latin *exacerbare*: *ex-* ('thoroughly') + *acerbus* ('harsh, bitter'), related to *acer*, 'sharp'. The same sharpness is in *acid*, *acrid* and an *acerbic* remark. To exacerbate is to make something harsher.",
+   "trap": "*Exaggerate* = describe as bigger than it is. *Exasperate* = annoy greatly. *Exacerbate* = make worse. Three look-alikes, three meanings.",
+   "distractor_traps": [
+    "In Practice Test 6 it was a wrong option (*exacerbating*, with *epitomizing* and *precluding*) beside the key *redressing* (= remedying): same field, opposite direction. The passage described an attempt to put a wrong right.",
+    "This is the classic direction trap. Before reading the options, write a plus or a minus in the blank: is the problem getting better or worse?"
+   ],
+   "tip": "ex·[acer]·bate: *acer* = sharp, like *acid*. It makes the pain sharper.",
+   "related": ["ameliorate", "mitigate", "precipitate", "stymie"],
+   "related_other": [],
+   "sat_evidence": {
+    "sources": [
+     "Official distractor: *exacerbating*, Practice Test 6, Module 1, Q3 (key *redressing*)",
+     "Asian recall, unverified: Aug 2026 (TestDaily, US form, listed as a new word; Test Ninjas list for the 22 Aug sitting)",
+     "No official key found"
+    ],
+    "tier": "Tier 2: official distractor plus one recall sitting reported through both routes. Not an official key",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). Thin direct evidence; its value is as the opposite that makes *ameliorate* and *mitigate* testable."
+   },
+   "mini_item": {
+    "passage": "The new road was meant to ease congestion in the old town. Instead, by drawing thousands of additional cars into its narrow streets each day, it has ______ the very problem it was built to solve.",
+    "options": ["exacerbated", "ameliorated", "belied", "attested to"],
+    "key": 0,
+    "rationale": "*Instead* and the extra cars show the congestion got worse; *ameliorated* is the opposite direction."
+   }
+  },
+  {
+   "rank": 30,
+   "id": "stymie",
+   "word": "stymie",
+   "pos": "verb",
+   "cefr": null,
+   "cefr_source": "Unlabelled: no level on the Oxford or Cambridge entry. Treat as beyond C1.",
+   "group": "core",
+   "cluster": "fix",
+   "ipa": "/ˈstaɪmi/",
+   "def": "To stymie a person, a plan or an effort is to block it so that it cannot make progress.",
+   "sat_sense": "Block or thwart (College Board's gloss is 'prevent, greatly hinder'). The 'block' corner of the remedy/worsen/cause/block field, stronger than *hinder* or *impede*.",
+   "ex": [
+    "Attempts to date the cave paintings were long stymied by the lack of any organic material in the pigments.",
+    "The robotics team's progress was stymied for a week by a single missing cable, which took seven days to arrive."
+   ],
+   "syn": {"B1": "stop", "B2": "defeat", "C1": null},
+   "ant": {"B1": "help", "B2": "enable", "C1": "facilitate"},
+   "colls": ["stymie efforts to", "stymie progress", "stymie an investigation", "be stymied by", "stymie attempts to", "stymie growth"],
+   "family": ["stymie (v)", "stymies", "stymied", "stymieing / stymying"],
+   "grammar": "Transitive, most often passive: *be stymied by + obstacle*. Objects are efforts, attempts, progress, plans and the people making them.",
+   "say": "/ˈstaɪmi/: two syllables, STY-mee. The first syllable rhymes with *sky*.",
+   "ukus": "Both *stymieing* and *stymying* are accepted spellings of the *-ing* form.",
+   "fact": "A nineteenth-century golf word: a stymie was the position in which an opponent's ball lay on the green between your ball and the hole, blocking your shot. Its earlier origin is uncertain; one possible story links it to a Scots word for a person who sees poorly. The rule left golf in the 1950s, but the verb stayed.",
+   "trap": "It has no Latin root or word family to help, and it looks informal, but it is standard in serious writing. Do not confuse with *stifle* (suppress) or *stigma*.",
+   "distractor_traps": [
+    "Practice Test 10 options: *compound*, *disparage*, *outstrip*. *Compound* as a verb means make a problem worse, so it is the right mood but the wrong object: you compound a difficulty, and you stymie an effort.",
+    "*Disparage* (speak of as worthless) and *outstrip* (do better than) are also negative-looking or competitive verbs; only *stymie* means stop progress."
+   ],
+   "tip": "Golf: the other ball sits right in your line to the hole. You are stymied.",
+   "related": ["mitigate", "precipitate", "exacerbate"],
+   "related_other": ["circumvent"],
+   "sat_evidence": {
+    "sources": [
+     "Official practice-test key: Test 10, Module 2, Q4; the same item is a Question Bank key rated Hard (batch Mar 2025)",
+     "No recall reports found"
+    ],
+    "tier": "Tier 1: official key rated Hard. Included under the balance rule as the 'block' verb, despite the lowest teaching leverage of the 30",
+    "likelihood_note": "Low for any single form: in the back-test only 1 of 30 later official keys repeated an earlier key (about 3%). It is one of the later keys outside both the Oxford 5000 and the Academic Word List: a reminder that some hard keys can only be met through reading."
+   },
+   "mini_item": {
+    "passage": "The team hoped to sequence the ancient grain's DNA within a year. Their work was ______, however, by the poor condition of the samples, most of which had been stored in damp cellars and yielded nothing usable.",
+    "options": ["buttressed", "precipitated", "stymied", "corroborated"],
+    "key": 2,
+    "rationale": "*However* and 'nothing usable' show the work was blocked; *buttressed* and *corroborated* are supportive, and *precipitated* would mean set off."
+   }
+  }
+ ],
+ "patterns": [
+  {
+   "id": "claim-ladder", "icon": "🪜",
+   "title": "Every claim stands on a ladder of strength",
+   "kind": "scale",
+   "insight": "SAT passages are about research, and research is about how far a claim can be trusted. Six of the thirty items mark rungs on one ladder. At the bottom a claim is *untenable* (it cannot be defended at all); one rung up it is *tenuous* (it stands, but on thin support). A claim rises when someone *substantiates* it (supplies evidence for it, possibly their own), when finds or records *attest to* it (the evidence itself bears witness), when the writer *buttresses* it (adds further props), and highest of all when an independent second source *corroborates* it. One verb pulls the other way: evidence that *belies* a claim shows the claim to be false. The test almost never asks 'is the claim supported?'; it asks 'how strongly, and by whom?', so the wrong options are usually words from another rung.",
+   "items": ["tenuous", "substantiate", "attest-to", "buttress", "corroborate", "belie"],
+   "also": ["untenable", "concede", "repudiate"],
+   "examples": [
+    "One unsigned postcard: the claim is *tenuous*. No evidence that survives questioning: it is *untenable*.",
+    "The author adds wage data to *buttress* her own argument; a rival team's separate experiment *corroborates* it.",
+    "Shell beads found far inland *attest to* long-distance trade; a finding that the beads were made locally would *belie* it."
+   ],
+   "drill": "Put these in order from weakest to strongest support for a claim, saying each aloud: corroborated, tenuous, substantiated, untenable. Then name the verb from this card that knocks a claim down."
+  },
+  {
+   "id": "problem-line", "icon": "🌡️",
+   "title": "One line for problems: start it, worsen it, soften it, improve it",
+   "kind": "scale",
+   "insight": "Five verbs describe what happens to a problem, and they differ only in direction and distance. To *precipitate* a problem is to set it off suddenly. To *exacerbate* it is to make an existing problem worse. To *mitigate* it is to make its harm less severe while the problem remains. To *ameliorate* it is to make the situation actually better. Beyond that lies *rectify* (put it right). *Stymie* belongs to a different sentence: its object is not the problem but someone's effort or progress, which it blocks. So two questions settle most items in this field. First, the direction: is the passage making things better or worse? Second, the object: is the blank acting on a harm, a situation, or an attempt? The back-test is a warning about this very set: 'remedy' words were keys in three earlier official tests and in none of the next three, so learn the line, not a favourite word.",
+   "items": ["precipitate", "exacerbate", "mitigate", "ameliorate", "stymie"],
+   "also": ["rectify", "circumvent", "engender"],
+   "examples": [
+    "The drought *precipitated* a food shortage; hoarding *exacerbated* it; imports *mitigated* its effects; a good harvest *ameliorated* the situation.",
+    "Relief efforts were *stymied* by flooded roads (the efforts are blocked, not the flood).",
+    "'Did not solve the problem, but...' signals *mitigate* or *ameliorate*; 'instead' after a hoped-for cure signals *exacerbate*."
+   ],
+   "drill": "Draw a line with a minus sign at the left and a plus sign at the right. Place exacerbate, mitigate, ameliorate and rectify on it in ten seconds, then say what kind of object *stymie* and *precipitate* each need."
+  },
+  {
+   "id": "hidden-visible", "icon": "👁️",
+   "title": "Hidden or showing: latent and manifest, opaque and clear",
+   "kind": "contrast",
+   "insight": "Four items answer the question 'can you see it?'. *Latent* and *manifest* are a true opposite pair about the thing itself: a latent quality is present but not yet showing; when it shows, it has become manifest. *Opaque* is about the viewer's side: the thing may be fully there, but you cannot see into it or understand how it works; its opposite is *transparent* or *clear*. *Belie* handles the case where what shows is misleading: the surface tells a different story from the reality. Its mirror image is *attest to*, where the surface is honest evidence of what lies beneath. This field is almost absent from Easy official items and common in Hard ones, so it matters most to students who reach the harder second module.",
+   "items": ["latent", "manifest", "opaque", "belie", "attest-to"],
+   "also": [],
+   "examples": [
+    "Her talent was *latent* until the audition; by the final scene it was *manifest* in every gesture.",
+    "The rules are not hidden, just *opaque*: everyone can read them, and no one can follow them.",
+    "A calm voice *belied* her nerves (surface and truth differ); her shaking hands *attested to* them (surface and truth agree)."
+   ],
+   "drill": "For each sentence, say latent, manifest, opaque or belies: (1) the anger showed in every line of the letter; (2) the anger was there but had not yet surfaced; (3) nobody could work out what the letter meant; (4) the polite greeting gave no hint of the anger that followed."
+  },
+  {
+   "id": "centre-edge", "icon": "🎯",
+   "title": "How much does it matter? From the centre to the edge and off the map",
+   "kind": "scale",
+   "insight": "Picture a target. At the centre is whatever is *integral to* the whole: remove it and the whole fails. Further out is what is *peripheral to* it: connected, but at the edge. Off the target altogether is what is *inconsequential to* it (nothing follows from it) or *immaterial to* it (it does not bear on the question). The last two are near-synonyms with a different angle: *inconsequential* judges effects, *immaterial* judges relevance to a decision or argument. All four take *to*. SAT passages use this scale when a scholar re-ranks something: what was thought minor turns out to be essential, or the reverse, and a contrast word (*instead*, *far from*, *merely*) tells you which way the passage is moving. *A dearth of* is a neighbour from the quantity scale: it says how much of something exists, not how much it matters.",
+   "items": ["integral", "peripheral", "inconsequential-to", "immaterial-to", "dearth"],
+   "also": ["negligible", "ubiquitous"],
+   "examples": [
+    "Once seen as *peripheral to* the story, the servant's letters are now thought *integral to* it.",
+    "The paint colour is *immaterial to* the judges' decision; a two-baht price rise is *inconsequential to* most buyers.",
+    "'Far from being ___, the chorus...' wants an edge word in the blank, because *far from* will overturn it."
+   ],
+   "drill": "Say whether each is integral, peripheral or immaterial to winning a 100-metre race: the runner's start; the colour of her shoelaces; the warm-up music. Then put each answer in a full sentence with *to*."
+  },
+  {
+   "id": "fit-mismatch", "icon": "🧩",
+   "title": "Alike, unlike, out of place, out of pattern",
+   "kind": "contrast",
+   "insight": "Four items describe fit, and each needs a different number of things. *Homogeneous* and *disparate* both describe a whole set: its members are all of one kind, or of kinds so different they resist comparison. *An anomaly* is one case set against a pattern: thirty-nine results agree and the fortieth does not. *Incongruous with* is one thing set against its surroundings or against what is expected: a steel door on a brick cottage. So before choosing, count: is the passage talking about a set, about one case and a pattern, or about one thing and its setting? Two Greek roots hold the field together: *homos*, 'same', is in *homogeneous* and, less visibly, in *anomaly* (*an-* + *homalos*, 'not even'); *genos*, 'kind', is the second half of *homogeneous* and of its opposite, *heterogeneous*.",
+   "items": ["homogeneous", "disparate", "anomaly", "incongruous-with"],
+   "also": ["disparity"],
+   "examples": [
+    "A *homogeneous* sample: two hundred first-year students from one university. A *disparate* one: sailors, farmers and schoolchildren.",
+    "One falling tide gauge among thirty-nine rising ones is an *anomaly*.",
+    "The cheerful ending is *incongruous with* the bleak chapters before it."
+   ],
+   "drill": "Look round the classroom and name, in a sentence each: one homogeneous set, one disparate set, one thing that is incongruous with the room, and one anomaly in a pattern you can see."
+  },
+  {
+   "id": "roots", "icon": "🌳",
+   "title": "A dozen Latin and Greek roots carry most of the list",
+   "kind": "family",
+   "insight": "Most of the thirty are Latin or Greek compounds, and their roots recur across the SAT's vocabulary. *Tangere*, 'to touch', gives *contingent* (touching, so dependent), *integral* (untouched, so whole) and the official distractor *tangential* (touching only at the edge). *Valere*, 'to be strong', gives *prevail* (be stronger) and *ambivalent* (strong both ways), with *valid* and *prevalent*. *Testis*, 'witness', gives *attest*, *testify* and *testimony*. *Robur*, 'oak', gives *corroborate* and *robust*. *Melior*, 'better', gives *ameliorate*; *acer*, 'sharp', gives *exacerbate*, *acid* and *acerbic*; *mitis*, 'mild', gives *mitigate*. *Sequi*, 'to follow', gives *inconsequential*, *sequence* and *consequently*. *Stare*, 'to stand', gives *substantiate* (stand under). *Caput*, 'head', gives *precipitate* (head first). Greek *homos*, 'same', gives *homogeneous* and *anomaly*; *peri*, 'around', gives *peripheral*. Among the content words, three have no classical root to lean on: *belie* and *dearth* are native English (be- + lie; dear + -th), and *stymie* is a golf word of uncertain origin. Roots are a memory aid, not a decoding trick: *sanguine* is from 'blood', and no amount of Latin will tell you it means hopeful.",
+   "items": ["contingent-on", "integral", "prevail-over", "ambivalent", "attest-to", "corroborate", "ameliorate", "exacerbate", "mitigate", "inconsequential-to", "substantiate", "precipitate", "homogeneous", "anomaly", "peripheral", "sanguine", "belie", "dearth", "stymie"],
+   "also": [],
+   "examples": [
+    "*tangere* (touch), root in brackets: con·[ting]·ent, in·[teg]·ral, [tang]·ential, [tang]·ible. (Brackets mark the root, not the stress.)",
+    "*valere* (be strong): pre·[vail], ambi·[val]·ent, [val]·id, pre·[val]·ent.",
+    "*robur* (oak): cor·[rob]·orate and [rob]·ust; *acer* (sharp): ex·[acer]·bate and [ac]·id."
+   ],
+   "drill": "Cover the list. From each root, name one of the thirty and one everyday relative: tangere, valere, testis, robur, melior, acer, sequi. Seven roots in sixty seconds."
+  },
+  {
+   "id": "word-building", "icon": "🧱",
+   "title": "Word-building: the 'not' prefixes and the -ate verbs",
+   "kind": "sound",
+   "insight": "Two building rules cover half the list. First, the 'not' family. Latin *in-* means 'not' and changes shape before certain letters: *in-consequential*, *in-congruous*, but *im-material* before m. Greek *a-/an-* does the same job in *an-omaly*, and English *un-* in *untenable*. Strip the prefix and you usually find a positive word worth knowing: *consequential*, *congruent*, *material* (= relevant), *tenable*. Two warnings. *Integral* hides a 'not' you no longer feel (in- + touch = untouched, whole), so it is positive. And *dis-* in *disparate* means 'apart', not 'not'. Second, the *-ate* verbs: *corroborate, ameliorate, mitigate, exacerbate, substantiate, precipitate*. They descend from Latin past participles in *-atus*, and they behave alike. As verbs the ending is a full /eɪt/ ('ayt'), and the main stress falls two syllables before it: kuh-ROB-uh-rayt, MIT-i-gayt, ig-ZAS-uh-bayt, suhb-STAN-shee-ayt, pri-SIP-i-tayt. *Ameliorate* is the exception: it has five syllables, /əˈmiː.li.ə.reɪt/, with the stress three syllables before the ending: uh-MEE-lee-uh-rayt. The noun adds *-ion* and moves the main stress onto the A: kuh-rob-uh-RAY-shuhn, mit-i-GAY-shuhn. When an *-ate* word is an adjective, the ending weakens to /ət/: *disparate* is DIS-puh-ruht, and the adjective *precipitate* (hasty) ends the same way.",
+   "items": ["inconsequential-to", "incongruous-with", "immaterial-to", "anomaly", "integral", "disparate", "corroborate", "ameliorate", "mitigate", "exacerbate", "substantiate", "precipitate"],
+   "also": ["untenable"],
+   "examples": [
+    "[in]·consequential; [in]·congruous; [im]·material; [an]·omaly (an- + homalos). Positive partners: consequential, congruent, material.",
+    "Verb /eɪt/: they *corroborate* (kuh-ROB-uh-rayt). Noun: *corroboration* (kuh-rob-uh-RAY-shuhn).",
+    "Adjective /ət/: *disparate* sources (DIS-puh-ruht); a *precipitate* decision (pri-SIP-i-tuht)."
+   ],
+   "drill": "Read aloud as verb, then as -ation noun, tapping the stressed syllable: mitigate, exacerbate, corroborate, substantiate, precipitate, ameliorate. Then give the positive partner of immaterial, inconsequential and incongruous."
+  },
+  {
+   "id": "prepositions", "icon": "🔗",
+   "title": "The preposition is half the answer",
+   "kind": "grammar",
+   "insight": "The digital SAT does not test idioms in the everyday sense (no 'raining cats and dogs'). What looks idiom-like is the dependent preposition: a word that always brings the same small word with it. Between 16% and 21% of official vocabulary keys are multi-word, at every difficulty. The prepositions are not random; each carries a picture. *On* is resting on: *contingent on*, like *depend on* and *rely on*. *To* points at the thing a judgement is made against: *integral to, peripheral to, inconsequential to, immaterial to*, and evidence that *attests to* a fact. *With* sets two things side by side to see whether they match: *incongruous with*, like *consistent with*. *Over* is on top, the winner: *prevail over*. *For* is in place of: *a proxy for*, like *a substitute for*. *Of* measures a quantity: *a dearth of*. *In* marks where something shows: *manifest in*. *About* or *toward(s)* aims a feeling: *ambivalent about*, *sanguine about*. One caution from the official items: all four options normally come with their own correct preposition (*controversial among, antagonistic toward, imitated by*), so grammar alone will not eliminate them. Learn the phrase as one unit of meaning.",
+   "items": ["contingent-on", "proxies-for", "inconsequential-to", "immaterial-to", "incongruous-with", "attest-to", "prevail-over", "dearth", "manifest", "integral", "peripheral", "ambivalent", "sanguine"],
+   "also": ["mediated by"],
+   "examples": [
+    "Survival is *contingent on* rain. Pit size is *a proxy for* wealth. The colour is *immaterial to* the result.",
+    "The steel door is *incongruous with* the brick walls. The safer design *prevailed over* its rival.",
+    "The beads *attest to* trade; her debt to tradition is *manifest in* the courtyards; critics were *ambivalent about* the ending."
+   ],
+   "drill": "Cover the right-hand words and supply the preposition in under a minute: contingent ___, a proxy ___, immaterial ___, incongruous ___, attest ___, prevail ___, a dearth ___, manifest ___, integral ___, ambivalent ___."
+  },
+  {
+   "id": "second-senses", "icon": "🎭",
+   "title": "Concrete first, abstract on the test",
+   "kind": "metaphor",
+   "insight": "Many of the thirty began as words for physical things, and the SAT uses the abstract sense that grew out of them. A *buttress* is a stone prop against a wall; evidence buttresses a claim. *Opaque* glass blocks light; opaque prose blocks understanding. *Peripheral* vision is at the edge of sight; a peripheral issue is at the edge of the argument. *Tenuous* meant thin; a tenuous link is a thin thread. To *precipitate* was to throw down head first, and chemists and weather forecasters still use it for things that fall; a crisis is precipitated when it comes down all at once. *Immaterial* meant not made of matter, and now means not mattering. *Sanguine* meant full of blood, and so rosy and hopeful. A *proxy* was a person acting for another, and is now a measurement acting for another. The dictionary often labels only the concrete sense (Oxford marks the noun *buttress*, the noun *peripheral* and the chemistry noun *precipitate*, and leaves the SAT sense without a level), which is why so many of these cards read 'unlabelled'. The official 'most nearly means' items are built on the same idea in reverse: an everyday word used in a less common sense, as when *manifest* meant 'perceptible'.",
+   "items": ["buttress", "opaque", "peripheral", "tenuous", "precipitate", "immaterial-to", "sanguine", "proxies-for", "manifest", "latent", "integral", "contingent-on"],
+   "also": [],
+   "examples": [
+    "Stone *buttress* on a wall, then data *buttressing* a theory.",
+    "*Opaque* bathroom glass, then an *opaque* tax rule.",
+    "A ship's *manifest* lists what is on board; a *manifest* error is one anybody can see."
+   ],
+   "drill": "Choose three of buttress, opaque, peripheral, tenuous, precipitate. For each, say one sentence with the physical meaning and one with the abstract meaning."
+  },
+  {
+   "id": "distractors", "icon": "🪤",
+   "title": "How the three wrong answers are built",
+   "kind": "testcraft",
+   "insight": "Official wrong options are not random hard words; they come in recognisable kinds. (1) Same field, opposite direction: *exacerbating* beside the key *redressing*; *profusion of* beside *paucity of*; *operative* beside *latent*. (2) Same field, different relationship: *unobtrusive* and *concealed* (about visibility) beside *peripheral* (about importance); *compound* (worsen a difficulty) beside *stymie* (block an effort). (3) Same register, different job: *circumvent, disseminate, implement* beside *corroborate* are all things researchers do, but not to a claim. (4) Same grammar frame: every option is adjective + preposition, so only meaning separates *inconsequential to* from *antagonistic toward*. Sound-alikes (*collaborate* for *corroborate*, *desperate* for *disparate*, *ambiguous* for *ambivalent*) rarely appear as printed options; they are mistakes students bring with them. Three facts from the official data keep expectations honest. At Hard level the distractors are as rare as the keys. The key is the rarest of the four options in about 31% of Hard items and the plainest in about 16%, so 'pick the hardest word' and 'avoid the hardest word' both fail. And about 13% of Question Bank keys also serve as a wrong option in another item, which is why *ambivalent*, *substantiate*, *exacerbate* and *incongruous* are on this list although they are mostly evidenced as distractors.",
+   "items": ["ambivalent", "substantiate", "exacerbate", "incongruous-with", "corroborate", "peripheral", "stymie", "latent", "dearth", "inconsequential-to", "prevail-over", "contingent-on"],
+   "also": [],
+   "examples": [
+    "Blank needs 'make better'; the options include *exacerbate*. Kind 1: right field, wrong direction.",
+    "Blank needs 'not central'; the options include *concealed*. Kind 2: nearby field, wrong relationship.",
+    "Blank needs 'support with evidence'; the options include *implement*. Kind 3: right register, wrong job."
+   ],
+   "drill": "Take any mini-item on the cards. Before looking at the key, label each wrong option 1, 2, 3 or 4 by the kinds above. One item, one minute."
+  }
+ ],
+ "fields": [
+  {"id": "claim", "name": "Strength of a claim", "description": "How well a claim is supported, and what evidence does to it: from weak (*tenuous*) to supported twice over (*corroborate*). The largest Question Bank field (evidence, claims and reasoning: 44 of 261 keys).", "word_ids": ["tenuous", "attest-to", "substantiate", "corroborate", "buttress"]},
+  {"id": "fix", "name": "Remedy, worsen, cause, block", "description": "What an action does to a problem or an effort: start it (*precipitate*), worsen it (*exacerbate*), soften it (*mitigate*), improve it (*ameliorate*), or stop an effort dead (*stymie*). Question Bank field 'helping, hindering and causing': 33 of 261 keys.", "word_ids": ["ameliorate", "precipitate", "mitigate", "exacerbate", "stymie"]},
+  {"id": "visible", "name": "Hidden, visible, clarity", "description": "Whether something shows (*manifest*), lies hidden (*latent*), cannot be seen into (*opaque*), or shows a false face (*belie*). Almost absent from Easy items; 9 of 61 Hard keys.", "word_ids": ["manifest", "opaque", "latent", "belie"]},
+  {"id": "centre", "name": "Centre, edge, relevance (and extent)", "description": "How much something matters to the whole: essential (*integral to*), marginal (*peripheral to*), or of no effect (*inconsequential to*, *immaterial to*). The extent phrase *a dearth of* is filed here, as the first report's 'widespread or marginal' set was.", "word_ids": ["integral", "peripheral", "immaterial-to", "inconsequential-to", "dearth"]},
+  {"id": "fit", "name": "Fit, mismatch, anomaly", "description": "Whether things are alike (*homogeneous*), unlike (*disparate*), out of place (*incongruous with*) or out of pattern (*anomaly*). Part of the Question Bank's similarity-and-difference field (38 of 261 keys).", "word_ids": ["anomaly", "homogeneous", "incongruous-with", "disparate"]},
+  {"id": "attitude", "name": "Attitude and temperament", "description": "A person's stance or outlook: hopeful (*sanguine*) or pulled two ways (*ambivalent*). Question Bank field 'attitude, stance and disposition': 17 of 261 keys.", "word_ids": ["ambivalent", "sanguine"]},
+  {"id": "depend", "name": "Dependence and relationship", "description": "How two things are tied: one is a condition of the other (*contingent on*), stands in for it (*a proxy for*) or defeats it (*prevail over*). The first report under-weighted this field; the Question Bank does not.", "word_ids": ["contingent-on", "proxies-for", "prevail-over"]},
+  {"id": "transition", "name": "Transitions (outside the seven fields)", "description": "Logical links tested in Transitions questions, not Words in Context: concession (*that said*) and fitting result (*accordingly*). Included because both carry a C1 level (*accordingly*: Oxford visible badge; *that said*: Oxford page markup, not displayed) and three official keys each.", "word_ids": ["that-said", "accordingly"]}
+ ],
+ "runners_up": [
+  {"id": "granted", "word": "granted", "cefr": "unlabelled", "field": "transition", "reason": "Transition of concession: Question Bank key in 2 items (Medium, Hard) and distractor in 5; recalled on 3 dates. Left out because neither dictionary gives it a level of any kind (not even in page markup), transitions were capped at two, and *that said* already covers concession."},
+  {"id": "counterfactual", "word": "counterfactual", "cefr": "unlabelled", "field": "claim", "reason": "Question Bank key, Hard (Jul 2026); recalled Mar 2026 by two sources. Tied at 5.5 with *mitigate* and *buttress*; lost the tie because it anchors no scale or pair."},
+  {"id": "exhaustive", "word": "exhaustive", "cefr": "C1 (Cambridge)", "field": "centre", "reason": "Practice Test 10 key and Hard Question Bank key, plus a Question Bank distractor. An extent word outside the paired contrasts. Teach with *exhausting / exhausted*."},
+  {"id": "untenable", "word": "untenable", "cefr": "unlabelled", "field": "claim", "reason": "The rung below *tenuous* (cannot be defended at all). Recall only: Mar 2026 (TestDaily, 'old') and a tier-D list. Covered inside the claim-ladder pattern card."},
+  {"id": "mediated-by", "word": "mediated by", "cefr": "unlabelled for this sense (Oxford marks other senses C2 in page markup)", "field": "depend", "reason": "Question Bank key, Hard (Aug 2025): 'made possible or shaped by an in-between factor'. Tied at 5.5 with *mitigate* and *buttress*; a strong ninth phrase if the list is extended."},
+  {"id": "ubiquitous", "word": "ubiquitous", "cefr": "unlabelled", "field": "centre", "reason": "Noun *ubiquity* is a Hard Question Bank key (Apr 2026); *ubiquitous* is a Hard distractor and was recalled Sep 2025. The opposite of *a dearth of*."},
+  {"id": "concede", "word": "concede", "cefr": "C1 (Oxford visible badge)", "field": "claim", "reason": "Question Bank key, Medium. Well labelled and widely taught already; lower rarity than the chosen claim words."},
+  {"id": "repudiate", "word": "repudiate", "cefr": "unlabelled", "field": "claim", "reason": "Question Bank key, Hard, with a harder-module label; its distractor *recants* is worth teaching beside it (reject someone else's idea versus take back your own)."},
+  {"id": "engender", "word": "engender", "cefr": "unlabelled", "field": "fix", "reason": "Question Bank key, Hard (*engendering*); on TTA's vendor list. A 'cause' verb; *precipitate* was preferred for its second senses."},
+  {"id": "disparity", "word": "disparity", "cefr": "unlabelled", "field": "fit", "reason": "Recalled on five dates (unverified), no official key. Treated inside the *disparate* card: a gap in level, not a difference in kind."},
+  {"id": "dogmatic", "word": "dogmatic", "cefr": "C2 (Oxford page markup)", "field": "attitude", "reason": "Question Bank key, Hard. The next attitude word to add: holding beliefs as beyond question, the opposite temperament to *ambivalent*."},
+  {"id": "negligible", "word": "negligible", "cefr": "C2 (Cambridge)", "field": "centre", "reason": "Question Bank key, Hard. Too small to matter; overlaps with *inconsequential* but takes no preposition."},
+  {"id": "circumvent", "word": "circumvent", "cefr": "C2 (Oxford page markup)", "field": "fix", "reason": "Official distractor three times (Practice Test 7 and two Question Bank items) and recalled Sep 2025. Get round an obstacle: the answer to being *stymied*."},
+  {"id": "unassuming", "word": "unassuming", "cefr": "unlabelled", "field": "attitude", "reason": "Practice Test 11 key and Hard Question Bank key (modest, unremarkable). Its distractor *incongruous* is in the top 30."},
+  {"id": "rectify", "word": "rectify", "cefr": "C1 (Cambridge)", "field": "fix", "reason": "Practice Test 7 key and Medium Question Bank key. The 'put right completely' end of the problem line, beyond *ameliorate*."},
+  {"id": "rigour", "word": "rigour", "cefr": "unlabelled", "field": "claim", "reason": "The most often recalled word that is not everyday (six dates, unverified; American spelling *rigor*), but no source says which sense was tested and it has no official key."}
+ ]
+}
