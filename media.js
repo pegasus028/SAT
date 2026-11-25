@@ -7,6 +7,7 @@
    stage: a stage id from data/stages.js ("vocab", "transitions", "boundaries", "form-sense")
    — the episode then appears on that stage's Podcast / Video node in the Stages tab.
    words / pattern: the episode's chip also appears on those word and pattern cards.
+   short: a few words shown on the video's own button in the Stages tab when a stage has more than one video.
    series: videos with the same series name sit together on their own shelf under that title
      (optional blurb in MEDIA.video.series["name"]); videos without one go on the general Videos shelf.
    Leave a list empty and the app shows "coming soon".
@@ -18,13 +19,13 @@ window.MEDIA = {
       "30 High-value SAT words": "The thirty words in four videos, about ten minutes each, taught part by part through the patterns behind SAT vocabulary. Watch them in order."
     },
     episodes: [
-      { id: "v-top30-1", series: "30 High-value SAT words", title: "SAT-Top30-V1-Parts-1-2", mins: 11, youtube: "QikdsCrXfB8", stage: "vocab",
+      { id: "v-top30-1", series: "30 High-value SAT words", title: "SAT-Top30-V1-Parts-1-2", mins: 11, short: "Parts 1–2", youtube: "QikdsCrXfB8", stage: "vocab",
         note: "Part 1 Strength of a claim · Part 2 Start, worsen, soften, improve" },
-      { id: "v-top30-2", series: "30 High-value SAT words", title: "SAT-Top30-V2-Parts-3-4", mins: 9, youtube: "wXgpObrLYBU", stage: "vocab",
+      { id: "v-top30-2", series: "30 High-value SAT words", title: "SAT-Top30-V2-Parts-3-4", mins: 9, short: "Parts 3–4", youtube: "wXgpObrLYBU", stage: "vocab",
         note: "Part 3 Hidden or showing · Part 4 How much it matters" },
-      { id: "v-top30-3", series: "30 High-value SAT words", title: "SAT-Top30-V3-Parts-5-7", mins: 9, youtube: "oPQtCuDun6A", stage: "vocab",
+      { id: "v-top30-3", series: "30 High-value SAT words", title: "SAT-Top30-V3-Parts-5-7", mins: 9, short: "Parts 5–7", youtube: "oPQtCuDun6A", stage: "vocab",
         note: "Part 5 Fit and mismatch · Part 6 Attitude · Part 7 How two things are tied" },
-      { id: "v-top30-4", series: "30 High-value SAT words", title: "SAT-Top30-V4-Parts-8-9-Summary", mins: 9, youtube: "WxbotHOFU1o", stage: "vocab",
+      { id: "v-top30-4", series: "30 High-value SAT words", title: "SAT-Top30-V4-Parts-8-9-Summary", mins: 9, short: "Parts 8–9 + summary", youtube: "WxbotHOFU1o", stage: "vocab",
         note: "Part 8 Transitions · Part 9 Patterns · Summary table" }
     ] },
   extras:  { title: "Extras", blurb: "Links T.Chris adds for practice.", items: [] }

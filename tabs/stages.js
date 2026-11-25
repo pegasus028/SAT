@@ -124,7 +124,16 @@
     var pods = SAT.media(function (m) { return m._kind === 'podcast' && m.stage === st.id; });
     var vids = SAT.media(function (m) { return m._kind === 'video' && m.stage === st.id; });
     var md = meta().media[st.id] || {};
-    return '<button type="button" class="sg-node' + (md.done ? ' done' : '') + '" data-act="pod" data-st="' + st.id + '"' + (pods.length ? '' : ' disabled') + '><span class="sg-ni">' + (md.done ? '✓' : '♪') + '</span>Podcast' + (pods.length ? (pods.length > 1 ? '<span class="sg-nx">' + pods.length + '</span>' : '') : '<span class="sg-nx">soon</span>') + '</button>' +
+    /* A stage with videos but no podcast drops the Podcast button (T.Chris, 26 Nov 2026). */
+    var pod = (pods.length || !vids.length) ? '<button type="button" class="sg-node' + (md.done ? ' done' : '') + '" data-act="pod" data-st="' + st.id + '"' + (pods.length ? '' : ' disabled') + '><span class="sg-ni">' + (md.done ? '✓' : '♪') + '</span>Podcast' + (pods.length ? (pods.length > 1 ? '<span class="sg-nx">' + pods.length + '</span>' : '') : '<span class="sg-nx">soon</span>') + '</button>' : '';
+    /* Several videos: one button each, opening just that video. */
+    if (vids.length > 1) {
+      var seen = md.videosSeen || {};
+      return pod + vids.map(function (v, i) {
+        return '<button type="button" class="sg-node' + (seen[v.id] ? ' done' : '') + '" data-act="vid" data-st="' + st.id + '" data-vid="' + esc(v.id || '') + '" title="' + esc(v.title || '') + '"><span class="sg-ni">' + (seen[v.id] ? '✓' : '▶') + '</span>Video ' + (i + 1) + (v.short ? '<span class="sg-nx">' + esc(v.short) + '</span>' : '') + '</button>';
+      }).join('');
+    }
+    return pod +
       '<button type="button" class="sg-node' + (md.videoOpens ? ' done' : '') + '" data-act="vid" data-st="' + st.id + '"' + (vids.length ? '' : ' disabled') + '><span class="sg-ni">▶</span>Video' + (vids.length ? '' : '<span class="sg-nx">soon</span>') + '</button>';
   }
   function stageCard(st, i, open) {
@@ -171,7 +180,7 @@
   function wireMap(el, openId) {
     SAT.$$('[data-lv]', el).forEach(function (b) { b.onclick = function () { ui.lvl = ui.lvl === b.dataset.lv ? '' : b.dataset.lv; paintMap(el, openId); }; });
     SAT.$$('[data-act=pod]', el).forEach(function (b) { b.onclick = function () { togglePod(b.dataset.st); }; });
-    SAT.$$('[data-act=vid]', el).forEach(function (b) { b.onclick = function () { openVideo(b.dataset.st); }; });
+    SAT.$$('[data-act=vid]', el).forEach(function (b) { b.onclick = function () { openVideo(b.dataset.st, b.dataset.vid); var md = meta().media[b.dataset.st]; if (b.dataset.vid && md && md.videosSeen && md.videosSeen[b.dataset.vid]) { b.classList.add('done'); b.querySelector('.sg-ni').textContent = '✓'; } }; });
     if (openId) { var c = document.getElementById('sg-st-' + openId); if (c && c.scrollIntoView && !ui.scrolled) { ui.scrolled = true; setTimeout(function () { c.scrollIntoView({ block: 'start', behavior: 'smooth' }); }, 30); } }
   }
 
@@ -194,9 +203,11 @@
     });
   }
   function ytId(u) { var m = String(u || '').match(/(?:youtu\.be\/|v=|\/embed\/|\/shorts\/)([A-Za-z0-9_-]{6,})/); return m ? m[1] : (/^[A-Za-z0-9_-]{6,}$/.test(String(u || '')) ? u : ''); }
-  function openVideo(stId) {
-    var vids = SAT.media(function (m) { return m._kind === 'video' && m.stage === stId; }); if (!vids.length) return;
-    var r = mediaRec(stId); r.videoOpens = (r.videoOpens || 0) + 1; r.last = Date.now(); SAT.save(); SAT.log({ kind: 'lesson', id: 'video:' + stId });
+  function openVideo(stId, vidId) {
+    var vids = SAT.media(function (m) { return m._kind === 'video' && m.stage === stId && (!vidId || m.id === vidId); }); if (!vids.length) return;
+    var r = mediaRec(stId); r.videoOpens = (r.videoOpens || 0) + 1; r.last = Date.now();
+    if (vidId) { r.videosSeen = r.videosSeen || {}; r.videosSeen[vidId] = Date.now(); }
+    SAT.save(); SAT.log({ kind: 'lesson', id: 'video:' + (vidId || stId) });
     var st = stageById(stId) || {};
     SAT.sheet('<p class="eyebrow">' + esc(st.title || '') + ' · video</p>' + vids.map(function (v) {
       var id = ytId(v.youtube || v.url), mp4 = /\.mp4(\?|#|$)/i.test(v.src || '');
