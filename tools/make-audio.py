@@ -20,6 +20,17 @@ OUT = os.path.join(ROOT, 'audio', 'tts')
 MANIFEST = os.path.join(ROOT, 'data', 'tts.js')
 VOICE, RATE = 'en-GB-SoniaNeural', '-7%'    # T.Chris's standard for every Sonia read-aloud (21 Nov 2026)
 THAI_VOICE = 'th-TH-PremwadeeNeural'
+# Voice-only respellings (T.Chris, 25 Nov 2026). Applied to the text sent to the voice, never to the
+# recording key, so the app finds the clip from the on-screen text. "SAT" (capitals = the exam, not the
+# verb "sat") is spoken as the letters S-A-T.
+VOICE_FIXES = [(re.compile(r'\bSAT\b'), 'S A T')]
+FIX_RE = re.compile('|'.join(f.pattern for f, _ in VOICE_FIXES))
+
+
+def voice_text(text):
+    for rx, rep in VOICE_FIXES:
+        text = rx.sub(rep, text)
+    return text
 THAI_RUN = re.compile(r'([\u0E00-\u0E7F]+(?:[\s,]+[\u0E00-\u0E7F]+)*)')
 
 if os.environ.get('TTS_CA_BUNDLE'):          # only for networks with an intercepting proxy
@@ -73,8 +84,9 @@ async def record_mixed(text, path):
 
 async def record(item, sem, force):
     path = os.path.join(OUT, item['key'] + '.mp3')
-    mixed = bool(THAI_RUN.search(item['text']))
-    floor = 8000 if mixed else min_bytes(item['text'])
+    text = voice_text(item['text'])
+    mixed = bool(THAI_RUN.search(text))
+    floor = 8000 if mixed else min_bytes(text)
     if not force and os.path.exists(path) and os.path.getsize(path) >= floor:
         return 'kept'
     if mixed and not shutil.which('ffmpeg'):
@@ -84,9 +96,9 @@ async def record(item, sem, force):
         for attempt in range(4):
             try:
                 if mixed:
-                    await record_mixed(item['text'], path)
+                    await record_mixed(text, path)
                 else:
-                    await say(item['text'], VOICE, path, floor)
+                    await say(text, VOICE, path, floor)
                 return 'made'
             except Exception as e:  # network hiccup or throttling: back off and retry
                 if attempt == 3:
@@ -97,10 +109,11 @@ async def record(item, sem, force):
 
 async def main():
     force, prune = '--force' in sys.argv, '--prune' in sys.argv
+    refix = '--refix' in sys.argv            # re-record only clips whose text a VOICE_FIXES rule changes
     items = json.loads(subprocess.check_output(['node', os.path.join(ROOT, 'tools', 'tts-list.js')], cwd=ROOT))
     os.makedirs(OUT, exist_ok=True)
     sem = asyncio.Semaphore(4)
-    results = await asyncio.gather(*(record(i, sem, force) for i in items))
+    results = await asyncio.gather(*(record(i, sem, force or (refix and bool(FIX_RE.search(i['text'])))) for i in items))
     keys = {i['key'] for i in items}
     if prune:
         for f in os.listdir(OUT):

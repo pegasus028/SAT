@@ -245,6 +245,8 @@
   }
   try { if (window.speechSynthesis) { speechSynthesis.getVoices(); speechSynthesis.addEventListener('voiceschanged', pickVoice); } } catch (e) {}
   function ttsNorm(s) { return String(s || '').replace(/\s+/g, ' ').trim(); }
+  /* Voice-only respellings, same rules as VOICE_FIXES in tools/make-audio.py (the exam name SAT is spoken S-A-T). */
+  SAT.voiceFix = function (s) { return String(s).replace(/\bSAT\b/g, 'S A T'); };
   SAT.ttsKey = function (s) { s = ttsNorm(s); var h = 0x811c9dc5; for (var i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return ('0000000' + h.toString(16)).slice(-8); };
   SAT.sayText = function (raw) { return ttsNorm(window.speechText ? window.speechText(raw) : raw); };
   var TTS_SET = {}; ((window.TTS && window.TTS.keys) || []).forEach(function (k) { TTS_SET[k] = 1; });
@@ -255,7 +257,7 @@
   function rdMark(on) { var p = RD.parts[RD.i]; if (p && p.el) p.el.classList.toggle('reading', on); }
   function rdSynth(text, gen) {
     try {
-      var u = new SpeechSynthesisUtterance(text); u.lang = 'en-GB'; u.rate = 0.9; var v = pickVoice(); if (v) { u.voice = v; u.lang = v.lang; }
+      var u = new SpeechSynthesisUtterance(SAT.voiceFix(text)); u.lang = 'en-GB'; u.rate = 0.9; var v = pickVoice(); if (v) { u.voice = v; u.lang = v.lang; }
       u.onend = function () { if (gen === RD.gen) rdNext(); };
       u.onerror = function (e) { if (gen === RD.gen && e.error !== 'interrupted' && e.error !== 'canceled') rdNext(); };
       RD.synth = true; speechSynthesis.cancel(); speechSynthesis.speak(u);

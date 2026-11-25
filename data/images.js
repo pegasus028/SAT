@@ -4,7 +4,39 @@
    Pattern pictures: T.Chris's Image Bank frames (bank id in `bank`), cropped to 3:2.
    A missing key means "no picture yet": tabs draw a typographic panel instead. */
 window.IMAGES = {
-  words: {},
+  /* Word pictures: from T.Chris's deck SAT_Top_30_Vocabulary_v2_section_zoomv2.pptx (12 Gemini, 18 Image Bank, cropped). */
+  words: {
+    "manifest": { src: 'art/words/manifest.webp', alt: "Photo for the word \"manifest\": a Satriwithaya student in a school scene." },
+    "ambivalent": { src: 'art/words/ambivalent.webp', alt: "Photo for the word \"ambivalent\": a Satriwithaya student in a school scene." },
+    "integral": { src: 'art/words/integral.webp', alt: "Photo for the word \"integral\": a Satriwithaya student in a school scene." },
+    "that-said": { src: 'art/words/that-said.webp', alt: "Photo for the word \"that said\": a Satriwithaya student in a school scene." },
+    "opaque": { src: 'art/words/opaque.webp', alt: "Photo for the word \"opaque\": a Satriwithaya student in a school scene." },
+    "tenuous": { src: 'art/words/tenuous.webp', alt: "Photo for the word \"tenuous\": a Satriwithaya student in a school scene." },
+    "anomaly": { src: 'art/words/anomaly.webp', alt: "Photo for the word \"anomaly\": a Satriwithaya student in a school scene." },
+    "peripheral": { src: 'art/words/peripheral.webp', alt: "Photo for the word \"peripheral\": a Satriwithaya student in a school scene." },
+    "sanguine": { src: 'art/words/sanguine.webp', alt: "Photo for the word \"sanguine\": a Satriwithaya student in a school scene." },
+    "ameliorate": { src: 'art/words/ameliorate.webp', alt: "Photo for the word \"ameliorate\": a Satriwithaya student in a school scene." },
+    "immaterial-to": { src: 'art/words/immaterial-to.webp', alt: "Photo for the word \"immaterial to\": a Satriwithaya student in a school scene." },
+    "homogeneous": { src: 'art/words/homogeneous.webp', alt: "Photo for the word \"homogeneous\": a Satriwithaya student in a school scene." },
+    "contingent-on": { src: 'art/words/contingent-on.webp', alt: "Photo for the word \"contingent on\": a Satriwithaya student in a school scene." },
+    "attest-to": { src: 'art/words/attest-to.webp', alt: "Photo for the word \"attest to\": a Satriwithaya student in a school scene." },
+    "incongruous-with": { src: 'art/words/incongruous-with.webp', alt: "Photo for the word \"incongruous with\": a Satriwithaya student in a school scene." },
+    "proxies-for": { src: 'art/words/proxies-for.webp', alt: "Photo for the word \"a proxy for\": a Satriwithaya student in a school scene." },
+    "prevail-over": { src: 'art/words/prevail-over.webp', alt: "Photo for the word \"prevail over\": a Satriwithaya student in a school scene." },
+    "inconsequential-to": { src: 'art/words/inconsequential-to.webp', alt: "Photo for the word \"inconsequential to\": a Satriwithaya student in a school scene." },
+    "substantiate": { src: 'art/words/substantiate.webp', alt: "Photo for the word \"substantiate\": a Satriwithaya student in a school scene." },
+    "dearth": { src: 'art/words/dearth.webp', alt: "Photo for the word \"a dearth of\": a Satriwithaya student in a school scene." },
+    "accordingly": { src: 'art/words/accordingly.webp', alt: "Photo for the word \"accordingly\": a Satriwithaya student in a school scene." },
+    "corroborate": { src: 'art/words/corroborate.webp', alt: "Photo for the word \"corroborate\": a Satriwithaya student in a school scene." },
+    "disparate": { src: 'art/words/disparate.webp', alt: "Photo for the word \"disparate\": a Satriwithaya student in a school scene." },
+    "latent": { src: 'art/words/latent.webp', alt: "Photo for the word \"latent\": a Satriwithaya student in a school scene." },
+    "belie": { src: 'art/words/belie.webp', alt: "Photo for the word \"belie\": a Satriwithaya student in a school scene." },
+    "precipitate": { src: 'art/words/precipitate.webp', alt: "Photo for the word \"precipitate\": a Satriwithaya student in a school scene." },
+    "buttress": { src: 'art/words/buttress.webp', alt: "Photo for the word \"buttress\": a Satriwithaya student in a school scene." },
+    "mitigate": { src: 'art/words/mitigate.webp', alt: "Photo for the word \"mitigate\": a Satriwithaya student in a school scene." },
+    "exacerbate": { src: 'art/words/exacerbate.webp', alt: "Photo for the word \"exacerbate\": a Satriwithaya student in a school scene." },
+    "stymie": { src: 'art/words/stymie.webp', alt: "Photo for the word \"stymie\": a Satriwithaya student in a school scene." }
+  },
   story: {
     cover: { src: 'art/story/cover.webp', alt: 'Ploy, Fah and Mint on the school rooftop after rain beside a white weather box: Mint holds an old logbook, Fah points at a page, Ploy studies a thermometer.' },
     p1: { src: 'art/story/p1.webp', alt: 'Ploy, Fah and Mint at a library table on a rainy afternoon, a stack of old logbooks beside them and a laptop showing a pale graph.' },
